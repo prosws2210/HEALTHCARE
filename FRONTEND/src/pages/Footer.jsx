@@ -6,28 +6,70 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGooglePlusG } from "react-icons/fa";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
 
 
 const Footer = () => {
 	return (
 		<div className="">
-			<div className="grid grid-cols-3 gap-20 bg-neutral-700 text-white px-20 pt-8 pb-8">
+			<div className="flex gap-24 bg-neutral-700 text-white px-20 pt-8 pb-8">
+				<div className="w-4/12">
+					<h2 className="font-bold text-xl">Call us now @</h2>
+					<div className="mt-3">
+						<div className="flex pb-4">
+							<a href="https://www.facebook.com/">
+								<FaPhone className="text-1xl mr-4 mt-2" />
+							</a>
+							<div>
+								<h6 className="font-semibold">Emergency</h6>
+								<p>
+									<a href="tel:1066" className="text-blue-500">
+										1066
+									</a>
+								</p>
+							</div>
+						</div>
 
-				<div>
-					<h2 className="font-bold text-xl pb-2">About Us</h2>
-					<p className="text-justify text-sm">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Healthify Yourself focuses on technologies that promise to reduce costs, streamline processes, and speed time-to-market. Our	commitment to patient care, high customer satisfaction, and	personalized treatment plans have resulted in positive health outcomes. We have a robust and diverse Pharma Pipeline and a
-						dedicated Pharma Team working tirelessly to bring safe and effective
-						treatments to our patients. Backed by our strong quality processes
-						and rich experience managing global operations, we strive to exceed
-						your expectations at every step of your healthcare journey.
-					</p>
+						<div className="flex pb-4">
+							<a href="https://www.facebook.com/">
+								<FaPhone className="text-1xl mr-4 mt-2" />
+							</a>
+							<div>
+								<h6 className="font-semibold">Lifeline International</h6>
+								<p>
+									<a href="tel:4043441066" className="text-blue-500">
+										+91 4043441066
+									</a>
+								</p>
+							</div>
+						</div>
+
+						<div className="flex pb-4">
+							<a href="https://www.facebook.com/">
+								<FaPhone className="text-1xl mr-4 mt-2" />
+							</a>
+							<div>
+								<h6 className="font-semibold">Health Help Line</h6>
+								<p>
+									<a href="tel:1860-500-1066" className="text-blue-500">
+										1860-500-1066
+									</a>
+								</p>
+							</div>
+						</div>
+
+						<div className="flex flex-col bottom-32 left-4 w-60 gap-y-3">
+							<button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full">
+								Book an Appointment
+							</button>
+						</div>
+
+					</div>
 				</div>
 
-
-				<div>
-					<h2 className="font-bold text-xl pb-2">Useful Links</h2>
-					<div className="flex flex-col gap-2">
+				<div className="w-8/12">
+					<h2 className="font-bold text-xl">Useful Links</h2>
+					<div className="flex flex-col gap-2 mt-3">
 						<Link to="/" className="border-b-2 border-neutral-500 pt-3 flex justify-between">
 							<p>Home</p>
 							<MdOutlineKeyboardArrowRight className="text-2xl" />
@@ -46,15 +88,14 @@ const Footer = () => {
 						</Link>
 						<Link to="/contact" className="border-b-2 border-neutral-500 pt-3 flex justify-between">
 							<p>Contact Us</p>
-						<MdOutlineKeyboardArrowRight className="text-2xl" />
+							<MdOutlineKeyboardArrowRight className="text-2xl" />
 						</Link>
 					</div>
 				</div>
 
-
-				<div className="">
-					<h2 className="font-bold text-xl first-line pb-2">Contact Us</h2>
-					<div className="text-sm italic">
+				<div className="w-8/12">
+					<h2 className="font-bold text-xl first-line">Contact Us</h2>
+					<div className="text-sm italic mt-3">
 						<div className="flex justify-between">
 							<div>Isha Shrivastava</div>
 							<div>(22BRS1181)</div>
@@ -77,10 +118,12 @@ const Footer = () => {
 						B.Tech in CSE with AI&ML <br />
 						VIT Chennai <br />
 						Tamil Nadu, IND <br />
+
 						<br />
-						Phone: +91 1010101010 <br />
-						Email: random_mail@gmail.com <br />
-						Web: www.random.in
+
+						<strong>Phone : </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +91 1010101010 <br />
+						<strong>Email : </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; random_mail@gmail.com <br />
+						<a href="https://health-care-website-two.vercel.app/"> <strong>Website : </strong>&nbsp;&nbsp; www.health-care.com</a>
 					</div>
 				</div>
 			</div>
@@ -91,21 +134,21 @@ const Footer = () => {
 						2024 &copy; All Rights Reserved | Designed by Eliksha Maheshwari and Developed by Shakti Swaroop Sahu
 					</a>
 				</div>
-				<div className="flex gap-3">
+				<div className="flex gap-4">
 				<a href="https://www.facebook.com/">
-					<FaFacebook className="text-2xl mr-2" />
+					<FaFacebook className="text-1xl mr-2" />
 				</a>
 				<a href="https://www.instagram.com/">
-					<FaInstagram className="text-2xl mr-2" />
+					<FaInstagram className="text-1xl mr-2" />
 				</a>
 				<a href="https://github.com/sws2210">
-					<FaGithub className="text-2xl mr-2" />
+					<FaGithub className="text-1xl mr-2" />
 				</a>
 				<a href="https://www.linkedin.com/">
-					<FaLinkedin className="text-2xl mr-2" />
+					<FaLinkedin className="text-1xl mr-2" />
 				</a>
 				<a href="https://mail.google.com/">
-					<FaGooglePlusG className="text-2xl mr-2" />
+					<FaGooglePlusG className="text-1xl mr-2" />
 				</a>
 				</div>
 			</div>
