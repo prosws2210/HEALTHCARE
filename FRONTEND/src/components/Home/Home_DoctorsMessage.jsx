@@ -7,7 +7,7 @@ const Home_DoctorsMessage = () => {
       <div className="container mx-auto px-20 pt-4 relative">
         <div className='flex items-center gap-6'>
           <div className="w-1/2">
-            <img className="w-full" src="assets/images/doctt.png" alt="" />
+            <img className="w-full" src="assets/images/doctt.png" alt="" loading='lazy' />
           </div>
           <div className="flex flex-col items-left w-1/2 pl-6 bg-white bg-opacity-30 backdrop-blur-md p-4 rounded-lg">
             <h2 className="text-2xl font-bold mb-2">Hello, I'm Doctor Rajesh</h2>

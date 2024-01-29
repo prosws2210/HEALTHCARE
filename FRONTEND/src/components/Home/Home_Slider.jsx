@@ -88,7 +88,7 @@ const HomeSlider = () => {
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="carousel-item relative">
-                <img className="w-full h-full object-cover" src={slide.image} alt={`Slide ${index + 1}`} />
+                <img className="w-full h-full object-cover" src={slide.image} alt={`Slide ${index + 1}`} loading='lazy' />
                 <div className="absolute inset-0 flex flex-col bg-opacity-30 bg-black text-white px-20 pt-80">
                   <div className="relative z-10 max-w-[60%]">
                     <h4 className="text-4xl font-bold mb-4">{slide.title}</h4>

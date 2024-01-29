@@ -10,6 +10,7 @@ const About_Content = () => {
             src="assets/images/blog/blog_04.jpg"
             alt=""
             className="w-full h-auto rounded-md shadow-xl border-8 border-neutral-100"
+            loading='lazy'
           />
         </div>
       </div>

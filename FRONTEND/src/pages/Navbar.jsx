@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="shadow-2xl" style={boxShadowStyle}>
       <div className="flex justify-around py-2 z-10">
         <div>
-          <img src="/assets/images/jipmer-mbbs.jpg" alt="" className="h-12" />
+          <img src="/assets/images/jipmer-mbbs.jpg" alt="" className="h-12" loading="lazy" />
         </div>
 
         <div className="flex text-sm gap-14 font-bold items-center">

@@ -19,7 +19,7 @@ const Home_TeamDoctors = () => {
         <div className="w-full md:w-1/5 p-1/2 bg-white shadow-md">
           <div className="border border-white p-2">
             <div>
-              <img className="teammempic object-cover" alt="" src="assets/images/team/team-memb1.jpg" />
+              <img className="teammempic object-cover" alt="" src="assets/images/team/team-memb1.jpg" loading='lazy' />
             </div>
             <div>
               <p className="font-bold pt-2 text-xs text-center">Dr. Aarav Patel<i> - PSM Dept</i></p>
@@ -48,7 +48,7 @@ const Home_TeamDoctors = () => {
         <div className="w-full md:w-1/5 p-1/2 bg-white shadow-md">
           <div className="border border-white p-2">
             <div>
-              <img className="teammempic object-cover" alt="" src="assets/images/team/team-memb2.jpg" />
+              <img className="teammempic object-cover" alt="" src="assets/images/team/team-memb2.jpg" loading='lazy' />
             </div>
             <div>
               <p className="font-bold pt-2 text-xs text-center">Dr. Priya Sharma<i> - Cardiologist</i></p>
@@ -77,7 +77,7 @@ const Home_TeamDoctors = () => {
         <div className="w-full md:w-1/5 p-1/2 bg-white shadow-md">
           <div className="border border-white p-2">
             <div>
-              <img className="teammempic object-cover" alt="" src="assets/images/team/team-memb3.jpg" />
+              <img className="teammempic object-cover" alt="" src="assets/images/team/team-memb3.jpg" loading='lazy' />
             </div>
             <div>
               <p className="font-bold pt-2 text-xs text-center">Dr. Rajesh Verma<i> - Pediatrician</i></p>
@@ -106,7 +106,7 @@ const Home_TeamDoctors = () => {
         <div className="w-full md:w-1/5 p-1/2 bg-white shadow-md">
           <div className="border border-white p-2">
             <div>
-              <img className="teammempic object-cover" alt="" src="assets/images/team/team-memb4.jpg" />
+              <img className="teammempic object-cover" alt="" src="assets/images/team/team-memb4.jpg" loading='lazy' />
             </div>
             <div>
               <p className="font-bold pt-2 text-xs text-center">Dr. Amit Kumar<i> - Ortho. Surgeon</i></p>
