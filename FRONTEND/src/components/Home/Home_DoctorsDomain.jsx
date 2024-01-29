@@ -1,8 +1,9 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 
 const Home_DoctorsDomain = () => {
     const doctors = [
-        { name: 'Cardiology', image: 'assets/images/team/cardiology.png' },
+        { name: 'Cardiology', image: 'assets/images/team/cardiology.png', link: "/Domain/Cardialogy",},
         { name: 'Gynecology', image: 'assets/images/team/gynacology.png' },
         { name: 'Urology', image: 'assets/images/team/urology.png' },
         { name: 'Radiology', image: 'assets/images/team/Radiology.png' },
