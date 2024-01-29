@@ -1,0 +1,66 @@
+.our-team {
+    padding: 50px; }
+    @media screen and (max-width: 940px) {
+      .our-team {
+        padding: 30px 10px; } }
+    .our-team .user-card {
+      background-color: #FFF;
+      padding: 10px;
+      box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      border-radius: 2px;
+      margin-bottom: 20px; }
+      .our-team .user-card img {
+        width: 100%; }
+      .our-team .user-card .detfs {
+        text-align: center; }
+        .our-team .user-card .detfs ul {
+          margin-left: 10%;
+          width: 100%; }
+          .our-team .user-card .detfs ul li {
+            float: left;
+            padding: 10px;
+            font-size: 13px; }
+        .our-team .user-card .detfs p {
+          margin-top: 17px; }
+  
+  .container-fluid {
+    padding: 0;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1199px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  
+  /* Button Container Styles */
+  .slider-detail .vbh {
+    margin-left: -40px;
+  }
+  
+  /* Button Styles within Button Container */
+  .slider-detail .vbh .btn {
+    padding: 20px;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 20px;
+  
+    /* Additional Styles for the button */
+    background-color: #599fd8; /* Green background color */
+    color: #000000; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 36px; /* Add a slight border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Style for the doctor image */
+  .doctor-message .doc-img img {
+    width: 100%; /* Take up the full width of its container */
+    max-width: 600px; /* Limit the maximum width as needed */
+    height: 200%;
+    /* margin-top: 100px; Adjust the top margin as needed */
+  }
+  
