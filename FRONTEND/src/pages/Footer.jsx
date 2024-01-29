@@ -11,11 +11,11 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const Footer = () => {
 	return (
 		<div className="">
-			<div className="grid grid-cols-3 gap-10 bg-neutral-700 text-white px-20 pt-8 pb-8">
+			<div className="grid grid-cols-3 gap-20 bg-neutral-700 text-white px-20 pt-8 pb-8">
 
 				<div>
 					<h2 className="font-bold text-xl pb-2">About Us</h2>
-					<p className="text-justify font-medium text-sm">
+					<p className="text-justify text-sm">
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Healthify Yourself focuses on technologies that promise to reduce costs, streamline processes, and speed time-to-market. Our	commitment to patient care, high customer satisfaction, and	personalized treatment plans have resulted in positive health outcomes. We have a robust and diverse Pharma Pipeline and a
 						dedicated Pharma Team working tirelessly to bring safe and effective
 						treatments to our patients. Backed by our strong quality processes
@@ -54,11 +54,11 @@ const Footer = () => {
 
 				<div className="">
 					<h2 className="font-bold text-xl first-line pb-2">Contact Us</h2>
-					<div className="font-semibold italic">
-						{/* <div className="flex justify-between">
+					<div className="text-sm italic">
+						<div className="flex justify-between">
 							<div>Isha Shrivastava</div>
 							<div>(22BRS1181)</div>
-						</div> */}
+						</div>
 						<div className="flex justify-between">
 							<div>Eliksha Maheshwari</div>
 							<div>(22BAI1312)</div>
@@ -67,10 +67,10 @@ const Footer = () => {
 							<div>Shakti Swaroop Sahu</div>
 							<div>(22BAI1012)</div>
 						</div>
-						{/* <div className="flex justify-between">
+						<div className="flex justify-between">
 							<div>Soham Jyoti Mondal</div>
 							<div>(22BAI1023)</div>
-						</div> */}
+						</div>
 						
 						<br />
 

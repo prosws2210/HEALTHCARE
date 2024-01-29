@@ -10,7 +10,7 @@ const Home_TeamDoctors = () => {
     <div className='bg-violet-50 pt-14 pb-6'>
 
       <div className='text-center p-4'>
-        <h2 className='text-2xl font-bold pb-2'>Meet our Team</h2>
+        <h2 className='text-2xl font-bold pb-2  '>Meet our Team</h2>
         <p className='text-gray-600'>Take a look at our innovative and experienced team</p>
       </div>
 
