@@ -115,9 +115,9 @@ const Footer = () => {
 						
 						<br />
 
-						B.Tech in CSE with AI&ML <br />
-						VIT Chennai <br />
-						Tamil Nadu, IND <br />
+						B.Tech in CSE - Spl. in AI with ( ML & Robotics ) <br />
+						Vellore Institute of Technology - Chennai, <br />
+						Tamil Nadu, INDIA <br />
 
 						<br />
 
