@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-// import Home_DoctorsDomain from "./components/Home/Cardialogy.jsx";
+import Cardialogy from "./components/Home/Cardialogy.jsx";
 
 import About from "./pages/About.jsx";
 import Predict from "./pages/Predict.jsx";
@@ -18,7 +18,7 @@ export default function App() {
 			<Router>
 				<Routes>
 					<Route path="/" element={<Home />} />
-					{/* <Route path="/Home/Cardialogy" element={<Cardialogy />} /> */}
+					<Route path="/Home/Cardialogy" element={<Cardialogy />} />
 
 					<Route path="/About" element={<About />} />
 					<Route path="/Predict" element={<Predict />} />

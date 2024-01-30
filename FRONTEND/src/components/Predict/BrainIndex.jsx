@@ -19,4 +19,4 @@ const BrainIndex = () => {
 }
 
 export default BrainIndex
- 
+   

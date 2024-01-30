@@ -1,9 +1,9 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Home_DoctorsDomain = () => {
     const doctors = [
-        { name: 'Cardiology', image: 'assets/images/team/cardiology.png', link: "/Domain/Cardialogy",},
+        { name: 'Cardiology', image: 'assets/images/team/cardiology.png', link: "/Home/Cardialogy",},
         { name: 'Gynecology', image: 'assets/images/team/gynacology.png' },
         { name: 'Urology', image: 'assets/images/team/urology.png' },
         { name: 'Radiology', image: 'assets/images/team/Radiology.png' },
@@ -38,12 +38,14 @@ const Home_DoctorsDomain = () => {
         <div className="grid grid-cols-6 gap-8 px-32 pb-6 justify-evenly">
         {doctors.map((doctor, index) => (
             <div key={index} className="border bg-white border-white p-2 shadow-md rounded-2xl hover:border-blue-500">
-                <div className='flex justify-center'>
-                <img className="teammempic object-cover w-28 h-28" alt="" src={doctor.image} loading='lazy' />
-                </div>
-                <div>
-                <p className="font-bold pt-2 text-sm text-center">{doctor.name}</p>
-                </div>
+                <Link to={doctor.link}>
+                    <div className='flex justify-center'>
+                        <img className="teammempic object-cover w-28 h-28" alt="" src={doctor.image} loading='lazy' />
+                    </div>
+                    <div>
+                        <p className="font-bold pt-2 text-sm text-center">{doctor.name}</p>
+                    </div>
+                </Link>
             </div>
         ))}
         </div>
