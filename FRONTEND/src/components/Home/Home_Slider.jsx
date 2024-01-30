@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
+
 const HomeSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const swiperRef = useRef(null);
@@ -13,7 +14,7 @@ const HomeSlider = () => {
       if (swiperRef.current) {
         swiperRef.current.slideNext();
       }
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
