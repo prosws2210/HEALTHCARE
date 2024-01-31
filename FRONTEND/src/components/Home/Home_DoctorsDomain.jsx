@@ -3,29 +3,29 @@ import { Link } from 'react-router-dom';
 
 const Home_DoctorsDomain = () => {
     const doctors = [
-        { name: 'Cardiology', image: 'assets/images/team/cardiology.png', link: "/Home/Cardialogy",},
-        { name: 'Gynecology', image: 'assets/images/team/gynacology.png' },
-        { name: 'Urology', image: 'assets/images/team/urology.png' },
-        { name: 'Radiology', image: 'assets/images/team/Radiology.png' },
+        { name: 'Cardiology', image: 'assets/images/team/cardiology.png', link: "/Home/Cardialogy" },
         { name: 'Dentistry', image: 'assets/images/team/Dentistry.png' },
-        { name: 'Neurology', image: 'assets/images/team/Neurology.png' },
         { name: 'Dermatology', image: 'assets/images/team/Dermatology.png' },
-        { name: 'Nephrology', image: 'assets/images/team/Nephrology.png' },
-        { name: 'Plastic Surgery', image: 'assets/images/team/Plastic Surgery.png' },
         { name: 'ENT', image: 'assets/images/team/ENT.png' },
+        { name: 'Endocrinology', image: 'assets/images/team/Endocrinology.png' },
         { name: 'Gastroenterology', image: 'assets/images/team/Gastroenterology.png' },
+        { name: 'Gynecology', image: 'assets/images/team/gynacology.png' },
+        { name: 'Nephrology', image: 'assets/images/team/Nephrology.png' },
+        { name: 'Neurology', image: 'assets/images/team/Neurology.png' },
+        { name: 'Neurosurgery', image: 'assets/images/team/Neurosurgery.png' },
+        { name: 'Oncology', image: 'assets/images/team/Oncology.png' },
         { name: 'Ophthalmology', image: 'assets/images/team/Ophthalmology.png' },
-        { name: 'Pulmonology', image: 'assets/images/team/Pulmonology.png' },
-        // { name: 'Neonatology', image: 'assets/images/team/Neonatology.png' },
         { name: 'Orthopaedic', image: 'assets/images/team/Orthopaedic.png' },
         { name: 'Pediatrics', image: 'assets/images/team/Pediatrics.png' },
-        { name: 'Rheumatology', image: 'assets/images/team/Rheumatology.png' },
-        { name: 'Vascular Surgery', image: 'assets/images/team/Vascular Surgery.png' },
-        { name: 'Oncology', image: 'assets/images/team/Oncology.png' },
-        { name: 'Endocrinology', image: 'assets/images/team/Endocrinology.png' },
-        { name: 'Neurosurgery', image: 'assets/images/team/Neurosurgery.png' },
+        { name: 'Plastic Surgery', image: 'assets/images/team/Plastic Surgery.png' },
         { name: 'Psychiatry', image: 'assets/images/team/Psychiatry.png' },
+        { name: 'Pulmonology', image: 'assets/images/team/Pulmonology.png' },
+        { name: 'Radiology', image: 'assets/images/team/Radiology.png' },
+        { name: 'Rheumatology', image: 'assets/images/team/Rheumatology.png' },
+        { name: 'Urology', image: 'assets/images/team/urology.png' },
+        { name: 'Vascular Surgery', image: 'assets/images/team/Vascular Surgery.png' },
     ];
+    
       
 
     return (

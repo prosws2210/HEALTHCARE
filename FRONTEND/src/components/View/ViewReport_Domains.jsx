@@ -24,7 +24,7 @@ const ViewReport_Domains = () => {
         { name: 'Oncology', image: 'assets/images/team/Oncology.png' },
         { name: 'Endocrinology', image: 'assets/images/team/Endocrinology.png' },
         { name: 'Neurosurgery', image: 'assets/images/team/Neurosurgery.png' },
-        { name: 'Psychiatry', image: 'assets/images/team/Psychiatry.png' },
+        // { name: 'Psychiatry', image: 'assets/images/team/Psychiatry.png' },
     ];
       
 
