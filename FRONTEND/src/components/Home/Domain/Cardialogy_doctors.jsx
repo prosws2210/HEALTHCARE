@@ -108,7 +108,7 @@ const Cardialogy_doctors = () => {
                     <div className="font-bold px-2 text-md">{member.name}</div>
                     <div className='flex flex-col gap-y-2'>
                         <div className='text-xs px-2'>{member.qualification}</div>
-                        <div className="text-xs px-2"> <strong>Reg id:</strong> <i>{member.id}</i></div>
+                        <div className="text-xs px-2"> <strong>Staff id:</strong> <i>{member.id}</i></div>
                         <div className="text-xs px-2"> <strong>Language:</strong> <i>{member.language}</i></div>
                     </div>
                 </div>

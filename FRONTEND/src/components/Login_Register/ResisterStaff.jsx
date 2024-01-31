@@ -4,6 +4,7 @@ const RegisterStaff = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [selectedGender, setSelectedGender] = useState("");
   const [bloodGroup, setBloodGroup] = useState("");
+  const [deptGroup, setDeptGroup] = useState("");
   const [phoneNumber, setPhoneNumber] = useState(""); // Added state for phoneNumber
   const [aadharNumber, setAadharNumber] = useState(""); // Added state for aadharNumber
   const [image, setImage] = useState(null);
@@ -24,6 +25,7 @@ const RegisterStaff = () => {
   const handleSelect = (gender) => setSelectedGender(gender);
 
   const handleBloodGroupChange = (e) => setBloodGroup(e.target.value);
+  const handleDeptGroupChange = (e) => setDeptGroup(e.target.value);
 
   const handlePhoneNumberChange = (e) => setPhoneNumber(e.target.value);
 
@@ -96,8 +98,8 @@ const RegisterStaff = () => {
               onChange={handleBloodGroupChange}
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
             >
-              <option value="" disabled>
-                Select Blood Group
+              <option value="" className="text-gray-700" disabled>
+                <strong>Select Blood Group</strong>
               </option>
               {["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"].map((group) => (
                 <option key={group} value={group}>
@@ -165,15 +167,45 @@ const RegisterStaff = () => {
             <label htmlFor="department-name" className="block text-gray-700 font-bold mb-2">
               Department Name
             </label>
-            <input
+            <select
               id="department-name"
               name="department-name"
-              type="text"
-              autoComplete="off"
-              required
+              value={deptGroup}
+              onChange={handleDeptGroupChange}
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-              placeholder="Department Name"
-            />
+            >
+              <option value="" className="text-gray-700" disabled>
+                <strong>Select Department Name</strong>
+              </option>
+
+              {[
+                "Cardiology",
+                "Dentistry",
+                "Dermatology",
+                "ENT",
+                "Endocrinology",
+                "Gastroenterology",
+                "Gynecology",
+                "Nephrology",
+                "Neurology",
+                "Neurosurgery",
+                "Oncology",
+                "Ophthalmology",
+                "Orthopaedic",
+                "Pediatrics",
+                "Plastic Surgery",
+                "Psychiatry",
+                "Pulmonology",
+                "Radiology",
+                "Rheumatology",
+                "Urology",
+                "Vascular Surgery",
+                ].map((group) => (
+                <option key={group} value={group}>
+                  {group}
+                </option>
+              ))}
+            </select>
           </div>
 
           <div>
@@ -193,8 +225,73 @@ const RegisterStaff = () => {
               placeholder="Aadhar Number (XXXX-XXXX-XXXX)"
             />
           </div>
-
         </div>
+
+        
+        <div className="grid grid-cols-2 gap-8">
+          <div>
+            <label htmlFor="education" className="block text-gray-700 font-bold mb-2">
+              Education
+            </label>
+            <input
+              id="education"
+              name="education"
+              type="text"
+              maxLength="60"
+              autoComplete="education"
+              required
+              className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              placeholder="Education (max 60 characters)"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="experience" className="block text-gray-700 font-bold mb-2">
+              Experience 
+            </label>
+            <input
+              id="experience"
+              name="experience"
+              type="text"
+              maxLength="40"
+              autoComplete="experience"
+              required
+              className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              placeholder="Experience (max 40 characters)"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="language" className="block text-gray-700 font-bold mb-2">
+              Language
+            </label>
+            <input
+              id="language"
+              name="language"
+              type="text"
+              autoComplete="language"
+              required
+              className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              placeholder="Language"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="timing" className="block text-gray-700 font-bold mb-2">
+              Timing
+            </label>
+            <input
+              id="timing"
+              name="timing"
+              type="text"
+              autoComplete="timing"
+              required
+              className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              placeholder="Timing : (eg: Mon-Sat 09:00-12:00 14:00-18:00)"
+            />
+          </div>
+        </div>
+
 
         {/* Email and Password */}
         <div className="grid grid-cols-3 gap-8 ">
