@@ -96,10 +96,10 @@ const Footer = () => {
 				<div className="w-8/12">
 					<h2 className="font-bold text-xl first-line">Contact Us</h2>
 					<div className="text-sm italic mt-3">
-						<div className="flex justify-between">
+						{/* <div className="flex justify-between">
 							<div>Isha Shrivastava</div>
 							<div>(22BRS1181)</div>
-						</div>
+						</div> */}
 						<div className="flex justify-between">
 							<div>Eliksha Maheshwari</div>
 							<div>(22BAI1312)</div>

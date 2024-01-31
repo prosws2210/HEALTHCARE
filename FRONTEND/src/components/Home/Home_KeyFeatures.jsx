@@ -58,8 +58,8 @@ const Home_KeyFeatures = () => {
   return (
     <div className='bg-violet-50 py-10 px-10'>
       <div className='text-center p-4'>
-        <h2 className='text-2xl font-bold pb-2'>Features We Offer</h2>
-        <p className='text-gray-600'>Take a look at some of our key features</p>
+        <h2 className='text-2xl font-bold pb-2'>Why choose Dr. Symptoms ???</h2>
+        <p className='text-gray-600'>Take a look at assistance we offer </p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pb-6 px-4 md:px-20 justify-evenly">

@@ -18,6 +18,7 @@ const Navbar = () => {
           <Link to="/about">About Us</Link>
           <Link to="/predict">Predict Disease</Link>
           <Link to="/check">Check Disease</Link>
+          <Link to="/viewreport">Reports & Prescriptions</Link>
           <Link to="/contact">Contact Us</Link>
         </div>
 

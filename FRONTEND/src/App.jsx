@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+// Pages
 import Home from "./pages/Home";
 import Cardialogy from "./components/Home/Cardialogy.jsx";
 
@@ -8,6 +10,7 @@ import Predict from "./pages/Predict.jsx";
 import BrainIndex from "./components/Predict/BrainIndex.jsx";
 
 import Check from "./pages/Check.jsx";
+import ViewReport from "./pages/ViewReport.jsx";
 import Contact from "./pages/Contact.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
@@ -25,6 +28,7 @@ export default function App() {
 					<Route path="/Predict/BrainIndex" element={<BrainIndex />} />
 
 					<Route path="/Check" element={<Check />} />
+					<Route path="/ViewReport" element={<ViewReport />} />
 					<Route path="/Contact" element={<Contact />} />
 					<Route path="/Login" element={<Login />} />
 					<Route path="/Register" element={<Register />} />
