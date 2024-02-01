@@ -11,7 +11,7 @@ import BrainIndex from "./components/Predict/BrainIndex.jsx";
 
 import Check from "./pages/Check.jsx";
 import ViewReport from "./pages/ViewReport.jsx";
-import CardialogyReport from "./components/View/Report/CardialogyReport.jsx";
+import HeartReport from "./components/View/Report/HeartReport.jsx";
 
 import Contact from "./pages/Contact.jsx";
 import Login from "./pages/Login.jsx";
@@ -31,7 +31,7 @@ export default function App() {
 
 					<Route path="/Check" element={<Check />} />
 					<Route path="/ViewReport" element={<ViewReport />} />
-					<Route path="/View/Report/CardialogyReport" element={<CardialogyReport />} />
+					<Route path="/View/Report/HeartReport" element={<HeartReport />} />
 
 					<Route path="/Contact" element={<Contact />} />
 					<Route path="/Login" element={<Login />} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
-const Body_Cardialogy = () => {
+const Body_Heart = () => {
     const doctors = [
         [
             {
@@ -57,4 +57,4 @@ const Body_Cardialogy = () => {
     );
 }
 
-export default Body_Cardialogy;
+export default Body_Heart;

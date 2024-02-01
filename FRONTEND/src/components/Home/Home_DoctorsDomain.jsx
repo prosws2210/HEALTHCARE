@@ -15,7 +15,7 @@ const Home_DoctorsDomain = () => {
         { name: 'Neurosurgery', image: 'assets/images/Domain_box/neurosurgery.png' },
         { name: 'Oncology', image: 'assets/images/Domain_box/oncology.png' },
         { name: 'Ophthalmology', image: 'assets/images/Domain_box/opthalmology.png' },
-        { name: 'Orthopaedic', image: 'assets/images/Domain_box/orthopedics.png' },
+        { name: 'Orthopedics', image: 'assets/images/Domain_box/orthopedics.png' },
         { name: 'Pediatrics', image: 'assets/images/Domain_box/pediatric.png' },
         { name: 'Plastic Surgery', image: 'assets/images/Domain_box/plastic surgery.png' },
         { name: 'Psychiatry', image: 'assets/images/Domain_box/psychiatry.png' },

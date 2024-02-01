@@ -3,29 +3,23 @@ import { Link } from 'react-router-dom';
 
 const ViewReport_Domains = () => {
     const doctors = [
-        { name: 'Cardiology', image: 'assets/images/team/cardiology.png', link: "/View/Report/CardialogyReport",},
-        { name: 'Gynecology', image: 'assets/images/team/gynacology.png' },
-        { name: 'Urology', image: 'assets/images/team/urology.png' },
-        { name: 'Radiology', image: 'assets/images/team/Radiology.png' },
+        { name: 'Bones and Muscles', image: 'assets/images/team/Bones and Muscles.png' },
+        { name: 'Brain & Neuro', image: 'assets/images/team/Brain & Neuro.png' },
         { name: 'Dentistry', image: 'assets/images/team/Dentistry.png' },
-        { name: 'Neurology', image: 'assets/images/team/Neurology.png' },
-        { name: 'Dermatology', image: 'assets/images/team/Dermatology.png' },
-        { name: 'Nephrology', image: 'assets/images/team/Nephrology.png' },
-        { name: 'Plastic Surgery', image: 'assets/images/team/Plastic Surgery.png' },
-        { name: 'ENT', image: 'assets/images/team/ENT.png' },
-        { name: 'Gastroenterology', image: 'assets/images/team/Gastroenterology.png' },
-        { name: 'Ophthalmology', image: 'assets/images/team/Ophthalmology.png' },
-        { name: 'Pulmonology', image: 'assets/images/team/Pulmonology.png' },
-        // { name: 'Neonatology', image: 'assets/images/team/Neonatology.png' },
-        { name: 'Orthopaedic', image: 'assets/images/team/Orthopaedic.png' },
-        { name: 'Pediatrics', image: 'assets/images/team/Pediatrics.png' },
-        { name: 'Rheumatology', image: 'assets/images/team/Rheumatology.png' },
-        { name: 'Vascular Surgery', image: 'assets/images/team/Vascular Surgery.png' },
-        { name: 'Oncology', image: 'assets/images/team/Oncology.png' },
-        { name: 'Endocrinology', image: 'assets/images/team/Endocrinology.png' },
-        { name: 'Neurosurgery', image: 'assets/images/team/Neurosurgery.png' },
-        // { name: 'Psychiatry', image: 'assets/images/team/Psychiatry.png' },
-    ];
+        { name: 'Eye', image: 'assets/images/team/Eye.png' },
+        { name: 'Gall Bladder', image: 'assets/images/team/Gall Bladder.png' },
+        { name: 'General Reports', image: 'assets/images/team/General (Bacterial).png' },
+        { name: 'Heart', image: 'assets/images/team/Heart.png', link: "/View/Report/HeartReport"},
+        { name: 'Intestine', image: 'assets/images/team/Intestine.png' },
+        { name: 'Kidney', image: 'assets/images/team/Kidney.png' },
+        { name: 'Liver', image: 'assets/images/team/Liver.png' },
+        { name: 'Lungs', image: 'assets/images/team/Lungs.png' },
+        { name: 'Mouth', image: 'assets/images/team/Mouth.png' },
+        { name: 'Pancreas', image: 'assets/images/team/Pancreas.png' },
+        { name: 'Reproductive health', image: 'assets/images/team/Reproductive health.png' },
+        { name: 'Skin & Hair', image: 'assets/images/team/Skin & Hair.png' },
+        { name: 'Stomach', image: 'assets/images/team/Stomach.png' },
+    ].sort((a, b) => a.name.localeCompare(b.name));
       
 
     return (
