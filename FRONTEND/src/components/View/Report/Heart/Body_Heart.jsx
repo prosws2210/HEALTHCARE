@@ -3,56 +3,125 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Body_Heart = () => {
     const doctors = [
-        [
-            {
-                name: 'Patient Name',
-                doctor: 'Doctor Name',
-                pathologist: 'Pathologist Name',
-                reportDomain: 'Cardiology',
-                image: 'assets/images/team/cardiology.png',
-                date: 'Report Date'
-            },
-            {
-                name: 'Patient Name',
-                doctor: 'Doctor Name',
-                pathologist: 'Pathologist Name',
-                reportDomain: 'Gynecology',
-                image: 'assets/images/team/gynacology.png',
-                date: 'Report Date'
-            },
-            {
-                name: 'Patient Name',
-                doctor: 'Doctor Name',
-                pathologist: 'Pathologist Name',
-                reportDomain: 'Urology',
-                image: 'assets/images/team/urology.png',
-                date: 'Report Date'
-            }
-        ]
+        {
+            doctor: 'Doctor Name 1',
+            pathologist_id: 'Pathologist ID',
+            reportDomain: 'Cardiology',
+            image: 'assets/images/team/cardiology.png',
+            date: 'Report Date',
+            labRequisition: 'Lab Requisition Details',
+            pdf: 'PDF Details',
+        },
+        {
+            doctor: 'Doctor Name 2',
+            pathologist_id: 'Pathologist ID',
+            reportDomain: 'Cardiology',
+            image: 'assets/images/team/cardiology.png',
+            date: 'Report Date',
+            labRequisition: 'Lab Requisition Details',
+            pdf: 'PDF Details',
+        },
+        {
+            doctor: 'Doctor Name 3',
+            pathologist_id: 'Pathologist ID',
+            reportDomain: 'Cardiology',
+            image: 'assets/images/team/cardiology.png',
+            date: 'Report Date',
+            labRequisition: 'Lab Requisition Details',
+            pdf: 'PDF Details',
+        },
+        {
+            doctor: 'Doctor Name 4',
+            pathologist_id: 'Pathologist ID',
+            reportDomain: 'Cardiology',
+            image: 'assets/images/team/cardiology.png',
+            date: 'Report Date',
+            labRequisition: 'Lab Requisition Details',
+            pdf: 'PDF Details',
+        },
+        {
+            doctor: 'Doctor Name 5',
+            pathologist_id: 'Pathologist ID',
+            reportDomain: 'Cardiology',
+            image: 'assets/images/team/cardiology.png',
+            date: 'Report Date',
+            labRequisition: 'Lab Requisition Details',
+            pdf: 'PDF Details',
+        },
+        {
+            doctor: 'Doctor Name 6',
+            pathologist_id: 'Pathologist ID',
+            reportDomain: 'Cardiology',
+            image: 'assets/images/team/cardiology.png',
+            date: 'Report Date',
+            labRequisition: 'Lab Requisition Details',
+            pdf: 'PDF Details',
+        },
+        {
+            doctor: 'Doctor Name 7',
+            pathologist_id: 'Pathologist ID',
+            reportDomain: 'Cardiology',
+            image: 'assets/images/team/cardiology.png',
+            date: 'Report Date',
+            labRequisition: 'Lab Requisition Details',
+            pdf: 'PDF Details',
+        },
+        {
+            doctor: 'Doctor Name 8',
+            pathologist_id: 'Pathologist ID',
+            reportDomain: 'Cardiology',
+            image: 'assets/images/team/cardiology.png',
+            date: 'Report Date',
+            labRequisition: 'Lab Requisition Details',
+            pdf: 'PDF Details',
+        },
+        {
+            doctor: 'Doctor Name 9',
+            pathologist_id: 'Pathologist ID',
+            reportDomain: 'Cardiology',
+            image: 'assets/images/team/cardiology.png',
+            date: 'Report Date',
+            labRequisition: 'Lab Requisition Details',
+            pdf: 'PDF Details',
+        },
+        {
+            doctor: 'Doctor Name 10',
+            pathologist_id: 'Pathologist ID',
+            reportDomain: 'Cardiology',
+            image: 'assets/images/team/cardiology.png',
+            date: 'Report Date',
+            labRequisition: 'Lab Requisition Details',
+            pdf: 'PDF Details',
+        },
     ];
 
     return (
-        <div className="grid grid-cols-1 gap-8 px-32 pb-8 pt-5 justify-evenly bg-purple-50">
-            {doctors.map((doctor, index) => (
-                <div>
-                    <div>
-                        <p className="text-sm text-center">Date: {doctor.date}</p>
-                    </div>
-                    <div key={index} className="border bg-white border-white p-2 shadow-md rounded-2xl hover:border-blue-500">
-                        <Link to={doctor.link}>
-                            <div className='flex justify-left'>
-                                <img className="teammempic object-cover w-28 h-28 p-6" alt="" src={doctor.image} loading='lazy' />
-                                <div>
-                                    <p className="font-bold pt-2 text-sm text-left">{doctor.name}</p>
-                                    <p className="text-sm text-center">Doctor: {doctor.doctor}</p>
-                                    <p className="text-sm text-center">Pathologist: {doctor.pathologist}</p>
-                                    <p className="text-sm text-center">Report Domain: {doctor.reportDomain}</p>
+        <div className="bg-violet-50 p-4 px-32 h-[600px]">            
+            <div className="grid grid-cols-1 gap-4 pb-8 pt-5 justify-evenly bg-violet-50 overflow-y-auto max-h-[calc(12*3rem)] pr-2">
+                {doctors.map((doctor, index) => (
+                    <div key={index}>
+                        <div className="border bg-white border-white p-2 shadow-md rounded-2xl hover:border-blue-500">
+                            <Link to={doctor.link}>
+                                <div className='flex justify-between'>
+                                    <div className='flex justify-left border-r border-gray-300 pr-40'>
+                                        <img className="teammempic object-cover w-28 h-28 p-6" alt="" src={doctor.image} loading='lazy' />
+                                        <div className='flex flex-col justify-center'>
+                                            <p className="text-md pl-4"><span className="font-bold">Doctor:</span> {doctor.doctor}</p>
+                                            <p className="text-md pl-4"><span className="font-bold">Pathologist ID:</span> {doctor.pathologist_id}</p>
+                                            <p className="text-md pl-4"><span className="font-bold">Report Domain:</span> {doctor.reportDomain}</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="bg-white p-2 rounded-b-none flex flex-col justify-between items-end py-5">
+                                        <p className="text-md text-center pr-80"><span className="font-bold">PDF:</span> {doctor.pdf}</p>
+                                        <p className="text-md text-center"><span className="font-bold">Date:</span> {doctor.date}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </Link>
+                            </Link>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 }
