@@ -24,7 +24,7 @@ const ViewReport_Domains = () => {
         { name: 'Rheumatology', image: 'assets/images/Domain_box/rheumatology.png' },
         { name: 'Urology', image: 'assets/images/Domain_box/urology.png' },
         { name: 'Vascular Surgery', image: 'assets/images/Domain_box/vascular surgery.png' },
-    ];
+    ].sort((a, b) => a.name.localeCompare(b.name));
       
 
     return (

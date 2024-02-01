@@ -6,11 +6,11 @@ const ViewReport_Domains = () => {
         { name: 'Bones and Muscles', image: 'assets/images/team/Bones and Muscles.png' },
         { name: 'Brain & Neuro', image: 'assets/images/team/Brain & Neuro.png' },
         { name: 'Dentistry', image: 'assets/images/team/Dentistry.png' },
+        { name: 'Digestive health', image: 'assets/images/team/Stomach.png' },
         { name: 'Eye', image: 'assets/images/team/Eye.png' },
         { name: 'Gall Bladder', image: 'assets/images/team/Gall Bladder.png' },
         { name: 'General Reports', image: 'assets/images/team/General.png' },
         { name: 'Heart', image: 'assets/images/team/Heart.png', link: "/View/Report/HeartReport"},
-        { name: 'Intestine', image: 'assets/images/team/Intestine.png' },
         { name: 'Kidney', image: 'assets/images/team/Kidney.png' },
         { name: 'Liver', image: 'assets/images/team/Liver.png' },
         { name: 'Lungs', image: 'assets/images/team/Lungs.png' },
@@ -18,7 +18,6 @@ const ViewReport_Domains = () => {
         { name: 'Pancreas', image: 'assets/images/team/Pancreas.png' },
         { name: 'Reproductive health', image: 'assets/images/team/Reproductive health.png' },
         { name: 'Skin & Hair', image: 'assets/images/team/Skin & Hair.png' },
-        { name: 'Stomach', image: 'assets/images/team/Stomach.png' },
     ].sort((a, b) => a.name.localeCompare(b.name));
       
 
