@@ -8,7 +8,7 @@ const ViewReport_Domains = () => {
         { name: 'Dentistry', image: 'assets/images/team/Dentistry.png' },
         { name: 'Eye', image: 'assets/images/team/Eye.png' },
         { name: 'Gall Bladder', image: 'assets/images/team/Gall Bladder.png' },
-        { name: 'General Reports', image: 'assets/images/team/General (Bacterial).png' },
+        { name: 'General Reports', image: 'assets/images/team/General.png' },
         { name: 'Heart', image: 'assets/images/team/Heart.png', link: "/View/Report/HeartReport"},
         { name: 'Intestine', image: 'assets/images/team/Intestine.png' },
         { name: 'Kidney', image: 'assets/images/team/Kidney.png' },
