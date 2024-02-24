@@ -71,12 +71,16 @@ const BrainIndex_Image = () => {
               )}
             </div>
             <div className="w-2/3 px-10">
-              {prediction && result && (
-                <div className="p-4 bg-purple-50 rounded-lg shadow-lg">
-                  <p className="text-black font-semibold text-2xl">Prediction: {prediction}</p>
-                  <p className="text-black font-semibold text-2xl">Result: {result}</p>
-                </div>
-              )}
+            {prediction && result && (
+              <div className="p-4 bg-purple-50 rounded-lg shadow-lg">
+                <p className="text-black text-2xl">
+                  <span className="font-bold">Prediction:</span> {prediction}
+                </p>
+                <p className="text-black text-2xl">
+                  <span className="font-bold">Result:</span> {result}
+                </p>
+              </div>
+            )}
             </div>
           </div>
         </div>
