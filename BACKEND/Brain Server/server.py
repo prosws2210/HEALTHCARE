@@ -7,7 +7,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-model_path = r'C:\Users\sahus\Documents\GitHub\HEALTHCARE\PYTHON MODELS\Brain_Tumor_VGG_model.h5'
+model_path = r'C:\Users\HP\Documents\GitHub\HEALTHCARE\PYTHON MODELS\Brain_Tumor_VGG_model.h5'
 
 # Load model with custom objects
 custom_objects = {"preprocess_input": preprocess_input}
@@ -25,7 +25,7 @@ def predict():
 
     prediction = model.predict(image)
 
-    prediction_str = 'Tumor is Present' if prediction > 0.5 else 'Tumor is not Present'
+    prediction_str = 'Tumor is Present' if prediction > 0.2 else 'Tumor is not Present'
     prediction_scaled = prediction * 100
 
     print("Prediction result: ", prediction)
@@ -33,7 +33,7 @@ def predict():
     print("Prediction string: ", prediction_str)  
 
     return {
-        'prediction': round(prediction_scaled.tolist()[0][0], 3),
+        'prediction': prediction_scaled.tolist()[0][0],
         'result': prediction_str
     }
 

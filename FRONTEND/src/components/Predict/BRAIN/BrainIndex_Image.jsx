@@ -74,7 +74,7 @@ const BrainIndex_Image = () => {
             {prediction && result && (
               <div className="p-4 bg-purple-50 rounded-lg shadow-lg">
                 <p className="text-black text-2xl">
-                  <span className="font-bold">Prediction:</span> {prediction}
+                  <span className="font-bold">Prediction:</span> {prediction} %
                 </p>
                 <p className="text-black text-2xl">
                   <span className="font-bold">Result:</span> {result}
