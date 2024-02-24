@@ -1,10 +1,3 @@
-# from flask import Flask, request
-# from keras.models import load_model
-# from keras.applications.vgg16 import preprocess_input
-# import numpy as np
-# from PIL import Image
-# from flask_cors import CORS
-
 from flask import Flask, request
 from tensorflow.keras.models import load_model
 from tensorflow.keras.applications.vgg16 import preprocess_input
@@ -14,7 +7,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-model_path = r'C:\Users\sahus\Documents\GitHub\HEALTHCARE\PYTHON MODELS\Brain_Tumor_VGG_model.h5'
+model_path = r'C:\Users\HP\Documents\GitHub\HEALTHCARE\PYTHON MODELS\Brain_Tumor_VGG_model.h5'
 
 # Load model with custom objects
 custom_objects = {"preprocess_input": preprocess_input}

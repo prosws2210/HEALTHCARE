@@ -79,7 +79,7 @@ const BrainIndex_Image = () => {
                   )}
               </div>
             </div>
-        </div>
+          </div>
 
         </div>
     </div>
