@@ -7,8 +7,8 @@ const Home_DoctorsDomain = () => {
         { name: 'Dentistry', image: 'assets/images/Domain_box/dentistry1.0.png' },
         { name: 'Dermatology', image: 'assets/images/Domain_box/dermatology1.0.png' },
         { name: 'Endocrinology', image: 'assets/images/Domain_box/endocrinology1.0.png' },
-        { name: 'ENT', image: 'assets/images/Domain_box/ent1.0.png' },
-        { name: 'Gastroenterology', image: 'assets/images/Domain_box/Gastroenterology1.0.png' },
+        { name: 'ENT', image: 'assets/images/Domain_box/ENT1.0 (2).png' },
+        { name: 'Gastroenterology', image: 'assets/images/Domain_box/Gastroenterology1.0 (2).png' },
         { name: 'Gynecology', image: 'assets/images/Domain_box/gynecology1.0.png' },
         { name: 'Nephrology', image: 'assets/images/Domain_box/nephrology1.0.png' },
         { name: 'Neurology', image: 'assets/images/Domain_box/neurology1.0.png' },
@@ -23,7 +23,7 @@ const Home_DoctorsDomain = () => {
         { name: 'Radiology', image: 'assets/images/Domain_box/radiology1.0.png' },
         { name: 'Rheumatology', image: 'assets/images/Domain_box/rheumatology1.0.png' },
         { name: 'Urology', image: 'assets/images/Domain_box/urology1.0.png' },
-        { name: 'Vascular Surgery', image: 'assets/images/Domain_box/vascular surgery1.0.png' },
+        { name: 'Vascular Surgery', image: 'assets/images/Domain_box/vascular-surgery1.0.png' },
     ];
     
       

@@ -3,21 +3,21 @@ import { Link } from 'react-router-dom';
 
 const ViewReport_Domains = () => {
     const doctors = [
-        { name: 'Bones and Muscles', image: 'assets/images/team/Bones and Muscles.png' },
-        { name: 'Brain & Neuro', image: 'assets/images/team/Brain & Neuro.png' },
-        { name: 'Dentistry', image: 'assets/images/team/Dentistry.png' },
-        { name: 'Digestive health', image: 'assets/images/team/Stomach.png' },
-        { name: 'Eye', image: 'assets/images/team/Eye.png' },
-        { name: 'Gall Bladder', image: 'assets/images/team/Gall Bladder.png' },
-        { name: 'General Reports', image: 'assets/images/team/General.png' },
-        { name: 'Heart', image: 'assets/images/team/Heart.png', link: "/View/Report/HeartReport"},
-        { name: 'Kidney', image: 'assets/images/team/Kidney.png' },
-        { name: 'Liver', image: 'assets/images/team/Liver.png' },
-        { name: 'Lungs', image: 'assets/images/team/Lungs.png' },
-        { name: 'Mouth', image: 'assets/images/team/Mouth.png' },
-        { name: 'Pancreas', image: 'assets/images/team/Pancreas.png' },
-        { name: 'Reproductive health', image: 'assets/images/team/Reproductive health.png' },
-        { name: 'Skin & Hair', image: 'assets/images/team/Skin & Hair.png' },
+        { name: 'Bones and Muscles', image: 'assets/images/team/Bones and muscles.png' },
+        { name: 'Brain & Neuro', image: 'assets/images/team/brain and neuro.png' },
+        { name: 'Dentistry', image: 'assets/images/team/dentistryx.png' },
+        { name: 'Digestive health', image: 'assets/images/team/digestive health.png' },
+        { name: 'Eye', image: 'assets/images/team/eye.png' },
+        { name: 'Gall Bladder', image: 'assets/images/team/gallbladder.png' },
+        { name: 'General Reports', image: 'assets/images/team/general health.png' },
+        { name: 'Heart', image: 'assets/images/team/heart.png', link: "/View/Report/HeartReport"},
+        { name: 'Kidney', image: 'assets/images/team/kidney.png' },
+        { name: 'Liver', image: 'assets/images/team/liver.png' },
+        { name: 'Lungs', image: 'assets/images/team/lungs.png' },
+        { name: 'Mouth', image: 'assets/images/team/mouth.png' },
+        { name: 'Pancreas', image: 'assets/images/team/pancreas.png' },
+        { name: 'Reproductive health', image: 'assets/images/team/reproduction.png' },
+        { name: 'Skin & Hair', image: 'assets/images/team/skin.png' },
     ].sort((a, b) => a.name.localeCompare(b.name));
       
 
