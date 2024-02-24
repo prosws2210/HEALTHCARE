@@ -7,7 +7,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-model_path = r'C:\Users\HP\Documents\GitHub\HEALTHCARE\PYTHON MODELS\Brain_Tumor_VGG_model.h5'
+model_path = r'C:\Users\sahus\Documents\GitHub\HEALTHCARE\PYTHON MODELS\Brain_Tumor_VGG_model.h5'
 
 # Load model with custom objects
 custom_objects = {"preprocess_input": preprocess_input}
@@ -20,7 +20,7 @@ def predict():
 
     image = Image.open(file.stream).resize((224, 224))
     image = np.array(image)
-    image = preprocess_input(image)  # Apply the same preprocessing used during training
+    image = preprocess_input(image)
     image = np.expand_dims(image, axis=0)
 
     prediction = model.predict(image)
@@ -32,7 +32,10 @@ def predict():
     print("Scaled prediction result: ", prediction_scaled)  
     print("Prediction string: ", prediction_str)  
 
-    return {'prediction': 'Prediction : ' + str(round(prediction_scaled.tolist()[0][0], 3)) + ' %' + '\nResult : ' + prediction_str}
+    return {
+        'prediction': round(prediction_scaled.tolist()[0][0], 3),
+        'result': prediction_str
+    }
 
 if __name__ == '__main__':
     app.run(debug=True)
