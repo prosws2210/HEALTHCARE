@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 const BrainIndex_Image_copy = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -9,6 +9,9 @@ const BrainIndex_Image_copy = () => {
   const [fileName, setFileName] = useState('');
   const [cancelClicked, setCancelClicked] = useState(false);
 
+  // Use a ref to store the interval ID for clearing later
+  const intervalRef = useRef(null);
+
   const handleImageUpload = (event) => {
     setSelectedFile(event.target.files[0]);
     setSelectedImage(URL.createObjectURL(event.target.files[0]));
@@ -16,8 +19,13 @@ const BrainIndex_Image_copy = () => {
   };
 
   const handleCancel = () => {
-    setCancelClicked(true);
-    setUploadProgress(0); // Reset progress if cancel is clicked
+    if (uploadProgress < 100) {
+      setCancelClicked(true);
+      setUploadProgress(0); // Reset progress if cancel is clicked
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    }
   };
 
   const handleSubmit = () => {
@@ -35,9 +43,10 @@ const BrainIndex_Image_copy = () => {
     setCancelClicked(false);
 
     let progress = 0;
-    const interval = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       if (cancelClicked) {
-        clearInterval(interval);
+        clearInterval(intervalRef.current);
+        setUploadProgress(0); // Reset progress if cancel is clicked
         return;
       }
 
@@ -45,25 +54,26 @@ const BrainIndex_Image_copy = () => {
       setUploadProgress(progress);
 
       if (progress >= 100) {
-        clearInterval(interval);
+        clearInterval(intervalRef.current);
 
-        // Check if cancel button was clicked before making the fetch request
-        if (!cancelClicked) {
-          // Once the progress is complete, make the fetch request
-          fetch('http://localhost:5000/predict', {
-            method: 'POST',
-            body: formData,
-          })
-            .then(response => response.json())
-            .then(data => {
+        // Once the progress is complete, make the fetch request
+        fetch('http://localhost:5000/predict', {
+          method: 'POST',
+          body: formData,
+        })
+          .then(response => response.json())
+          .then(data => {
+            // Check if cancel button was clicked before updating the state
+            if (!cancelClicked) {
               setPrediction(data.prediction);
               setResult(data.result);
-            })
-            .catch(error => console.error('Error:', error));
-        }
+            }
+          })
+          .catch(error => console.error('Error:', error));
       }
     }, 100);
   };
+  
 
   return (
     <div className="h-full bg-purple-50 p-12">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 const BrainIndex_Image = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -7,6 +7,10 @@ const BrainIndex_Image = () => {
   const [prediction, setPrediction] = useState(null);
   const [result, setResult] = useState(null);
   const [fileName, setFileName] = useState('');
+  const [cancelClicked, setCancelClicked] = useState(false);
+
+  // Use a ref to store the interval ID for clearing later
+  const intervalRef = useRef(null);
 
   const handleImageUpload = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -14,21 +18,44 @@ const BrainIndex_Image = () => {
     setFileName(event.target.files[0].name);
   };
 
+  const handleCancel = () => {
+    if (uploadProgress < 100) {
+      setCancelClicked(true);
+      setUploadProgress(0); // Reset progress if cancel is clicked
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    }
+  };
+
   const handleSubmit = () => {
+    if (!selectedFile) {
+      // Handle case where no file is selected
+      return;
+    }
+
     const formData = new FormData();
     formData.append('image', selectedFile);
-  
+
     // Reset prediction and result to null before starting progress
     setPrediction(null);
     setResult(null);
-  
+    setCancelClicked(false);
+
     let progress = 0;
-    const interval = setInterval(() => {
+    intervalRef.current = setInterval(() => {
+      if (cancelClicked) {
+        clearInterval(intervalRef.current);
+        setUploadProgress(0); // Reset progress if cancel is clicked
+        return;
+      }
+
       progress += 5;
       setUploadProgress(progress);
+
       if (progress >= 100) {
-        clearInterval(interval);
-  
+        clearInterval(intervalRef.current);
+
         // Once the progress is complete, make the fetch request
         fetch('http://localhost:5000/predict', {
           method: 'POST',
@@ -36,13 +63,16 @@ const BrainIndex_Image = () => {
         })
           .then(response => response.json())
           .then(data => {
-            setPrediction(data.prediction);
-            setResult(data.result);
+            // Check if cancel button was clicked before updating the state
+            if (!cancelClicked) {
+              setPrediction(data.prediction);
+              setResult(data.result);
+            }
           })
           .catch(error => console.error('Error:', error));
       }
     }, 100);
-  };  
+  };
   
 
   return (
@@ -56,7 +86,7 @@ const BrainIndex_Image = () => {
           <label className="w-full h-28 flex flex-col items-center px-4 py-6 bg-purple-500 text-white rounded-md tracking-wide uppercase border border-purple-500 cursor-pointer hover:bg-purple-600 hover:text-white shadow-md">
             <svg className="h-full" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
               <path d="M16 4H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-8 9V7h2v6H8zm0 4v-2h2v2H8zm5-10v2h-2V7h2zm0 4v6h-2v-6h2zm0 8v-2h-2v2h2z" />
-            </svg>
+            </svg>  
             <span className="mt-2 font-semibold text-base leading-normal">Select an Image</span>
             <input type="file" className="hidden" onChange={handleImageUpload} />
           </label>
@@ -64,15 +94,21 @@ const BrainIndex_Image = () => {
             <span className='font-semibold font-serif'>IMAGE : </span> {fileName}
           </p>
           <div className="flex justify-center space-x-4">
-            <button onClick={handleSubmit} className="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-purple-500 shadow-lg focus:outline-none hover:bg-purple-600 hover:shadow-none rounded-full">
+            <button onClick={handleSubmit} className="w-full py-3 mt-4 font-medium tracking-widest text-white uppercase bg-purple-500 shadow-lg focus:outline-none hover:bg-purple-600 hover:shadow-none rounded-full">
               Submit
             </button>
           </div>
           <hr className="border-t border-gray-400 mt-4" />
           <h4 className="font-bold mt-2 text-black">Status</h4>
-          <progress className="w-full h-2 text-purple-500 bg-gray-300" value={uploadProgress} max="100"></progress>
+          <div className='flex flex-row gap-5'>
+            <progress className="w-2/3 h-2 mt-2 text-purple-500 bg-gray-300" value={uploadProgress} max="100"></progress>
+            <button onClick={handleCancel} className="bg-red-500 hover:bg-red-600 text-white w-1/3 px-2 rounded-full">
+              Cancel
+            </button>
+          </div>
           <p className="text-sm text-center mt-2 text-purple-900">{uploadProgress}% uploaded</p>
         </div>
+
 
         {/* RIGHT BOX */}
         <div className="flex flex-col w-3/4 p-6 bg-white rounded-lg shadow-lg h-[400px] h-max-[400px]">
@@ -80,20 +116,20 @@ const BrainIndex_Image = () => {
           <div className="flex justify-center items-center">
             <div className="w-1/3">
               {selectedImage && (
-                <img src={selectedImage} alt="Selected" className="object-contain h-72 w-full" />
+                <img src={selectedImage} alt="Selected" className="object-contain h-64 w-full" />
               )}
             </div>
             <div className="w-2/3 px-10">
-            {prediction && result && (
-              <div className="p-4 bg-purple-50 rounded-lg shadow-lg border">                
-                <p className="text-black text-2xl">
-                  <span className="font-bold">Prediction:</span> {prediction} %
-                </p>
-                <p className="text-black text-2xl">
-                  <span className="font-bold">Result:</span> {result}
-                </p>
-              </div>
-            )}
+              {prediction && result && (
+                <div className="p-4 bg-purple-50 rounded-lg shadow-lg border border-black">
+                  <p className="text-black text-2xl">
+                    <span className="font-bold">Prediction:</span> {prediction} %
+                  </p>
+                  <p className="text-black text-2xl">
+                    <span className="font-bold">Result:</span> {result}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
