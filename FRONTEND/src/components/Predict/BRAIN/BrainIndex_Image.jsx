@@ -80,12 +80,12 @@ const BrainIndex_Image = () => {
           <div className="flex justify-center items-center">
             <div className="w-1/3">
               {selectedImage && (
-                <img src={selectedImage} alt="Selected" className="object-contain h-64 w-full" />
+                <img src={selectedImage} alt="Selected" className="object-contain h-72 w-full" />
               )}
             </div>
             <div className="w-2/3 px-10">
             {prediction && result && (
-              <div className="p-4 bg-purple-50 rounded-lg shadow-lg border border-black">                
+              <div className="p-4 bg-purple-50 rounded-lg shadow-lg border">                
                 <p className="text-black text-2xl">
                   <span className="font-bold">Prediction:</span> {prediction} %
                 </p>
