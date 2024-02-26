@@ -107,9 +107,9 @@ const BrainIndex_Image_copy = () => {
           <hr className="border-t border-gray-400 mt-4" />
           <h4 className="font-bold mt-2 text-black">Status</h4>
           <div className='flex flex-row gap-5'>
-            <progress className="w-2/3 h-2 mt-2 text-purple-500 bg-gray-300" value={uploadProgress} max="100"></progress>
-            <button onClick={handleCancel} className="bg-red-500 hover:bg-red-600 text-white w-1/3 px-2 rounded-full">
-              Cancel
+            <progress className="h-2 w-full mt-2 text-purple-500 bg-gray-300" value={uploadProgress} max="100"></progress>
+            <button onClick={handleCancel} className="bg-red-500 hover:bg-red-600 text-white px-2 rounded-full">
+              <strong>X</strong>
             </button>
           </div>
           <p className="text-sm text-center mt-2 text-purple-900">{uploadProgress}% uploaded</p>

@@ -1,4 +1,5 @@
 from flask import Flask, request
+from tensorflow import keras
 from tensorflow.keras.models import load_model
 from tensorflow.keras.applications.vgg16 import preprocess_input
 import numpy as np
@@ -10,11 +11,14 @@ CORS(app)
 
 # Load both models
 model_path1 = r'C:\Users\HP\Documents\GitHub\HEALTHCARE\PYTHON MODELS\Brain_Tumor_VGG_model.h5'
+# model_path1 = r'C:\Users\HP\Documents\GitHub\HEALTHCARE\PYTHON MODELS\saved_model.pb'
 model_path2 = r'C:\Users\HP\Documents\GitHub\HEALTHCARE\PYTHON MODELS\Brain_Tumor_VGG_model_new.h5'
 
 custom_objects = {"preprocess_input": preprocess_input}
-model1 = load_model(model_path1, custom_objects=custom_objects)
-model2 = load_model(model_path2, custom_objects=custom_objects)
+# model1 = load_model(model_path1, custom_objects=custom_objects)
+# model2 = load_model(model_path2, custom_objects=custom_objects)
+model1 = keras.models.load_model(model_path1, custom_objects=custom_objects)
+model2 = keras.models.load_model(model_path2, custom_objects=custom_objects)
 
 @app.route('/predict', methods=['POST'])
 def predict():
