@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const RegisterStaff = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -21,19 +22,32 @@ const RegisterStaff = () => {
   }
 
   const toggleShowPassword = () => setShowPassword(!showPassword);
-
   const handleSelect = (gender) => setSelectedGender(gender);
-
   const handleBloodGroupChange = (e) => setBloodGroup(e.target.value);
   const handleDeptGroupChange = (e) => setDeptGroup(e.target.value);
-
   const handlePhoneNumberChange = (e) => setPhoneNumber(e.target.value);
-
   const handleAadharNumberChange = (e) => setAadharNumber(e.target.value);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const formData = new FormData(e.target);
+
+      // Make a POST request to the Flask backend
+      const response = await axios.post("http://localhost:5000/register", formData);
+
+      // Handle the response, e.g., show a success message
+      console.log(response.data.message);
+    } catch (error) {
+      // Handle errors, e.g., show an error message
+      console.error("Error registering staff:", error.message);
+    }
+  };
 
   return (
     <div>
-      <form className="mt-8 space-y-6" action="#" method="POST">
+      <form className="mt-8 space-y-6" action="#" method="POST" onSubmit={handleSubmit} encType="multipart/form-data">
         <div className="grid grid-cols-3 gap-8">
 
           {/* Full Name */}
