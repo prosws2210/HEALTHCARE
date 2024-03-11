@@ -4,10 +4,15 @@ const BrainIndex_Image = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
-  const [prediction, setPrediction] = useState(null);
-  const [result, setResult] = useState(null);
+  // const [prediction, setPrediction] = useState(null);
+  // const [result, setResult] = useState(null);
+  const [prediction1, setPrediction1] = useState(null);
+  const [result1, setResult1] = useState(null);
+  const [prediction2, setPrediction2] = useState(null);
+  const [result2, setResult2] = useState(null);
   const [fileName, setFileName] = useState('');
   const [cancelClicked, setCancelClicked] = useState(false);
+
 
   // Use a ref to store the interval ID for clearing later
   const intervalRef = useRef(null);
@@ -38,8 +43,12 @@ const BrainIndex_Image = () => {
     formData.append('image', selectedFile);
 
     // Reset prediction and result to null before starting progress
-    setPrediction(null);
-    setResult(null);
+    // setPrediction(null);
+    // setResult(null);
+    setPrediction1(null);
+    setResult1(null);
+    setPrediction2(null);
+    setResult2(null);
     setCancelClicked(false);
 
     let progress = 0;
@@ -65,8 +74,12 @@ const BrainIndex_Image = () => {
           .then(data => {
             // Check if cancel button was clicked before updating the state
             if (!cancelClicked) {
-              setPrediction(data.prediction);
-              setResult(data.result);
+              // setPrediction(data.prediction);
+              // setResult(data.result);
+              setPrediction1(data.prediction_model1);
+              setResult1(data.result_model1);
+              setPrediction2(data.prediction_model2);
+              setResult2(data.result_model2);
             }
           })
           .catch(error => console.error('Error:', error));
@@ -119,7 +132,7 @@ const BrainIndex_Image = () => {
                 <img src={selectedImage} alt="Selected" className="object-contain h-64 w-full" />
               )}
             </div>
-            <div className="w-2/3 px-10">
+            {/* <div className="w-2/3 px-10">
               {prediction && result && (
                 <div className="p-4 bg-purple-50 rounded-lg shadow-lg border border-black">
                   <p className="text-black text-2xl">
@@ -130,11 +143,33 @@ const BrainIndex_Image = () => {
                   </p>
                 </div>
               )}
+            </div> */}
+            <div className="w-2/3 px-10 flex flex-col gap-3">
+              {prediction1 && result1 && (
+                <div className="p-4 bg-purple-50 rounded-lg shadow-lg border">
+                  <p className="text-black text-2xl">
+                    <span className="font-bold">Prediction:</span> {prediction1} %
+                  </p>
+                  <p className="text-black text-2xl">
+                    <span className="font-bold">Result:</span> {result1}
+                  </p>
+                </div>
+              )}
+              {prediction2 && result2 && (
+                <div className="p-4 bg-purple-50 rounded-lg shadow-lg border">
+                  <p className="text-black text-2xl">
+                    <span className="font-bold">Prediction:</span> {prediction2} %
+                  </p>
+                  <p className="text-black text-2xl">
+                    <span className="font-bold">Result:</span> {result2}
+                  </p>
+                </div> 
+              )}
             </div>
           </div>
         </div>
 
-      </div>
+      </div> 
     </div>
   );
 };

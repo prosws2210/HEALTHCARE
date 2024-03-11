@@ -144,7 +144,7 @@ const BrainIndex_Image_copy = () => {
                   <p className="text-black text-2xl">
                     <span className="font-bold">Result:</span> {result2}
                   </p>
-                </div>
+                </div> 
               )}
             </div>
           </div>
