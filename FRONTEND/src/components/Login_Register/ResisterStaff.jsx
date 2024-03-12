@@ -3,12 +3,29 @@ import axios from "axios";
 
 const RegisterStaff = () => {
   const [showPassword, setShowPassword] = useState(false);
+
+  // Personal Information
+  const [name, setName] = useState("");
+  const [DOB, setDOB] = useState("");
   const [selectedGender, setSelectedGender] = useState("");
   const [bloodGroup, setBloodGroup] = useState("");
-  const [deptGroup, setDeptGroup] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState(""); // Added state for phoneNumber
-  const [aadharNumber, setAadharNumber] = useState(""); // Added state for aadharNumber
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [aadharNumber, setAadharNumber] = useState("");
   const [image, setImage] = useState(null);
+
+  // Professional Information
+  const [staffID, setStaffID] = useState("");
+  const [education, setEducation] = useState("");
+  const [experience, setExperience] = useState("");
+  const [language, setLanguage] = useState("");
+  const [timing, setTiming] = useState("");
+  const [deptGroup, setDeptGroup] = useState("");
+
+  // Account Information
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
 
   const handleImageChange = (e) => {
     let reader = new FileReader();
@@ -16,10 +33,10 @@ const RegisterStaff = () => {
 
     reader.onloadend = () => {
       setImage(reader.result);
-    }
+    };
 
-    reader.readAsDataURL(file)
-  }
+    reader.readAsDataURL(file);
+  };
 
   const toggleShowPassword = () => setShowPassword(!showPassword);
   const handleSelect = (gender) => setSelectedGender(gender);
@@ -30,20 +47,39 @@ const RegisterStaff = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(email, password);
 
     try {
       const formData = new FormData(e.target);
+      formData.append("name", name);
+      formData.append("DOB", DOB);
+      formData.append("staffID", staffID);
+      formData.append("education", education);
+      formData.append("experience", experience);
+      formData.append("language", language);
+      formData.append("timing", timing);
+      formData.append("email", email);
+      formData.append("password", password);
+      formData.append("confirmPassword", confirmPassword);
 
-      // Make a POST request to the Flask backend
-      const response = await axios.post("http://localhost:5000/register", formData);
-
-      // Handle the response, e.g., show a success message
+      const response = await axios.post("http://localhost:8000/registerStaff", formData);
       console.log(response.data.message);
-    } catch (error) {
-      // Handle errors, e.g., show an error message
+
+			then(res=>{
+				if(res.data==="exist"){
+					alert("User already exists")
+				}
+				else{
+					alert("Invalid credentials");
+				}
+			})
+    } 
+
+    catch (error) {
       console.error("Error registering staff:", error.message);
     }
   };
+
 
   return (
     <div>
@@ -63,6 +99,7 @@ const RegisterStaff = () => {
               required
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
               placeholder="Full Name"
+              onChange={(e)=>{setName(e.target.value)}}
             />
           </div>
 
@@ -97,6 +134,7 @@ const RegisterStaff = () => {
               type="date"
               required
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              onChange={(e)=>{setDOB(e.target.value)}}
             />
           </div>
 
@@ -109,8 +147,8 @@ const RegisterStaff = () => {
               id="blood-group"
               name="blood-group"
               value={bloodGroup}
-              onChange={handleBloodGroupChange}
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              onChange={handleBloodGroupChange}
             >
               <option value="" className="text-gray-700" disabled>
                 <strong>Select Blood Group</strong>
@@ -136,9 +174,9 @@ const RegisterStaff = () => {
               required
               pattern="\d{10}"
               value={phoneNumber}
-              onChange={handlePhoneNumberChange}
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
               placeholder="+ 91"
+              onChange={handlePhoneNumberChange}
             />
           </div>
 
@@ -155,9 +193,9 @@ const RegisterStaff = () => {
               required
               pattern="\d{10}"
               value={phoneNumber}
-              onChange={handlePhoneNumberChange}
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
               placeholder="+ 91"
+              onChange={handlePhoneNumberChange}
             />
           </div>
 
@@ -174,6 +212,7 @@ const RegisterStaff = () => {
               required
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
               placeholder="Staff ID"
+              onChange={(e)=>{setStaffID(e.target.value)}}
             />
           </div>
 
@@ -185,8 +224,8 @@ const RegisterStaff = () => {
               id="department-name"
               name="department-name"
               value={deptGroup}
-              onChange={handleDeptGroupChange}
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              onChange={handleDeptGroupChange}
             >
               <option value="" className="text-gray-700" disabled>
                 <strong>Select Department Name</strong>
@@ -234,9 +273,9 @@ const RegisterStaff = () => {
               required
               pattern="\d{4}-\d{4}-\d{4}"
               value={aadharNumber}
-              onChange={handleAadharNumberChange}
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
               placeholder="Aadhar Number (XXXX-XXXX-XXXX)"
+              onChange={handleAadharNumberChange}
             />
           </div>
         </div>
@@ -256,6 +295,7 @@ const RegisterStaff = () => {
               required
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
               placeholder="Education (max 60 characters)"
+              onChange={(e)=>{setEducation(e.target.value)}}
             />
           </div>
 
@@ -272,6 +312,7 @@ const RegisterStaff = () => {
               required
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
               placeholder="Experience (max 40 characters)"
+              onChange={(e)=>{setExperience(e.target.value)}}
             />
           </div>
 
@@ -287,6 +328,7 @@ const RegisterStaff = () => {
               required
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
               placeholder="Language"
+              onChange={(e)=>{setLanguage(e.target.value)}}
             />
           </div>
 
@@ -302,6 +344,7 @@ const RegisterStaff = () => {
               required
               className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
               placeholder="Timing : (eg: Mon-Sat 09:00-12:00 14:00-18:00)"
+              onChange={(e)=>{setTiming(e.target.value)}}
             />
           </div>
         </div>
@@ -323,6 +366,7 @@ const RegisterStaff = () => {
                 pattern=".+@.+"
                 className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                 placeholder="Email address"
+                onChange={(e)=>{setEmail(e.target.value)}}
               />
             </div>
 
@@ -338,6 +382,7 @@ const RegisterStaff = () => {
                 required
                 className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                 placeholder="Password"
+                onChange={(e)=>{setPassword(e.target.value)}}
               />
               <button
                 type="button"
@@ -395,6 +440,7 @@ const RegisterStaff = () => {
                 required
                 className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                 placeholder="Confirm Password"
+                onChange={(e)=>{setConfirmPassword(e.target.value)}}
               />
             </div>
           </div>
@@ -409,8 +455,8 @@ const RegisterStaff = () => {
                 name="profile-image"
                 type="file"
                 accept="image/*"
-                onChange={handleImageChange}
                 className="appearance-none rounded-full relative block px-3 py-2 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                onChange={handleImageChange}
               />
             <p className="font-semibold text-sm px-3 italic">Upload your passport photo</p>
             </div>
@@ -426,6 +472,7 @@ const RegisterStaff = () => {
           <button
             type="submit"
             className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            onClick={handleSubmit}
           >
             Register
           </button>

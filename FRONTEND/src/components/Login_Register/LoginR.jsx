@@ -1,11 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useNavigate, Link } from 'react-router-dom';
+
 
 const LoginR = () => {
+	const history = useNavigate();
 	const [showPassword, setShowPassword] = useState(false);
 
 	const toggleShowPassword = () => {
 		setShowPassword(!showPassword);
 	};
+
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+
+	async function submit(e){
+		e.preventDefault();
+		console.log(email, password);
+		try {
+			const response = await axios.post('http://localhost:8000/login', {
+				email: email,
+				password: password
+			});
+			console.log(response);
+			then(res=>{
+				if(res.data==="exist"){
+					history('/Home');
+				}
+				else{
+					alert("Invalid credentials");
+				}
+			})
+		} 
+		
+		catch (e) {
+			console.error(e);
+		}
+	}
+
 	return (
 		<div>
 			<div className="bg-violet-50 flex justify-center items-center gap-10 px-40 py-10">
@@ -13,7 +45,7 @@ const LoginR = () => {
 					<h2 className="text-3xl font-extrabold text-gray-900 mb-6 text-center">
 						Sign in to your account
 					</h2>
-					<form className="space-y-4">
+					<form className="space-y-4" action="POST">
 						<div>
 							<label
 								htmlFor="email-address"
@@ -30,6 +62,7 @@ const LoginR = () => {
 								pattern=".+@.+"
 								className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
 								placeholder="Email address"
+								onChange={(e)=>{setEmail(e.target.value)}}
 							/>
 						</div>
 
@@ -48,6 +81,7 @@ const LoginR = () => {
 								required
 								className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
 								placeholder="Password"
+								onChange={(e)=>{setPassword(e.target.value)}}
 							/>
 							<button
 								type="button"
@@ -118,6 +152,7 @@ const LoginR = () => {
 						<button
 							type="submit"
 							className="w-full mt-4 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+							onClick={submit}
 						>
 							Sign in
 						</button>
