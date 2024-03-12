@@ -19,8 +19,13 @@ const CheckDisease_NLP = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-[76vh] bg-cover px-32 bg-violet-50" >
-      <section className="w-[100%] bg-opacity-25 rounded-xl">
+    <div className="flex items-center h-[76vh] bg-cover px-32 bg-violet-50 gap-10">
+      <section className="w-[20%] border-r border-black">
+        <div className="flex items-center justify-between px-4 py-3 border-b border-gray-700">
+          hello
+        </div>        
+      </section>
+      <section className="w-[80%] bg-opacity-25 rounded-xl">
         <div className="container mx-auto">
           <div className="row">
             <div className="col-md-12">

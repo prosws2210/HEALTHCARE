@@ -14,7 +14,7 @@ const RegisterStaff = () => {
   const [image, setImage] = useState(null);
 
   // Professional Information
-  const [staffID, setStaffID] = useState("");
+  const [staffID, setStaffID] = useState(""); 
   const [education, setEducation] = useState("");
   const [experience, setExperience] = useState("");
   const [language, setLanguage] = useState("");
