@@ -40,7 +40,7 @@ const LoginR_new = () => {
 	};
 
 	const checkAdminPassword = () => {
-		const adminPass = "healthcare_admin";
+		const adminPass = "apes";
 		if (adminPassword === adminPass) {
 			setIsAdmin(true);
 		} else {
