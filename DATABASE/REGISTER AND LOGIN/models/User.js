@@ -2,10 +2,6 @@ const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema(
 	{
-		isPatient: {
-			type: Boolean,
-			default: false,
-		},
 		name: {
 			type: String,
 			required: true,  
@@ -20,7 +16,6 @@ const UserSchema = new mongoose.Schema(
 		},
 		bloodGroup: {
 			type: String,
-			required: true,
 		},
 		phoneNumber: {
 			type: String,
@@ -28,7 +23,6 @@ const UserSchema = new mongoose.Schema(
 		},
 		AlternatephoneNumber: {
 			type: String,
-			required: true,
 		},
 		aadharNumber: {
 			type: String,
@@ -37,6 +31,19 @@ const UserSchema = new mongoose.Schema(
 		},
 		image: {
 			type: String,
+		},
+		email: {
+			type: String,
+			unique: true,
+			required: true,
+		},
+		password: {
+			type: String,
+			required: true,
+		},
+		isStaff: {
+			type: Boolean,
+			default: false,
 		},
 		staffID: {
 			type: String,
@@ -55,18 +62,6 @@ const UserSchema = new mongoose.Schema(
 		},
 		deptGroup: {
 			type: String,
-		},
-		email: {
-			type: String,
-			required: true,
-		},
-		password: {
-			type: String,
-			required: true,
-		},
-		confirmPassword: {
-			type: String,
-			required: true,
 		},
 	},
 	{ timestamps: true }

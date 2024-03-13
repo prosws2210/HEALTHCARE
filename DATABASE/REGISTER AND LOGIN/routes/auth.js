@@ -8,33 +8,48 @@ const jwt = require("jsonwebtoken");
 router.post("/register", async (req, res) => {
 	try {
 		const {
-			username,
-			isTeam,
 			name,
-			name1,
-			name2,
-			phone,
-			regno,
-			regno1,
-			regno2,
+			DOB,
+			selectedGender,
+			bloodGroup,
+			phoneNumber,
+			AlternatephoneNumber,
+			aadharNumber,
+			image,
 			email,
 			password,
+			isStaff,
+			staffID,
+			education,
+			experience,
+			language,
+			timing,
+			deptGroup
 		} = req.body;
+
 		const salt = await bcrypt.genSalt(10);
 		const hashedPassword = await bcrypt.hashSync(password, salt);
+
 		const newUser = new User({
-			username,
-			isTeam,
 			name,
-			name1,
-			name2,
-			phone,
-			regno,
-			regno1,
-			regno2,
+			DOB,
+			selectedGender,
+			bloodGroup,
+			phoneNumber,
+			AlternatephoneNumber,
+			aadharNumber,
+			image,
 			email,
 			password: hashedPassword,
+			isStaff,
+			staffID,
+			education,
+			experience, 
+			language,
+			timing,
+			deptGroup,
 		});
+
 		const savedUser = await newUser.save();
 		res.status(200).json(savedUser);
 	} catch (err) {

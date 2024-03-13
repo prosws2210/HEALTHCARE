@@ -12,6 +12,7 @@ const Register_body = () => {
     const [selectedGender, setSelectedGender] = useState("");
     const [bloodGroup, setBloodGroup] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
+    const [AlphoneNumber, setAlphoneNumber] = useState("");
     const [aadharNumber, setAadharNumber] = useState("");
     const [image, setImage] = useState(null);
     
@@ -28,16 +29,15 @@ const Register_body = () => {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     
-    const [selectedRole, setSelectedRole] = useState('staff');
     const [isStaff, setIsStaff] = useState(false);
     const [error, setError] = useState(false);
 	const navigate = useNavigate();
 
-	const [isAdmin, setIsAdmin] = useState(false);
+	const [isAdmin, setIsAdmin] = useState(true);
 	const [adminPassword, setAdminPassword] = useState("");
     
     const handleRoleToggle = (role) => {
-        setSelectedRole(role);
+        setIsStaff(role === 'staff');
     }
 
     const handleImageChange = (e) => {
@@ -59,11 +59,11 @@ const Register_body = () => {
                     selectedGender,
                     bloodGroup,
                     phoneNumber,
+                    AlphoneNumber,
                     aadharNumber,
                     image,
 					email,
 					password,
-                    confirmPassword,
 					isStaff,
 					staffID: isStaff ? staffID : "",
                     education: isStaff ? education : "",
@@ -79,11 +79,11 @@ const Register_body = () => {
             setSelectedGender(res.data.selectedGender);
             setBloodGroup(res.data.bloodGroup);
             setPhoneNumber(res.data.phoneNumber);
+            setAlphoneNumber(res.data.AlphoneNumber);
             setAadharNumber(res.data.aadharNumber);
             setImage(res.data.image);
 			setEmail(res.data.email);
 			setPassword(res.data.password);
-            setConfirmPassword(res.data.confirmPassword);
 			setError(false);
 			toast.success("Account created successfully");
 			navigate("/Login");
@@ -108,13 +108,6 @@ const Register_body = () => {
 	};
 
     const toggleShowPassword = () => setShowPassword(!showPassword);
-    const handleSelect = (gender) => setSelectedGender(gender);
-    const handleBloodGroupChange = (e) => setBloodGroup(e.target.value);
-    const handleDeptGroupChange = (e) => setDeptGroup(e.target.value);
-    const handlePhoneNumberChange = (e) => setPhoneNumber(e.target.value);
-    const handleAadharNumberChange = (e) => setAadharNumber(e.target.value);
-
-    const showStaffInformation = selectedRole === 'staff';
 
     return (
         <>
@@ -151,7 +144,7 @@ const Register_body = () => {
                             <button
                                 onClick={() => handleRoleToggle('staff')}
                                 className={`px-3 py-1 rounded focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ${
-                                    selectedRole === 'staff' ? 'bg-indigo-700 text-white' : 'bg-neutral-500 text-white'
+                                   (isStaff) ? 'bg-indigo-700 text-white' : 'bg-neutral-500 text-white'
                                 }`}
                             >
                                 Staff
@@ -160,7 +153,7 @@ const Register_body = () => {
                             <button
                                 onClick={() => handleRoleToggle('patient')}
                                 className={`px-3 py-1 rounded focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ${
-                                    selectedRole === 'patient' ? 'bg-indigo-700 text-white' : 'bg-neutral-500 text-white'
+                                    (!isStaff) ? 'bg-indigo-700 text-white' : 'bg-neutral-500 text-white'
                                 }`}
                             >
                                 Patient
@@ -186,6 +179,7 @@ const Register_body = () => {
                                                 required
                                                 className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                                 placeholder="Full Name"
+                                                onChange={(e)=>{setName(e.target.value)}}
                                             />
                                         </div>
 
@@ -193,7 +187,9 @@ const Register_body = () => {
                                             <label className="block text-gray-700 font-bold mb-2">Gender</label>
                                             <div className="space-x-10">
                                             <button
-                                                onClick={() => handleSelect("Male")}
+                                                onClick={() => setSelectedGender("Male")}
+                                                value="Male"
+                                                type="button"
                                                 className={`px-3 py-1 rounded focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ${
                                                 selectedGender === "Male"
                                                     ? "bg-indigo-700 text-white"
@@ -203,7 +199,9 @@ const Register_body = () => {
                                                 Male
                                             </button>
                                             <button
-                                                onClick={() => handleSelect("Female")}
+                                                onClick={() => setSelectedGender("Female")}
+                                                value="Female"
+                                                type="button"
                                                 className={`px-3 py-1 rounded focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ${
                                                 selectedGender === "Female"
                                                     ? "bg-indigo-700 text-white"
@@ -213,7 +211,9 @@ const Register_body = () => {
                                                 Female
                                             </button>
                                             <button
-                                                onClick={() => handleSelect("Other")}
+                                                onClick={() => setSelectedGender("Other")}
+                                                value="Other"
+                                                type="button"
                                                 className={`px-3 py-1 rounded focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ${
                                                 selectedGender === "Other"
                                                     ? "bg-indigo-700 text-white"
@@ -224,7 +224,6 @@ const Register_body = () => {
                                             </button>
                                             </div>
                                         </div>
-
                                         <div>
                                             <label htmlFor="date-of-birth" className="block text-gray-700 font-bold mb-2">Date of Birth</label>
                                             <input
@@ -233,6 +232,7 @@ const Register_body = () => {
                                                 type="date"
                                                 required
                                                 className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                                onChange={(e)=>{setDOB(e.target.value)}}
                                             />
                                         </div>
                                         </div>
@@ -248,9 +248,9 @@ const Register_body = () => {
                                                     required
                                                     pattern="\d{4}-\d{4}-\d{4}"
                                                     value={aadharNumber}
-                                                    onChange={handleAadharNumberChange}
                                                     className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                                     placeholder="Aadhar Number (XXXX-XXXX-XXXX)"
+                                                    onChange={(e)=>{setAadharNumber(e.target.value)}}
                                                 />
                                             </div>
 
@@ -260,8 +260,8 @@ const Register_body = () => {
                                                     id="blood-group"
                                                     name="blood-group"
                                                     value={bloodGroup}
-                                                    onChange={handleBloodGroupChange}
                                                     className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                                    onChange={(e)=>{setBloodGroup(e.target.value)}}
                                                 >
                                                     <option value="" disabled>Select Blood Group</option>
                                                     {["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"].map((group) => (
@@ -280,9 +280,9 @@ const Register_body = () => {
                                                     required
                                                     pattern="\d{10}"
                                                     value={phoneNumber}
-                                                    onChange={handlePhoneNumberChange}
                                                     className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                                     placeholder="+ 91"
+                                                    onChange={(e)=>{setPhoneNumber(e.target.value)}}
                                                 />
                                             </div>
 
@@ -297,9 +297,9 @@ const Register_body = () => {
                                                     required
                                                     pattern="\d{10}"
                                                     value={phoneNumber}
-                                                    onChange={handlePhoneNumberChange}
                                                     className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                                     placeholder="+ 91"
+                                                    onChange={(e)=>{setAlPhoneNumber(e.target.value)}}
                                                 />
                                             </div>
                                         </div>
@@ -322,6 +322,7 @@ const Register_body = () => {
                                                         pattern=".+@.+"
                                                         className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                                         placeholder="Email address"
+                                                        onChange={(e)=>{setEmail(e.target.value)}}
                                                     />
                                                 </div>
 
@@ -335,6 +336,7 @@ const Register_body = () => {
                                                         required
                                                         className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                                         placeholder="Password"
+                                                        onChange={(e)=>{setPassword(e.target.value)}}
                                                     />
                                                     <button
                                                         type="button"
@@ -404,7 +406,7 @@ const Register_body = () => {
                                                         type="file"
                                                         accept="image/*"
                                                         onChange={handleImageChange}
-                                                        className="appearance-none relative block py-2 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                                        className="appearance-none relative block py-2 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"                                                      
                                                     />
                                                     <p className="font-semibold text-sm italic">Upload your passport photo</p>
                                                 </label>
@@ -417,7 +419,7 @@ const Register_body = () => {
 
                                     {/* Staff Information */}
                                     <div>
-                                        {showStaffInformation && (
+                                        {isStaff && (
                                             <div>
                                                 <h1 className="text-2xl font-bold text-black mb-8">STAFF INFORMATION</h1>
                                                 <div className="grid grid-cols-3 gap-8 mt-8">
@@ -442,7 +444,7 @@ const Register_body = () => {
                                                             name="department-name"
                                                             value={deptGroup}
                                                             className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                                                            onChange={handleDeptGroupChange}
+                                                            onChange={(e)=>{setDeptGroup(e.target.value)}}                            
                                                         >
                                                             <option value="" className="text-gray-700" disabled><strong>Select Department Name</strong></option>
                                                             {[
@@ -540,10 +542,14 @@ const Register_body = () => {
                                 <div>
                                     <button
                                         type="submit"
+                                        onClick={handleRegister}
                                         className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                     >
                                         Register
                                     </button>
+                                    {error && (
+                                        <h3 className="text-red-500 text-sm ">Something went wrong</h3>
+                                    )}
                                 </div>
 
                                 <div>
