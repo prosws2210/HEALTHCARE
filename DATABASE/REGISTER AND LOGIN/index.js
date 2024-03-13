@@ -8,8 +8,8 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
-const postRoute = require("./routes/posts");
-const commentRoute = require("./routes/comments");
+// const postRoute = require("./routes/posts");
+// const commentRoute = require("./routes/comments");
 
 //database
 let isDatabaseConnected = false;
@@ -45,8 +45,8 @@ app.use(
 app.use(cookieParser());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
-app.use("/api/posts", postRoute);
-app.use("/api/comments", commentRoute);
+// app.use("/api/posts", postRoute);
+// app.use("/api/comments", commentRoute);
 
 // Set timeout limit to 10 seconds
 app.use((req, res, next) => {
