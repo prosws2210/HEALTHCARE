@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 import { UserContext } from "../context/UserContext";
+import toast from "react-hot-toast";
 
 
 const LoginR_new = () => {
@@ -31,7 +32,6 @@ const LoginR_new = () => {
 			setUser(res.data);
 			setError(false);
 			navigate("/");
-			// Assuming toast is defined elsewhere
 			toast.success("Welcome back " + res.data.username + " !");
 		} catch (err) {
 			setError(true);
@@ -44,7 +44,6 @@ const LoginR_new = () => {
 		if (adminPassword === adminPass) {
 			setIsAdmin(true);
 		} else {
-			// Assuming toast is defined elsewhere
 			toast.error("Incorrect admin password");
 		}
 	};
@@ -52,8 +51,8 @@ const LoginR_new = () => {
 	return (
 		<>
 			{!isAdmin ? (
-				<div className="flex flex-col items-center justify-center min-h-screen bg-violet-50">
-					<p className="text-lg text-center text-gray-700 mb-2">
+				<div className="flex flex-col items-center justify-center min-h-96 bg-violet-50">
+					<p className="text-lg font-bold text-center text-gray-700 mb-2">
 						You are not allowed to access this page
 					</p>
 					<p className="text-md text-center text-gray-600 mb-6">
@@ -67,7 +66,7 @@ const LoginR_new = () => {
 					/>
 					<button
 						onClick={checkAdminPassword}
-						className="mt-4 px-4 py-2 text-white bg-indigo-500 rounded hover:bg-indigo-600 focus:outline-none"
+						className="mt-4 px-4 py-2 text-white bg-indigo-500 rounded-3xl hover:bg-indigo-600 focus:outline-none"
 					>
 						Submit
 					</button>

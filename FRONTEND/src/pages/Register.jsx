@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from "./Navbar";
 import Title from "../components/Login_Register/Login_Title"
-import RegisterR from '../components/Login_Register/RegisterR';
+import RegisterBody from "../components/Login_Register/Register_body";
+// import RegisterR from '../components/Login_Register/RegisterR';
 import Footer from "./Footer";
 
 const Register = () => {
@@ -9,7 +10,8 @@ const Register = () => {
     <div>
         <Navbar />
         <Title />
-        <RegisterR/>
+        {/* <RegisterR/> */}
+        <RegisterBody/>
         <Footer />
     </div>
   )
