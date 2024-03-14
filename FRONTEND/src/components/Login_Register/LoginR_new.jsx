@@ -13,7 +13,7 @@ const LoginR_new = () => {
 	const { setUser } = useContext(UserContext);
 	const navigate = useNavigate();
 
-	const [isAdmin, setIsAdmin] = useState(false);
+	const [isAdmin, setIsAdmin] = useState(true);  // Set to false to restrict access to the page 
 	const [adminPassword, setAdminPassword] = useState("");
 
 	const toggleShowPassword = () => {
