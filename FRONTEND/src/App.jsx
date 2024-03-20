@@ -16,7 +16,6 @@ import HeartReport from "./components/View/Report/HeartReport.jsx";
 import Contact from "./pages/Contact.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
-
 import {Toaster} from "react-hot-toast";
 
 export default function App() {

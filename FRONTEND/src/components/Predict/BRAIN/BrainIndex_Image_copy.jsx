@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-const BrainIndex_Image_copy = () => {
+const BrainIndex_Image_Copy = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
@@ -11,7 +11,6 @@ const BrainIndex_Image_copy = () => {
   const [fileName, setFileName] = useState('');
   const [cancelClicked, setCancelClicked] = useState(false);
 
-  // Use a ref to store the interval ID for clearing later
   const intervalRef = useRef(null);
 
   const handleImageUpload = (event) => {
@@ -23,7 +22,7 @@ const BrainIndex_Image_copy = () => {
   const handleCancel = () => {
     if (uploadProgress < 100) {
       setCancelClicked(true);
-      setUploadProgress(0); // Reset progress if cancel is clicked
+      setUploadProgress(0); 
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
@@ -32,14 +31,12 @@ const BrainIndex_Image_copy = () => {
 
   const handleSubmit = () => {
     if (!selectedFile) {
-      // Handle case where no file is selected
       return;
     }
 
     const formData = new FormData();
     formData.append('image', selectedFile);
 
-    // Reset prediction and result to null before starting progress
     setPrediction1(null);
     setResult1(null);
     setPrediction2(null);
@@ -50,7 +47,7 @@ const BrainIndex_Image_copy = () => {
     intervalRef.current = setInterval(() => {
       if (cancelClicked) {
         clearInterval(intervalRef.current);
-        setUploadProgress(0); // Reset progress if cancel is clicked
+        setUploadProgress(0); 
         return;
       }
 
@@ -60,14 +57,12 @@ const BrainIndex_Image_copy = () => {
       if (progress >= 100) {
         clearInterval(intervalRef.current);
 
-        // Once the progress is complete, make the fetch request
-        fetch('http://localhost:5000/predict', {
+        fetch('http://localhost:8501/', { // Update the URL to match your Streamlit backend's endpoint
           method: 'POST',
           body: formData,
         })
           .then(response => response.json())
           .then(data => {
-            // Check if cancel button was clicked before updating the state
             if (!cancelClicked) {
               setPrediction1(data.prediction_model1);
               setResult1(data.result_model1);
@@ -80,13 +75,10 @@ const BrainIndex_Image_copy = () => {
     }, 100);
   };
   
-
   return (
     <div className="h-full bg-purple-50 p-12">
       <h1 className="text-3xl font-bold mb-6 text-center text-black">UPLOAD IMAGES TO GET YOUR PREDICTION</h1>
       <div className="flex justify-center items-start gap-10">
-
-        {/* LEFT BOX */}
         <div className="w-1/4 p-6 bg-white rounded-lg shadow-lg flex flex-col h-[400px] h-max-[400px]">
           <h1 className="text-2xl font-bold mb-4 text-center text-black">Upload Image</h1>
           <label className="w-full h-28 flex flex-col items-center px-4 py-6 bg-purple-500 text-white rounded-md tracking-wide uppercase border border-purple-500 cursor-pointer hover:bg-purple-600 hover:text-white shadow-md">
@@ -107,24 +99,25 @@ const BrainIndex_Image_copy = () => {
           <hr className="border-t border-gray-400 mt-4" />
           <h4 className="font-bold mt-2 text-black">Status</h4>
           <div className='flex flex-row gap-5'>
-            <progress className="h-2 w-full mt-2 text-purple-500 bg-gray-300" value={uploadProgress} max="100"></progress>
-            <button onClick={handleCancel} className="bg-red-500 hover:bg-red-600 text-white px-2 rounded-full">
-              <strong>X</strong>
+            <progress className="w-2/3 h-2 mt-2 text-purple-500 bg-gray-300" value={uploadProgress} max="100"></progress>
+            <button onClick={handleCancel} className="bg-red-500 hover:bg-red-600 text-white w-1/3 px-2 rounded-full">
+              Cancel
             </button>
           </div>
           <p className="text-sm text-center mt-2 text-purple-900">{uploadProgress}% uploaded</p>
         </div>
-
-
-        {/* RIGHT BOX */}
         <div className="flex flex-col w-3/4 p-6 bg-white rounded-lg shadow-lg h-[400px] h-max-[400px]">
           <h1 className="text-2xl font-bold mb-4 text-black flex justify-center items-center">Your Results</h1>
           <div className="flex justify-center items-center">
+            
+            {/*  Predictions */}
             <div className="w-1/3">
               {selectedImage && (
                 <img src={selectedImage} alt="Selected" className="object-contain h-64 w-full" />
               )}
             </div>
+            
+            {/*  Right side of the image display */}
             <div className="w-2/3 px-10 flex flex-col gap-3">
               {prediction1 && result1 && (
                 <div className="p-4 bg-purple-50 rounded-lg shadow-lg border">
@@ -147,12 +140,13 @@ const BrainIndex_Image_copy = () => {
                 </div> 
               )}
             </div>
+
           </div>
         </div>
 
-      </div>
+      </div> 
     </div>
   );
 };
 
-export default BrainIndex_Image_copy;
+export default BrainIndex_Image_Copy;
