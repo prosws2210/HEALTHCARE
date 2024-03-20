@@ -23,6 +23,10 @@ def predict():
 
     image = Image.open(file.stream).resize((224, 224))
     image = np.array(image)
+
+    # Ensure the image has 3 channels (RGB)
+    if image.shape[-1] != 3:
+        image = np.stack((image,) * 3, axis=-1)
     image = preprocess_input(image)
     image = np.expand_dims(image, axis=0)
 
