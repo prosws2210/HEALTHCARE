@@ -29,7 +29,7 @@ const CheckDisease_NLP = () => {
         <section className="flex flex-col justify-between w-[83%] rounded-3xl bg-white py-4 px-8 h-[80%] shadow-2xl">
           {/* Top writeup */}
           <div className="p-8 bg-white">
-            <h1 className="text-4xl font-bold text-blue-600 mb-2 text-shadow">HEY THERE!</h1>  
+            <h1 className="text-4xl font-bold text-blue-600 mb-2 text-shadow">HEY THERE! 💋</h1>  
             <p className="text-md text-gray-800 font-serif text-shadow">My name is Dr.Symptoms and I'm your personal family AI Doctor. Give me your symptoms and I will try my best to cure them!</p>
           </div>
 
