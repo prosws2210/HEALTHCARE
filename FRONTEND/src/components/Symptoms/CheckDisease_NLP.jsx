@@ -19,58 +19,85 @@ const CheckDisease_NLP = () => {
   };
 
   return (
-    <div className="flex items-center h-[76vh] bg-cover px-32 bg-violet-50 gap-10">
-      <section className="w-[20%] border-r border-black">
-        <div className="flex items-center justify-between px-4 py-3 border-b border-gray-700">
-          hello
-        </div>        
-      </section>
-      <section className="w-[80%] bg-opacity-25 rounded-xl">
-        <div className="container mx-auto">
-          <div className="row">
-            <div className="col-md-12">
-              <div className='h-[50vh] pb-6'></div>
-              <div className="form-group space-y-4">
+    <div className="py-8 bg-cover px-20 bg-violet-50 gap-6">
+      <div className="flex flex-row h-full gap-5">
+        <section className="w-[17%] rounded-3xl bg-white py-4 px-8 shadow-2xl">
+          <div className="flex items-center justify-between">
+            hello
+          </div>        
+        </section>
+        <section className="flex flex-col justify-between w-[83%] rounded-3xl bg-white py-4 px-8 h-[80%] shadow-2xl">
+          {/* Top writeup */}
+          <div className="p-8 bg-white">
+            <h1 className="text-4xl font-bold text-blue-600 mb-2 text-shadow">HEY THERE!</h1>  
+            <p className="text-md text-gray-800 font-serif text-shadow">My name is Dr.Symptoms and I'm your personal family AI Doctor. Give me your symptoms and I will try my best to cure them!</p>
+          </div>
 
-                <label htmlFor="symptom1" className="text-black text-xl font-bold">
-                  Enter Your Symptoms
-                </label>
-                
-                <div className="input-group">
-                  <input
-                    type="text"
-                    className="form-control border-2 border-gray-800 px-4 rounded-lg bg-transparent text-black w-full h-10"
-                    id="symptom"
-                    name="symptom"
-                    required
-                    placeholder="Enter your symptoms"
-                    value={input}
-                    onChange={handleInputChange}
-                  />
-                  <div className="input-group-append"></div>
-                </div>
+          <div className='h-[30vh]'></div>
 
-                <div className="flex justify-center">
-                  <button
-                    type="button"
-                    className="btn btn-primary bg-gradient-to-r from-blue-500 to-purple-500 border-2 border-black rounded-full w-[15%] py-2 text-white text-lg font-bold"
-                    onClick={handleCheckDisease}
-                  >
-                    Check Disease
-                  </button>
-                </div>
-                {output && (
-                  <div className="mt-4">
-                    <p className="text-black text-xl font-bold">Bot Response:</p>
-                    <p className="text-black">{output}</p>
+          {/* Bottom writeup */}
+          <div className='flex flex-col px-8 py-2 space-y-4'>
+            <h1 className="text-1xl font-semibold text-gray-400">Here are few things we can try</h1>
+            <div className='flex flex-row items-center justify-between gap-10'>
+              {/* 1st box */}
+              <div className="flex items-center justify-between p-4 bg-white border-black border-2 rounded-2xl w-full">                
+                hello
+              </div>
+              {/* 2nd box */}
+              <div className="flex items-center justify-between p-4 bg-white border-black border-2 rounded-2xl w-full">
+                hello
+              </div>
+              {/* 3rd box */}
+              <div className="flex items-center justify-between p-4 bg-white border-black border-2 rounded-2xl w-full">
+                hello
+              </div>
+            </div>
+            <div className="container mx-auto h-full">
+              <div className="row h-full">
+                <div className="col-md-12 h-full">
+                  <div className="form-group space-y-4 h-full">
+
+                    <label htmlFor="symptom1" className="text-black text-xl font-bold">
+                      Enter Your Symptoms
+                    </label>
+                    
+                    <div className="input-group bg-white rounded-xl">
+                      <input
+                        type="text"
+                        className="form-control border-2 border-gray-800 px-4 rounded-lg bg-transparent w-full h-12"
+                        id="symptom"
+                        name="symptom"
+                        required
+                        placeholder="Enter your symptoms"
+                        value={input}
+                        onChange={handleInputChange}
+                      />
+                      <div className="input-group-append"></div>
+                    </div>
+
+                    <div className="flex justify-center">
+                      <button
+                        type="button"
+                        className="btn btn-primary bg-gradient-to-r from-blue-500 to-purple-500 border-2 border-black rounded-full w-[15%] py-2 text-white text-lg font-bold"
+                        onClick={handleCheckDisease}
+                      >
+                        Check Disease
+                      </button>
+                    </div>
+                    {output && (
+                      <div className="mt-4">
+                        <p className="text-black text-xl font-bold">Bot Response:</p>
+                        <p className="text-black">{output}</p>
+                      </div>
+                    )}
+
                   </div>
-                )}
-
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }
