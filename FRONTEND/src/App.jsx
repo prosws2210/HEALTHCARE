@@ -16,6 +16,8 @@ import HeartReport from "./components/View/Report/HeartReport.jsx";
 import Contact from "./pages/Contact.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
+import Donation from "./pages/Donation.jsx";
+
 import {Toaster} from "react-hot-toast";
 
 export default function App() {
@@ -38,6 +40,7 @@ export default function App() {
 					<Route path="/Contact" element={<Contact />} />
 					<Route path="/Login" element={<Login />} />
 					<Route path="/Register" element={<Register />} />
+					<Route path="/Donation" element={<Donation />} />
 				</Routes>
 			</Router>
 		</div>

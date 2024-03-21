@@ -38,12 +38,21 @@ const Navbar = () => {
           <Link to="/contact">Contact Us</Link>
         </div>
 
-        <div className="flex items-center">
-          <Link to="/login">
-            <button className="border-2 rounded-full px-4 py-1 border-blue-500 text-sm font-medium text-blue-700 hover:bg-blue-500 hover:text-white">
-              Login / Register
-            </button>
-          </Link>
+        <div className="flex flex-row gap-6">
+          <div className="flex items-center">
+            <Link to="/login">
+              <button className="border-2 rounded-full px-4 py-1 border-blue-500 text-sm font-medium text-blue-700 hover:bg-blue-500 hover:text-white">
+                Login / Register
+              </button>
+            </Link>
+          </div>
+          <div className="flex items-center">
+            <Link to="/donation">
+              <button className="rounded-full px-4 py-2 bg-yellow-400 text-sm font-medium text-black-700 transform hover:scale-110 transition-transform duration-200">              
+                DONATE ❤
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
