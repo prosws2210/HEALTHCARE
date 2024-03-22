@@ -43,10 +43,14 @@ const LoginR_new = () => {
             } else if (staffData.length > 0) {
                 console.log('Logged in as staff', staffData);
                 setLoginStatus("Logged in as staff");
+				toast.success("Account Logged in successfully as staff");
+                navigate("/Login");
                 // Handle staff login
             } else if (patientData.length > 0) {
                 console.log('Logged in as patient', patientData);
                 setLoginStatus("Logged in as patient");
+				toast.success("Account Logged in successfully as patient");
+                navigate("/Login");
                 // Handle patient login
             } else {
                 toast.error("No matching user found");
@@ -226,7 +230,10 @@ const LoginR_new = () => {
 									Sign in
 								</button>
 							</form>
-							<p className="mb-4 text-red-500">{loginStatus}</p>
+
+							{/* The value printed in the website */}
+							<p className="mb-4 text-center text-red-500 text-2xl pt-2 font-bold">{loginStatus}</p>	
+
 							<p className="mt-10 text-sm text-center">
 								Don't have an account?{' '}
 								<Link
