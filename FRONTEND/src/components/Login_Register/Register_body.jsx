@@ -131,7 +131,8 @@ const Register_body = () => {
                             Timing,
                             DeptGroup,
                         }
-                    ]));
+                    ])
+                );
             } 
             
             else if (!isStaff) {
@@ -162,7 +163,9 @@ const Register_body = () => {
                 toast.success("Account created successfully");
                 navigate("/Login");
             }
-        } catch (error) {
+        } 
+        
+        catch (error) {
             console.error('Error: ', error);
             toast.error("An error occurred during registration");
         }
