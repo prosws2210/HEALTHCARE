@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from "./Navbar";
 import Title from "../components/Login_Register/Login_Title"
 import RegisterBody from "../components/Login_Register/Register_body";
-import Test from "../components/Login_Register/Sax";
+// import Test from "../components/Login_Register/Sax";
 // import RegisterR from '../components/Login_Register/RegisterR';
 import Footer from "./Footer";
 
@@ -13,7 +13,7 @@ const Register = () => {
         <Title />
         {/* <RegisterR/> */}
         <RegisterBody/>
-        <Test/>
+        {/* <Test/> */}
         <Footer />
     </div>
   )
