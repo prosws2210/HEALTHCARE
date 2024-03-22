@@ -10,6 +10,7 @@ import Predict from "./pages/Predict.jsx";
 import BrainIndex from "./components/Predict/BrainIndex.jsx";
 
 import Check from "./pages/Check.jsx";
+
 import ViewReport from "./pages/ViewReport.jsx";
 import HeartReport from "./components/View/Report/HeartReport.jsx";
 

@@ -14,7 +14,7 @@ const Home_DoctorsMessage = () => {
             <span className="text-gray-600">Expert Clinical Pediatrician in Manhattan</span>
 
             <p className="mt-4 text-gray-700 font-bold">
-              Welcome to my practice! As a dedicated Pediatrician specializing in children's health in Manhattan, I am committed to providing compassionate and effective healthcare tailored to the unique needs of your child. Lorem Ipsum is simply text of the printing and typesetting industry.
+              Welcome to my pediatric practice! I specialize in children's health in Manhattan, offering compassionate and effective healthcare tailored to your child's unique needs. With a focus on compassion and expertise, we strive to provide the best possible healthcare experience for your child.
             </p>
             <br />
             <h5 className="text-lg font-bold">Contact Information:</h5>

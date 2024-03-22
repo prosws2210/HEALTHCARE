@@ -11,28 +11,27 @@ const Donation_Features = () => {
 
     const features = [
         {
-            title: 'REGISTRATION',
-            shortText: 'When you arrive at the dona.....',
-            fullText: 'When you arrive at the donation center, you\'ll need to complete the registration process. Please bring a valid photo ID and any relevant medical information. You can also fill out the donor questionnaire ahead of time to expedite the process.',
-            imagePath: '/registration_image.jpg'
+            title: 'REGISTRATION AND SCREENING',
+            shortText: 'During registration, dono.....',
+            fullText: 'During registration, donors provide identification and basic information. They undergo screening, answering questions about health history, recent travels, and potential risk factors. This process ensures eligibility for donation and helps identify any factors that may affect the safety of the donation or recipient.',
+            imagePath: '/assets/images/blood donation/online-registration.png'        },
+        {
+            title: 'MEDICAL HISTORY AND PHYSICAL EXAM',
+            shortText: 'In the medical history revi.....',
+            fullText: 'In the medical history review, a healthcare professional assesses the donor\'s health background, including past surgeries, medications, and chronic conditions. A physical exam follows, checking vital signs like blood pressure and pulse. These steps ensure the donor is in good health and suitable for blood donation.',
+            imagePath: '/assets/images/blood donation/medical-report.png'
         },
         {
-            title: 'SEEING',
-            shortText: 'After registration, you\'ll .....',
-            fullText: 'After registration, you\'ll undergo a brief health check to ensure that you\'re eligible to donate. This includes a review of your medical history and a quick physical examination. Once you\'ve completed the screening process, you\'ll be directed to the donation area.',
-            imagePath: '/seeing_image.jpg'
+            title: 'HAEMOGLOBIN TEST',
+            shortText: 'The haemoglobin test involv.....',
+            fullText: 'The haemoglobin test involves taking a small blood sample to measure the donor\'s haemoglobin levels. Adequate haemoglobin is crucial for the donor\'s well-being and the recipient\'s safety during blood transfusion. This test ensures that the donor has sufficient oxygen-carrying capacity in their blood for a safe donation.',
+            imagePath: '/assets/images/blood donation/blood-test.png'
         },
         {
-            title: 'DONATION',
-            shortText: 'The donation process itself .....',
-            fullText: 'The donation process itself only takes about 10 minutes. Afterward, you\'ll have time to relax and enjoy some refreshments in our recovery area. We recommend avoiding strenuous physical activity for the rest of the day and staying hydrated.',
-            imagePath: '/donation_image.jpg'
-        },
-        {
-            title: 'SAVE LIFE',
-            shortText: 'Your decision to donate .....',
-            fullText: 'Your decision to donate blood can make a significant impact on the lives of others. Every donation has the potential to save up to three lives. Your generosity can provide hope to patients in need and contribute to their recovery.',
-            imagePath: '/save_life_image.jpg'
+            title: 'DONATION AND POST-CARE',
+            shortText: 'During donation, a steri.....',
+            fullText: 'During donation, a sterile needle collects blood from the donor, typically around one pint. Afterward, donors rest and receive refreshments. They are advised to drink fluids and avoid strenuous activity. Follow-up checks may occur to ensure their well-being, and donors are thanked for their life-saving contribution to healthcare.',
+            imagePath: '/assets/images/blood donation/donation.png'
         },
     ];
 
@@ -55,7 +54,7 @@ const Donation_Features = () => {
                             className="mb-4"
                             src={feature.imagePath}
                             style={{
-                                width: '100%',
+                                width: '200px',
                                 height: '200px',
                                 objectFit: 'cover',
                             }}

@@ -91,26 +91,26 @@ const Footer_New = () => {
 					</div>
 				</div>
 
-				<div className="w-7/12">
+				<div className="w-6/12">
 					<h2 className="font-bold text-xl first-line">Contact Us</h2>
 					<div className="text-sm italic mt-3">
 						<div className="flex flex-row justify-between">
 							<div className="flex flex-col">
-								<div className="flex justify-between gap-4">
+								<div className="flex justify-between gap-8">
 									<div>Anushka Mohan</div>
 									<div>(22BCE5081)</div>
 								</div>
-								<div className="flex justify-between gap-4">
+								<div className="flex justify-between gap-8">
 									<div>Eliksha Maheshwari</div>
 									<div>(22BAI1312)</div>
 								</div>
 							</div>
 							<div className="flex flex-col">
-								<div className="flex justify-between gap-4">
+								<div className="flex justify-between gap-8">
 									<div>Paridhi Rathore</div>
 									<div>(22BCE1581)</div>
 								</div>
-								<div className="flex justify-between gap-4">
+								<div className="flex justify-between gap-8">
 									<div>Shakti Swaroop Sahu</div>
 									<div>(22BAI1012)</div>
 								</div>

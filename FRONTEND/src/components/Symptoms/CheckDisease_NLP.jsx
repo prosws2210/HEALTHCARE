@@ -27,7 +27,7 @@ const CheckDisease_NLP = () => {
           {/* Top div */}
         <div className='flex flex-row justify-between pt-2 pb-4 items-center bg-white border-gray-600 border-b-4'>
           <div className="text-lg font-bold text-blue-500">
-            Dr. SYMPTOMS
+            UMEED 
           </div>     
           <div className="flex items-center text-blue-500">
             <FaPhone className="text-2xl mr-2" /> 
@@ -43,7 +43,7 @@ const CheckDisease_NLP = () => {
           {/* Top writeup */}
           <div className="p-8 bg-white">
             <h1 className="text-4xl font-bold text-blue-600 mb-2 text-shadow">HEY THERE! </h1>  
-            <p className="text-md text-gray-800 font-serif text-shadow">My name is Dr.Symptoms and I'm your personal family AI Doctor. Give me your symptoms and I will try my best to cure them!</p>
+            <p className="text-md text-gray-800 font-serif text-shadow">My name is UMEED and I'm your personal family AI Doctor. Give me your symptoms and I will try my best to cure them!</p>
           </div>
 
           <div className='h-[30vh]'></div>

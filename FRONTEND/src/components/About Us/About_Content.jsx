@@ -18,27 +18,16 @@ const About_Content = () => {
       {/* Text on the right */}
       <div className="max-w">
         <h2 className="text-2xl font-bold mb-4">Welcome to UMEED - Advancing Healthcare Excellence</h2>
-        <p className="text-gray-700">
-          UMEED, a pioneer in medical education, stands as a beacon of quality healthcare and academic brilliance.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida.
-          Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
+        <p className="text-gray-700 font-medium">
+        UMEED - HEALTHCARE, a leading name in medical expertise, exemplifies quality healthcare and academic excellence. Our dedication to advancing medical knowledge and providing exceptional healthcare services is mirrored in our cutting-edge facilities and a team of devoted professionals.
+        <br />
+        <br />
+        With a strong focus on nurturing the next generation of healthcare leaders, UMEED - HEALTHCARE continues to be a center of academic distinction and groundbreaking medical research. 
+        At UMEED - HEALTHCARE, patient well-being is paramount, and we are committed to meeting the healthcare needs of our community through evidence-based practices and continuous improvement efforts. Our collaborative approach ensures that each patient receives personalized care and the highest quality medical treatment available.
+        <br />
+        <br />
+        Join us on our journey to redefine healthcare excellence and make a positive impact on the health and wellness of individuals and communities alike.
         </p>
-
-        <p className="mt-4 text-gray-700">
-          Our commitment to advancing medical knowledge and providing top-notch healthcare services is reflected in our
-          state-of-the-art facilities and a team of dedicated professionals. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna
-          sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
-        </p>
-
-        <p className="mt-4 text-gray-700">
-          With a rich heritage and a focus on nurturing the next generation of healthcare leaders, JIPMER continues to
-          be a hub for academic excellence and innovative medical research. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin
-          pulvinar. Suspendisse hendrerit ultrices mauris. Fusce tristique lacus at urna sollicitudin pulvinar.
-          Suspendisse hendrerit ultrices mauris.
-        </p>
-        {/* Add more paragraphs with the same styling */}
       </div>
     </div>
   );

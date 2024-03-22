@@ -22,7 +22,7 @@ const HomeSlider = () => {
   const slides = [
     {
       image: 'assets/images/slider/slider_11.jpg',
-      title: 'Welcome to Dr. Symptoms',
+      title: 'Welcome to UMEED - HEALTHCARE',
       content: (
         <>
           <strong>Your Health, Our Priority ... </strong><br />
