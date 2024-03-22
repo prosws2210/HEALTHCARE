@@ -29,7 +29,7 @@ const CheckDisease_NLP = () => {
         <section className="flex flex-col justify-between w-[83%] rounded-3xl bg-white py-4 px-8 h-[80%] shadow-2xl">
           {/* Top writeup */}
           <div className="p-8 bg-white">
-            <h1 className="text-4xl font-bold text-blue-600 mb-2 text-shadow">HEY THERE! 💋</h1>  
+            <h1 className="text-4xl font-bold text-blue-600 mb-2 text-shadow">HEY THERE! </h1>  
             <p className="text-md text-gray-800 font-serif text-shadow">My name is Dr.Symptoms and I'm your personal family AI Doctor. Give me your symptoms and I will try my best to cure them!</p>
           </div>
 
@@ -40,16 +40,20 @@ const CheckDisease_NLP = () => {
             <h1 className="text-1xl font-semibold text-gray-400">Here are few things we can try</h1>
             <div className='flex flex-row items-center justify-between gap-10'>
               {/* 1st box */}
-              <div className="flex items-center justify-between p-4 bg-white border-black border-2 rounded-2xl w-full">                
-                hello
+              <div className="text-xs p-2 text-center flex items-center bg-white border-black border-2 rounded-2xl w-full h-12">                
+                What could be causing my symptoms of [describe symptoms] ?
               </div>
               {/* 2nd box */}
-              <div className="flex items-center justify-between p-4 bg-white border-black border-2 rounded-2xl w-full">
-                hello
+              <div className="text-xs p-2 text-center flex items-center bg-white border-black border-2 rounded-2xl w-full h-12">
+                How should I manage my [specific health condition] ?
               </div>
               {/* 3rd box */}
-              <div className="flex items-center justify-between p-4 bg-white border-black border-2 rounded-2xl w-full">
-                hello
+              <div className="text-xs p-2 text-center flex items-center bg-white border-black border-2 rounded-2xl w-full h-12">
+                What does the term [medical term] mean ?
+              </div>
+              {/* 4th box */}
+              <div className="text-xs p-2 text-center flex items-center bg-white border-black border-2 rounded-2xl w-full h-12">
+                Suggest some exercises to improve my mental well-being.
               </div>
             </div>
             <div className="container mx-auto h-full">
