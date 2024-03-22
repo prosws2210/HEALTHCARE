@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { FaPhone } from "react-icons/fa6";
+
 
 const CheckDisease_NLP = () => {
   const [input, setInput] = useState('');
@@ -19,14 +21,25 @@ const CheckDisease_NLP = () => {
   };
 
   return (
-    <div className="py-8 bg-cover px-20 bg-violet-50 gap-6">
+    <div className="py-8 bg-cover px-12 bg-violet-50 gap-6">
       <div className="flex flex-row h-full gap-5">
-        <section className="w-[17%] rounded-3xl bg-white py-4 px-8 shadow-2xl">
-          <div className="flex items-center justify-between">
-            hello
-          </div>        
+        <section className="flex flex-col justify-between w-[20%] rounded-3xl bg-white py-4 px-8 shadow-2xl">
+          {/* Top div */}
+        <div className='flex flex-row justify-between pt-2 pb-4 items-center bg-white border-gray-600 border-b-4'>
+          <div className="text-lg font-bold text-blue-500">
+            Dr. SYMPTOMS
+          </div>     
+          <div className="flex items-center text-blue-500">
+            <FaPhone className="text-2xl mr-2" /> 
+          </div>
+        </div>
+
+          {/* Bottom div */}
+          <div>
+            Hello World 
+          </div>  
         </section>
-        <section className="flex flex-col justify-between w-[83%] rounded-3xl bg-white py-4 px-8 h-[80%] shadow-2xl">
+        <section className="flex flex-col justify-between w-[80%] rounded-3xl bg-white py-4 px-8 h-[80%] shadow-2xl">
           {/* Top writeup */}
           <div className="p-8 bg-white">
             <h1 className="text-4xl font-bold text-blue-600 mb-2 text-shadow">HEY THERE! </h1>  
