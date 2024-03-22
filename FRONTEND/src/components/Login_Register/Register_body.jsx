@@ -1,32 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
+import {supabase} from "../../createClient";
 
 const Register_body = () => {
     const [showPassword, setShowPassword] = useState(false);
 
     // Personal Information
-    const [name, setName] = useState("");
+    const [Name, setName] = useState("");
     const [DOB, setDOB] = useState("");
-    const [selectedGender, setSelectedGender] = useState("");
-    const [bloodGroup, setBloodGroup] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
-    const [AlphoneNumber, setAlphoneNumber] = useState("");
-    const [aadharNumber, setAadharNumber] = useState("");
+    const [Gender, setGender] = useState("");
+    const [BloodGroup, setBloodGroup] = useState("");
+    const [PhoneNumber, setPhoneNumber] = useState("");
+    const [AlternatePhoneNumber, setAlternatePhoneNumber] = useState("");
+    const [AadharNumber, setAadharNumber] = useState("");
     const [image, setImage] = useState(null);
     
     // Professional Information
-    const [staffID, setStaffID] = useState(""); 
-    const [education, setEducation] = useState("");
-    const [experience, setExperience] = useState("");
-    const [language, setLanguage] = useState("");
-    const [timing, setTiming] = useState("");
-    const [deptGroup, setDeptGroup] = useState("");
+    const [StaffID, setStaffID] = useState(""); 
+    const [Education, setEducation] = useState("");
+    const [Experience, setExperience] = useState("");
+    const [Language, setLanguage] = useState("");
+    const [Timing, setTiming] = useState("");
+    const [DeptGroup, setDeptGroup] = useState("");
     
     // Account Information
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [Email, setEmail] = useState("");
+    const [Password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     
     const [isStaff, setIsStaff] = useState(false);
@@ -44,64 +45,59 @@ const Register_body = () => {
         let reader = new FileReader();
         let file = e.target.files[0];
         reader.onloadend = () => {
-            setImage("");
+            setImage(reader.result);
         };
         reader.readAsDataURL(file);
     };
-
+    
     const handleRegister = async () => {
-        console.log(password + " " + confirmPassword)
-        if (password !== confirmPassword) {
+        if (Password !== confirmPassword) {
             toast.error("Passwords do not match");
-        } 
+            return;
+        }
+    
+        const parsedAadharNumber = AadharNumber ? parseInt(AadharNumber, 10) : null;
+        const parsedPhoneNumber = PhoneNumber ? parseInt(PhoneNumber, 10) : null;
+        const parsedAlternatePhoneNumber = AlternatePhoneNumber ? parseInt(AlternatePhoneNumber, 10) : null;
         
-        else {
-            // Register the user
-            try {
-                const res = await axios.post(
-                    "http://localhost:5000/api/auth/register",
+        try {
+            const { data, error } = await supabase
+                .from("Staff")
+                .insert([
                     {
-                        name,
+                        AadharNumber: parsedAadharNumber,
+                        Name,
                         DOB,
-                        selectedGender,
-                        bloodGroup,
-                        phoneNumber,
-                        AlphoneNumber,
-                        aadharNumber,
-                        image,
-                        email,
-                        password,
-                        isStaff,
-                        staffID: isStaff ? staffID : "",
-                        education: isStaff ? education : "",
-                        experience: isStaff ? experience : "",
-                        language: isStaff ? language : "",
-                        timing: isStaff ? timing : "",
-                        deptGroup: isStaff ? deptGroup : "",
+                        Gender,
+                        BloodGroup,
+                        Email,
+                        Password,
+                        PhoneNumber : parsedPhoneNumber,
+                        AlternatePhoneNumber : parsedAlternatePhoneNumber,
+                        StaffID: isStaff ? StaffID : null,
+                        Education: isStaff ? Education : null,
+                        Experience: isStaff ? Experience : null,
+                        Language: isStaff ? Language : null,
+                        Timing: isStaff ? Timing : null,
+                        DeptGroup: isStaff ? DeptGroup : null,
                     }
-                );
-
-                setName(res.data.name);
-                setDOB(res.data.DOB);
-                setSelectedGender(res.data.selectedGender);
-                setBloodGroup(res.data.bloodGroup);
-                setPhoneNumber(res.data.phoneNumber);
-                setAlphoneNumber(res.data.AlphoneNumber);
-                setAadharNumber(res.data.aadharNumber);
-                setImage(res.data.image);
-                setEmail(res.data.email);
-                setPassword(res.data.password);
-                setError(false);
+                ]);
+    
+            if (error) {
+                console.log('Error: ', error);
+                toast.error("Registration failed");
+            } else {
+                console.log('User data: ', data);
                 toast.success("Account created successfully");
                 navigate("/Login");
-            } 
-            
-            catch (err) {
-                setError(true);
-                console.log("Error at handlesubmit ", err);
             }
+        } catch (error) {
+            console.error('Error: ', error);
+            toast.error("An error occurred during registration");
         }
-	};
+    };
+    
+    
 
     const checkAdminPassword = () => {
 		const adminPass = "apes";
@@ -116,6 +112,15 @@ const Register_body = () => {
 	};
 
     const toggleShowPassword = () => setShowPassword(!showPassword);
+
+    useEffect(() => {
+		fetchUsers();
+	}, []);
+
+	async function fetchUsers() {
+		const { data, error } = await supabase.from("Staff").select("*");
+		console.log(data);
+	}
 
     return (
         <>
@@ -194,11 +199,11 @@ const Register_body = () => {
                                             <label className="block text-gray-700 font-bold mb-2">Gender</label>
                                             <div className="space-x-10">
                                             <button
-                                                onClick={() => setSelectedGender("Male")}
+                                                onClick={() => setGender("Male")}
                                                 value="Male"
                                                 type="button"
                                                 className={`px-3 py-1 rounded focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ${
-                                                selectedGender === "Male"
+                                                Gender === "Male"
                                                     ? "bg-indigo-700 text-white"
                                                     : "bg-neutral-500 text-white"
                                                 }`}
@@ -206,11 +211,11 @@ const Register_body = () => {
                                                 Male
                                             </button>
                                             <button
-                                                onClick={() => setSelectedGender("Female")}
+                                                onClick={() => setGender("Female")}
                                                 value="Female"
                                                 type="button"
                                                 className={`px-3 py-1 rounded focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ${
-                                                selectedGender === "Female"
+                                                Gender === "Female"
                                                     ? "bg-indigo-700 text-white"
                                                     : "bg-neutral-500 text-white"
                                                 }`}
@@ -218,11 +223,11 @@ const Register_body = () => {
                                                 Female
                                             </button>
                                             <button
-                                                onClick={() => setSelectedGender("Other")}
+                                                onClick={() => setGender("Other")}
                                                 value="Other"
                                                 type="button"
                                                 className={`px-3 py-1 rounded focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ${
-                                                selectedGender === "Other"
+                                                Gender === "Other"
                                                     ? "bg-indigo-700 text-white"
                                                     : "bg-neutral-500 text-white"
                                                 }`}
@@ -250,14 +255,20 @@ const Register_body = () => {
                                                 <input
                                                     id="aadhar-number"
                                                     name="aadhar-number"
-                                                    type="text"
+                                                    type="number"
                                                     autoComplete="aadhar-number"
                                                     required
-                                                    pattern="\d{4}-\d{4}-\d{4}"
-                                                    value={aadharNumber}
+                                                    value={AadharNumber}
                                                     className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                                     placeholder="Aadhar Number (XXXX-XXXX-XXXX)"
-                                                    onChange={(e)=>{setAadharNumber(e.target.value)}}
+                                                    onChange={(e) => {
+                                                        if (e.target.value === '') {
+                                                            setAadharNumber(0);
+                                                        } 
+                                                        else {
+                                                            setAadharNumber(e.target.value);
+                                                        }
+                                                    }}
                                                 />
                                             </div>
 
@@ -266,7 +277,7 @@ const Register_body = () => {
                                                 <select
                                                     id="blood-group"
                                                     name="blood-group"
-                                                    value={bloodGroup}
+                                                    value={BloodGroup}
                                                     className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                                     onChange={(e)=>{setBloodGroup(e.target.value)}}
                                                 >
@@ -282,13 +293,11 @@ const Register_body = () => {
                                                 <input
                                                     id="phone-number"
                                                     name="phone-number"
-                                                    type="tel"
-                                                    autoComplete="tel"
+                                                    type="number"
                                                     required
-                                                    pattern="\d{10}"
-                                                    value={phoneNumber}
+                                                    value={PhoneNumber}
                                                     className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                                                    placeholder="+ 91"
+                                                    // placeholder="+ 91"
                                                     onChange={(e)=>{setPhoneNumber(e.target.value)}}
                                                 />
                                             </div>
@@ -299,14 +308,12 @@ const Register_body = () => {
                                                 <input
                                                     id="alternate-phone-number"
                                                     name="phone-number"
-                                                    type="tel"
-                                                    autoComplete="tel"
+                                                    type="number"
                                                     required
-                                                    pattern="\d{10}"
-                                                    value={phoneNumber}
+                                                    value={PhoneNumber}
                                                     className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                                                    placeholder="+ 91"
-                                                    onChange={(e)=>{setAlPhoneNumber(e.target.value)}}
+                                                    // placeholder="+ 91"
+                                                    onChange={(e)=>{setAlternatePhoneNumber(e.target.value)}}
                                                 />
                                             </div>
                                         </div>
@@ -450,7 +457,7 @@ const Register_body = () => {
                                                         <select
                                                             id="department-name"
                                                             name="department-name"
-                                                            value={deptGroup}
+                                                            value={DeptGroup}
                                                             className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                                             onChange={(e)=>{setDeptGroup(e.target.value)}}                            
                                                         >
