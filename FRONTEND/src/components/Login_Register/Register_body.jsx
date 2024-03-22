@@ -50,39 +50,110 @@ const Register_body = () => {
         reader.readAsDataURL(file);
     };
     
+    // const handleRegister = async () => {
+    //     if (Password !== confirmPassword) {
+    //         toast.error("Passwords do not match");
+    //         return;
+    //     }
+    
+    //     const parsedAadharNumber = AadharNumber ? parseInt(AadharNumber, 10) : null;
+    //     const parsedPhoneNumber = PhoneNumber ? parseInt(PhoneNumber, 10) : null;
+    //     const parsedAlternatePhoneNumber = AlternatePhoneNumber ? parseInt(AlternatePhoneNumber, 10) : null;
+        
+    //     try {
+    //         const { data, error } = await supabase
+    //             .from("Staff")
+    //             .insert([
+    //                 {
+    //                     AadharNumber: parsedAadharNumber,
+    //                     Name,
+    //                     DOB,
+    //                     Gender,
+    //                     BloodGroup,
+    //                     Email,
+    //                     Password,
+    //                     PhoneNumber : parsedPhoneNumber,
+    //                     AlternatePhoneNumber : parsedAlternatePhoneNumber,
+    //                     StaffID: isStaff ? StaffID : null,
+    //                     Education: isStaff ? Education : null,
+    //                     Experience: isStaff ? Experience : null,
+    //                     Language: isStaff ? Language : null,
+    //                     Timing: isStaff ? Timing : null,
+    //                     DeptGroup: isStaff ? DeptGroup : null,
+    //                 }
+    //             ]);
+    
+    //         if (error) {
+    //             console.log('Error: ', error);
+    //             toast.error("Registration failed");
+    //         } else {
+    //             console.log('User data: ', data);
+    //             toast.success("Account created successfully");
+    //             navigate("/Login");
+    //         }
+    //     } catch (error) {
+    //         console.error('Error: ', error);
+    //         toast.error("An error occurred during registration");
+    //     }
+    // };
+    
     const handleRegister = async () => {
         if (Password !== confirmPassword) {
             toast.error("Passwords do not match");
             return;
         }
-    
+
         const parsedAadharNumber = AadharNumber ? parseInt(AadharNumber, 10) : null;
         const parsedPhoneNumber = PhoneNumber ? parseInt(PhoneNumber, 10) : null;
         const parsedAlternatePhoneNumber = AlternatePhoneNumber ? parseInt(AlternatePhoneNumber, 10) : null;
         
         try {
-            const { data, error } = await supabase
-                .from("Staff")
-                .insert([
-                    {
-                        AadharNumber: parsedAadharNumber,
-                        Name,
-                        DOB,
-                        Gender,
-                        BloodGroup,
-                        Email,
-                        Password,
-                        PhoneNumber : parsedPhoneNumber,
-                        AlternatePhoneNumber : parsedAlternatePhoneNumber,
-                        StaffID: isStaff ? StaffID : null,
-                        Education: isStaff ? Education : null,
-                        Experience: isStaff ? Experience : null,
-                        Language: isStaff ? Language : null,
-                        Timing: isStaff ? Timing : null,
-                        DeptGroup: isStaff ? DeptGroup : null,
-                    }
-                ]);
-    
+            let data, error;
+
+            if (isStaff) {
+                ({ data, error } = await supabase
+                    .from("Staff")
+                    .insert([
+                        {
+                            AadharNumber: parsedAadharNumber,
+                            Name,
+                            DOB,
+                            Gender,
+                            BloodGroup,
+                            Email,
+                            Password,
+                            PhoneNumber : parsedPhoneNumber,
+                            AlternatePhoneNumber : parsedAlternatePhoneNumber,
+                            StaffID,
+                            Education,
+                            Experience,
+                            Language,
+                            Timing,
+                            DeptGroup,
+                        }
+                    ]));
+            } 
+            
+            else if (!isStaff) {
+                ({ data, error } = await supabase
+                    .from("Patient")
+                    .insert([
+                        {
+                            AadharNumber: parsedAadharNumber,
+                            Name,
+                            DOB,
+                            Gender,
+                            BloodGroup,
+                            Email,
+                            Password,
+                            PhoneNumber : parsedPhoneNumber,
+                            AlternatePhoneNumber : parsedAlternatePhoneNumber,
+                            // Include any additional fields for the Patient table here
+                        }
+                    ])
+                );
+            }
+
             if (error) {
                 console.log('Error: ', error);
                 toast.error("Registration failed");
@@ -96,8 +167,8 @@ const Register_body = () => {
             toast.error("An error occurred during registration");
         }
     };
-    
-    
+
+
 
     const checkAdminPassword = () => {
 		const adminPass = "apes";
