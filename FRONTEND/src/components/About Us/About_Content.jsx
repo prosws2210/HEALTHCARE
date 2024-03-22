@@ -17,9 +17,9 @@ const About_Content = () => {
 
       {/* Text on the right */}
       <div className="max-w">
-        <h2 className="text-2xl font-bold mb-4">Welcome to JIPMER - Advancing Healthcare Excellence</h2>
+        <h2 className="text-2xl font-bold mb-4">Welcome to UMEED - Advancing Healthcare Excellence</h2>
         <p className="text-gray-700">
-          JIPMER, a pioneer in medical education, stands as a beacon of quality healthcare and academic brilliance.
+          UMEED, a pioneer in medical education, stands as a beacon of quality healthcare and academic brilliance.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida.
           Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
         </p>

@@ -9,7 +9,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 
 
-const Footer = () => {
+const Footer_New = () => {
 	return (
 		<div className="">
 			<div className="flex gap-24 bg-neutral-700 text-white px-20 pt-8 pb-8">
@@ -35,7 +35,7 @@ const Footer = () => {
 								<FaPhone className="text-1xl mr-4 mt-2" />
 							</a>
 							<div>
-								<h6 className="font-semibold text-xs">Lifeline International</h6>
+								<h6 className="font-semibold text-xs">NGO contact</h6>
 								<p>
 									<a href="tel:4043441066" className="text-blue-500">
 										+91 4043441066
@@ -58,61 +58,59 @@ const Footer = () => {
 							</div>
 						</div>
 
-						<div className="flex flex-col bottom-32 left-4 w-60 gap-y-3">
-							<button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full">
-								Book an Appointment
-							</button>
-						</div>
+						<Link to="/login">
+							<div className="flex flex-col bottom-32 left-4 w-60 gap-y-3">
+								<button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full">
+									Become an Umeed Member
+								</button>
+							</div>
+						</Link>
 
 					</div>
 				</div>
 
-				<div className="w-5/12">
+				<div className="w-4/12">
 					<h2 className="font-bold text-xl">Useful Links</h2>
 					<div className="flex flex-col gap-2 mt-3">
-						{/* <Link to="/" className="border-b-2 border-neutral-500 pt-3 flex justify-between">
-							<p>Home</p>
-							<MdOutlineKeyboardArrowRight className="text-2xl" />
-						</Link> */}
-						<Link to="/predict" className="border-b-2 border-neutral-500 pt-3 flex justify-between">
-							<p>Diseases & Conditions - Predict Disease</p>
+						<Link to="http://localhost:1001/" className="border-b-2 border-neutral-500 pt-3 flex justify-between">
+							<p>Health-care Support</p>
 							<MdOutlineKeyboardArrowRight className="text-2xl" />
 						</Link>
-						<Link to="/check" className="border-b-2 border-neutral-500 pt-3 flex justify-between">
-							<p>Diseases & Conditions - Check Disease</p>
+						<Link to="http://localhost:1002/" className="border-b-2 border-neutral-500 pt-3 flex justify-between">
+							<p>Education Support</p>
 							<MdOutlineKeyboardArrowRight className="text-2xl" />
 						</Link>
-						<Link to="/viewreport" className="border-b-2 border-neutral-500 pt-3 flex justify-between">
-							<p>View Reports and Prescription</p>
+						<Link to="http://localhost:1003/" className="border-b-2 border-neutral-500 pt-3 flex justify-between">
+							<p>Dietary Support</p>
 							<MdOutlineKeyboardArrowRight className="text-2xl" />
 						</Link>
-						<Link to="/contact" className="border-b-2 border-neutral-500 pt-3 flex justify-between">
-							<p>Contact Us</p>
+						<Link to="http://localhost:1004/" className="border-b-2 border-neutral-500 pt-3 flex justify-between">
+							<p>Social Cause Support</p>
 							<MdOutlineKeyboardArrowRight className="text-2xl" />
 						</Link>
 					</div>
 				</div>
 
-				<div className="w-6/12">
+				<div className="w-7/12">
 					<h2 className="font-bold text-xl first-line">Contact Us</h2>
 					<div className="text-sm italic mt-3">
 						<div className="flex flex-row justify-between">
 							<div className="flex flex-col">
-								<div className="flex justify-between gap-2">
-									<div>Isha Shrivastava</div>
-									<div>(22BRS1181)</div>
+								<div className="flex justify-between gap-4">
+									<div>Anushka Mohan</div>
+									<div>(22BCE5081)</div>
 								</div>
-								<div className="flex justify-between gap-2">
+								<div className="flex justify-between gap-4">
 									<div>Eliksha Maheshwari</div>
 									<div>(22BAI1312)</div>
 								</div>
 							</div>
 							<div className="flex flex-col">
-								<div className="flex justify-between gap-2">
-									<div>Soham Jyoti Mondal</div>
-									<div>(22BAI1023)</div>
+								<div className="flex justify-between gap-4">
+									<div>Paridhi Rathore</div>
+									<div>(22BCE1581)</div>
 								</div>
-								<div className="flex justify-between gap-2">
+								<div className="flex justify-between gap-4">
 									<div>Shakti Swaroop Sahu</div>
 									<div>(22BAI1012)</div>
 								</div>
@@ -121,7 +119,7 @@ const Footer = () => {
 						
 						<br />
 
-						B.Tech in CSE - Spl. in AI with ( ML & Robotics ) <br />
+						B.Tech in CSE - Spl. in AI with ( ML & Core ) <br />
 						Vellore Institute of Technology - Chennai, Tamil Nadu, INDIA <br />
 
 						<br />
@@ -136,7 +134,7 @@ const Footer = () => {
 			<div className="bg-neutral-800 text-white py-4 flex justify-between px-20">
 				<div className="text-sm">
 					<a href="https://github.com/sws2210">
-						2024 &copy; All Rights Reserved | Designed by Eliksha Maheshwari and Developed by Shakti Swaroop Sahu
+						2024 &copy; All Rights Reserved | Designed by Developed by Team APES
 					</a>
 				</div>
 				<div className="flex gap-4">
@@ -161,4 +159,4 @@ const Footer = () => {
 	);
 };
 
-export default Footer;
+export default Footer_New;

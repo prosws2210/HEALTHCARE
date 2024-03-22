@@ -1,91 +1,78 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
 import { supabase } from '../../createClient'; 
-import toast from 'react-hot-toast';
+import toast from "react-hot-toast";
 
-const LoginFinal = () => {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState(null);
-    const navigate = useNavigate();
+const Login_final = () => {
+    const [Email, setEmail] = useState("");
+    const [Password, setPassword] = useState("");
+    const [loginStatus, setLoginStatus] = useState("");
 
-    const handleLogin = async (e) => {
-        e.preventDefault();
-        setError(null);
-    
-        // Ensure email and password are strings
-        const emailString = String(email);
-        const passwordString = String(password);
-    
+    const handleLogin = async () => {
         try {
-            const { data, error } = await supabase.auth.signInWithPassword({
-                email: emailString,
-                password: passwordString,
-            });
-    
-            if (error) {
-                throw error;
+            const { data: staffData, error: staffError } = await supabase
+                .from("Staff")
+                .select("*")
+                .eq("Email", Email)
+                .eq("Password", Password);
+
+            const { data: patientData, error: patientError } = await supabase
+                .from("Patient")
+                .select("*")
+                .eq("Email", Email)
+                .eq("Password", Password);
+
+            if (staffError || patientError) {
+                toast.error("Login failed");
+                setLoginStatus("Login failed");
+            } else if (staffData.length > 0) {
+                console.log('Logged in as staff', staffData);
+                setLoginStatus("Logged in as staff");
+                // Handle staff login
+            } else if (patientData.length > 0) {
+                console.log('Logged in as patient', patientData);
+                setLoginStatus("Logged in as patient");
+                // Handle patient login
+            } else {
+                toast.error("No matching user found");
+                setLoginStatus("No matching user found");
             }
-    
-            toast.success('Welcome back!');
-            navigate('/'); // Redirect to home page or dashboard
         } catch (error) {
-            console.error("Login Error:", error);
-            setError(error.message);
-            toast.error(error.message);
+            console.error('Error: ', error);
+            toast.error("An error occurred during login");
+            setLoginStatus("An error occurred during login");
         }
     };
-    
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-violet-50">
-            <h2 className="text-3xl font-extrabold text-gray-900 mb-6 text-center">
-                Sign in to your account
-            </h2>
-            <form className="space-y-4" onSubmit={handleLogin}>
-                <div>
-                    <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
-                        Email address
-                    </label>
-                    <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                        placeholder="Email address"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                </div>
-
-                <div>
-                    <label htmlFor="password" className="block text-gray-700 font-bold mb-2">
-                        Password
-                    </label>
-                    <input
-                        id="password"
-                        name="password"
-                        type="password"
-                        required
-                        className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                        placeholder="Password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                </div>
-
-                {error && <p className="text-red-500 text-sm">{error}</p>}
-
-                <button
-                    type="submit"
-                    className="w-full mt-4 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                    Sign in
-                </button>
-            </form>
+        <div className="container mx-auto px-4">
+            <h1 className="text-4xl font-bold mb-4">Login</h1>
+            <p className="mb-4 text-red-500">{loginStatus}</p>
+            <div className="mb-4">
+                <input
+                    type="email"
+                    value={Email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                />
+            </div>
+            <div className="mb-4">
+                <input
+                    type="password"
+                    value={Password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Password"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                />
+            </div>
+            <button
+                onClick={handleLogin}
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+                Login
+            </button>
         </div>
     );
 };
 
-export default LoginFinal;
+export default Login_final;

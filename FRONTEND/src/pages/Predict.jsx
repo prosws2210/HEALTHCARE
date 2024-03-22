@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from "./Navbar";
 import Title from "../components/Predict/PredictDisease_Title"
 import Domain from "../components/Predict/PredictDisease_Domain"
-import Footer from "./Footer";
+import Footer from "./Footer_New";
 
 const Predict = () => {
   return (

@@ -2,13 +2,15 @@ import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 import { UserContext } from "../context/UserContext";
+import { supabase } from '../../createClient'; 
 import toast from "react-hot-toast";
 
 
 const LoginR_new = () => {
-	const [email, setEmail] = useState("");
-	const [password, setPassword] = useState("");
+	const [Email, setEmail] = useState("");
+	const [Password, setPassword] = useState("");
 	const [showPassword, setShowPassword] = useState(false);
+	const [loginStatus, setLoginStatus] = useState("");
 	const [error, setError] = useState(false);
 	const { setUser } = useContext(UserContext);
 	const [loginResult, setLoginResult] = useState('');
@@ -23,21 +25,38 @@ const LoginR_new = () => {
 
 	const handleLogin = async () => {
 		try {
-			const res = await axios.post(
-				"https://health-care-website-two.vercel.app/api/auth/login",
-				{ email, password }, // Changed from 'username' to 'email'
-				{ withCredentials: true }
-			);
-			localStorage.setItem("token", res.data.token); // Store the token in local storage
-			console.log("Token at login: ", res.data.token);
-			setUser(res.data);
-			setError(false);
-			navigate("/");
-			toast.success("Welcome back " + res.data.username + " !");
-		} catch (err) {
-			setError(true);
-			console.log(err);
-		}
+            const { data: staffData, error: staffError } = await supabase
+                .from("Staff")
+                .select("*")
+                .eq("Email", Email)
+                .eq("Password", Password);
+
+            const { data: patientData, error: patientError } = await supabase
+                .from("Patient")
+                .select("*")
+                .eq("Email", Email)
+                .eq("Password", Password);
+
+            if (staffError || patientError) {
+                toast.error("Login failed");
+                setLoginStatus("Login failed");
+            } else if (staffData.length > 0) {
+                console.log('Logged in as staff', staffData);
+                setLoginStatus("Logged in as staff");
+                // Handle staff login
+            } else if (patientData.length > 0) {
+                console.log('Logged in as patient', patientData);
+                setLoginStatus("Logged in as patient");
+                // Handle patient login
+            } else {
+                toast.error("No matching user found");
+                setLoginStatus("No matching user found");
+            }
+        } catch (error) {
+            console.error('Error: ', error);
+            toast.error("An error occurred during login");
+            setLoginStatus("An error occurred during login");
+        }
 	};
 
 	const checkAdminPassword = () => {
@@ -110,7 +129,7 @@ const LoginR_new = () => {
 										pattern=".+@.+"
 										className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
 										placeholder="Email address"
-										value={email}
+										value={Email}
 										onChange={(e) => setEmail(e.target.value)}
 									/>
 								</div>
@@ -130,7 +149,7 @@ const LoginR_new = () => {
 										required
 										className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
 										placeholder="Password"
-										value={password}
+										value={Password}
 										onChange={(e) => setPassword(e.target.value)}
 									/>
 									<button
@@ -207,6 +226,7 @@ const LoginR_new = () => {
 									Sign in
 								</button>
 							</form>
+							<p className="mb-4 text-red-500">{loginStatus}</p>
 							<p className="mt-10 text-sm text-center">
 								Don't have an account?{' '}
 								<Link
