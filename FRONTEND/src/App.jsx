@@ -19,6 +19,9 @@ import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 import Donation from "./pages/Donation.jsx";
 
+import Navbar from "./pages/Navbar";
+import Footer from "./pages/Footer";
+
 import {Toaster} from "react-hot-toast";
 
 export default function App() {
@@ -26,6 +29,8 @@ export default function App() {
 		<div>
 			<Toaster />
 			<Router>
+				<Navbar />
+
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/Home/Cardialogy" element={<Cardialogy />} />
@@ -43,6 +48,8 @@ export default function App() {
 					<Route path="/Register" element={<Register />} />
 					<Route path="/Donation" element={<Donation />} />
 				</Routes>
+
+				<Footer />
 			</Router>
 		</div>
 	);
