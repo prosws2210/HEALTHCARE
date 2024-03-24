@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 const About_Count = () => {
     return (
-        <div className="pt-10 bg-violet-50 ">
+        <div className="pt-10 pb-6 bg-white">
             <h2 className="text-2xl font-bold text-center pb-6">OUR ACHIEVEMENTS IN MEDICAL</h2>            
             <div className='flex justify-center space-x-40'>
                 <div className="text-center flex flex-col gap-4">
