@@ -34,6 +34,11 @@ const DonationForm = () => {
     setNum2(Math.floor(Math.random() * 10));
   }, []);
 
+  const nextStep = () => {
+    setStep(prevStep => prevStep + 1);
+  };
+
+
   return (
     <div className="bg-violet-50 px-32 pt-8 pb-12">
 
@@ -181,7 +186,12 @@ const DonationForm = () => {
                   I have read through the website's Privacy Policy & Terms and Conditions to make a donation.
                 </label>
               </div>
-              <button className="w-full bg-blue-500 text-white py-2 rounded-2xl font-bold hover:bg-blue-700 transition duration-200 ease-in-out shadow-lg">Make a difference in someone's life by donating to the charity</button>
+              <button 
+                onClick={nextStep} 
+                className="w-full bg-blue-500 text-white py-2 rounded-2xl font-bold hover:bg-blue-700 transition duration-200 ease-in-out shadow-lg"
+              >
+                Make a difference in someone's life by donating to the charity
+              </button>            
             </div>
           </div>
         )}
@@ -312,7 +322,13 @@ const DonationForm = () => {
                           <p className="text-xs italic">
                             Note: In the next step you will be redirected to your bank's website to verify yourself.
                           </p>
-                          <div className="mt-4 p-4 bg-blue-500 text-white text-center font-bold rounded-2xl hover:bg-blue-700 cursor-pointer">Donate Now</div>
+                          {/* <div className="mt-4 p-4 bg-blue-500 text-white text-center font-bold rounded-2xl hover:bg-blue-700 cursor-pointer">Donate Now</div> */}
+                          <button 
+                            onClick={nextStep} 
+                            className="w-full mt-4 bg-blue-500 text-white py-2 rounded-2xl font-bold hover:bg-blue-700 transition duration-200 ease-in-out shadow-lg"
+                          >
+                            Donate Now
+                          </button>  
                         </div>
                       </div>
                     </div>
@@ -388,7 +404,13 @@ const DonationForm = () => {
                           <p className="text-xs italic">
                             Note: In the next step you will be redirected to your bank's website to verify yourself.
                           </p>
-                          <div className="mt-4 p-4 bg-blue-500 text-white text-center font-bold rounded-2xl hover:bg-blue-700 cursor-pointer">Donate Now</div>
+                          {/* <div className="mt-4 p-4 bg-blue-500 text-white text-center font-bold rounded-2xl hover:bg-blue-700 cursor-pointer">Donate Now</div> */}
+                          <button 
+                            onClick={nextStep} 
+                            className="w-full mt-4 bg-blue-500 text-white py-2 rounded-2xl font-bold hover:bg-blue-700 transition duration-200 ease-in-out shadow-lg"
+                          >
+                            Donate Now
+                          </button>  
                         </div>
                       </div>
                     </div>
@@ -425,7 +447,13 @@ const DonationForm = () => {
                         <p className="text-xs italic">
                           Note: In the next step you will be redirected to your bank's website to verify yourself.
                         </p>
-                        <div className="mt-4 p-4 bg-blue-500 text-white text-center font-bold rounded-2xl hover:bg-blue-700 cursor-pointer">Donate Now</div>
+                        {/* <div className="mt-4 p-4 bg-blue-500 text-white text-center font-bold rounded-2xl hover:bg-blue-700 cursor-pointer">Donate Now</div> */}
+                        <button 
+                          onClick={nextStep} 
+                          className="w-full mt-4 bg-blue-500 text-white py-2 rounded-2xl font-bold hover:bg-blue-700 transition duration-200 ease-in-out shadow-lg"
+                        >
+                          Donate Now
+                        </button>  
                       </div>
                     </div>
                   )}
