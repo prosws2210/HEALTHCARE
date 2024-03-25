@@ -14,9 +14,9 @@ const ContactForm = () => {
   return (
     <div className="contact-row px-20 bg-violet-50">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6">
+        <div className="flex justify-between px-10 gap-16 pt-6">
           {/* Contact Form */}
-          <div className="p-6">
+          <div className="flex-1 p-6">
             <h2 className="text-2xl font-bold mb-4">Contact Form</h2>
             <form>
 
@@ -104,58 +104,65 @@ const ContactForm = () => {
           </div>
 
           {/* Suggestion Form with Rating */}
-          <div className="p-6">
+          <div className="flex-1 p-6">
             <div className="space-y-4">
               <h2 className="text-2xl font-bold mb-6">Patient Feedback Form</h2>
 
-              {/* Ratings */}
-              <div className="pb-1">
-                {[
-                  "Whole Services",
-                  "Patient Support Services",
-                  "Medical Consultation",
-                  "Appointment Scheduling",
-                  "Medication Management",
-                  "Safety Measures",
-                  "Privacy Respect"
-                ].map((label, idx) => (
-                  <div key={idx} className="flex items-center space-x-4 justify-between">
-                    <p className="text-gray-800 text-md font-semibold">{label} :</p>
-                    <div className="flex justify-center items-center mb-2">
-                      <StarRating
-                        value={ratingList[idx]}
-                        onChange={newValue => handleRatingChange(idx, newValue)}
-                      />
+              {/* Total Div */}
+              <div className='flex flex-col justify-between'>
+                {/* Ratings */}
+                <div className="pb-1">
+                  {[
+                    "Whole Services",
+                    "Patient Support Services",
+                    "Medical Consultation",
+                    "Appointment Scheduling",
+                    "Medication Management",
+                    "Safety Measures",
+                    "Privacy Respect"
+                  ].map((label, idx) => (
+                    <div key={idx} className="flex items-center space-x-4 justify-between">
+                      <p className="text-gray-800 text-md font-semibold">{label} :</p>
+                      <div className="flex justify-center items-center mb-2">
+                        <StarRating
+                          value={ratingList[idx]}
+                          onChange={newValue => handleRatingChange(idx, newValue)}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Comments and Submit Button */}
+                <div className='pt-11'>
+                  {/* Additional Suggestions */}
+                  <div className="mb-6">
+                    <label htmlFor="suggestion" className="block text-sm font-semibold text-gray-600 mb-2">
+                    Additional Suggestions:
+                    </label>
+                    <div className="relative rounded-md shadow-sm">
+                      <textarea
+                          rows="5"
+                          id="suggestion"
+                          placeholder="Type your suggestions here..."
+                          className="form-input py-4 px-4 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-4 focus:outline-none focus:shadow-outline-blue focus:border-blue-300"
+                      >
+                      </textarea>
                     </div>
                   </div>
-                ))}
-              </div>
 
-              {/* Additional Suggestions */}
-              <div className="mb-6">
-                <label htmlFor="suggestion" className="block text-sm font-semibold text-gray-600 mb-2">
-                Additional Suggestions:
-                </label>
-                <div className="relative rounded-md shadow-sm">
-                  <textarea
-                      rows="5"
-                      id="suggestion"
-                      placeholder="Type your suggestions here..."
-                      className="form-input py-4 px-4 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-4 focus:outline-none focus:shadow-outline-blue focus:border-blue-300"
-                  >
-                  </textarea>
+                  {/* Submit Button */}
+                  <div>
+                    <button className="bg-blue-500 hover:bg-blue-700 font-bold text-white py-2 px-4 rounded-2xl">Submit Suggestion</button>
+                  </div>
                 </div>
               </div>
 
-              {/* Submit Button */}
-              <div className="pt-2">
-                <button className="bg-blue-500 hover:bg-blue-700 font-bold text-white py-2 px-4 rounded-2xl">Submit Suggestion</button>
-              </div>
             </div>
           </div>
 
           {/* Address part */}
-          <div className="p-6">
+          <div className="flex-2 p-6">
             <div className="space-y-4">
               <h2 className="text-2xl font-bold mb-8">Address Information</h2>
               
