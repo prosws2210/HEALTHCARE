@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { FaCheckCircle, FaPlus, FaEquals, FaCreditCard, FaMoneyBill, FaFileAlt, FaFileUpload, FaTrello, FaWallet } from 'react-icons/fa';
-import Select from 'react-tailwindcss-select';
 
 const donationOptions = [
   4500.00,
