@@ -35,18 +35,18 @@ export default function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/Home/Cardialogy" element={<Cardialogy />} />
 
-					<Route path="/About" element={<About />} />
-					<Route path="/Predict" element={<Predict />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/predict" element={<Predict />} />
 					<Route path="/Predict/BrainIndex" element={<BrainIndex />} />
 
-					<Route path="/Check" element={<Check />} />
-					<Route path="/ViewReport" element={<ViewReport />} />
+					<Route path="/check" element={<Check />} />
+					<Route path="/viewreport" element={<ViewReport />} />
 					<Route path="/View/Report/HeartReport" element={<HeartReport />} />
 
-					<Route path="/Contact" element={<Contact />} />
-					<Route path="/Login" element={<Login />} />
-					<Route path="/Register" element={<Register />} />
-					<Route path="/Donation" element={<Donation />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/login" element={<Login />} />
+					<Route path="/register" element={<Register />} />
+					<Route path="/donation" element={<Donation />} />
 				</Routes>
 
 				<Footer />
