@@ -17,7 +17,7 @@ const About_Content = () => {
 
       {/* Text on the right */}
       <div className="max-w">
-        <h2 className="text-2xl font-bold mb-4">Welcome to UMEED - Advancing Healthcare Excellence</h2>
+        <h2 className="text-2xl font-bold mb-4">Welcome to DR. SYMPTOMS - Advancing Healthcare Excellence</h2>
         <p className="text-gray-700 font-medium">
         UMEED - HEALTHCARE, a leading name in medical expertise, exemplifies quality healthcare and academic excellence. Our dedication to advancing medical knowledge and providing exceptional healthcare services is mirrored in our cutting-edge facilities and a team of devoted professionals.
         <br />

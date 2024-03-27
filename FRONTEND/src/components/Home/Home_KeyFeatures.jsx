@@ -58,7 +58,7 @@ const Home_KeyFeatures = () => {
   return (
     <div className='bg-violet-50 py-10 px-10'>
       <div className='text-center p-4'>
-        <h2 className='text-2xl font-bold pb-2'>Why choose UMEED - HEALTHCARE ???</h2>
+        <h2 className='text-2xl font-bold pb-2'>Why choose Dr. Symptoms ???</h2>
         <p className='text-gray-600'>Take a look at assistance we offer </p>
       </div>
 
