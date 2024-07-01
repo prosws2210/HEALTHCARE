@@ -3,17 +3,17 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h3 align="center">Dr.Symptoms</h3>
+  <h3 align="center">Dr . Symptoms (Predict Diseases using AI)</h3>
 
   <p align="center">
     <br />
-    <a href="https://your-dr-symptoms-project-link.com">View Demo</a>
+    <a href="https://health-care-website-two.vercel.app/">View Website</a>
     <p>(Website might be down when Supabase database is paused)</p>
   </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
-<details>
+<!--  <details>
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a>
@@ -25,7 +25,7 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
-</details>
+</details> -->
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -55,13 +55,23 @@ On the backend, Flask is used to handle server-side logic and API endpoints. Dat
 <!-- FEATURES -->
 ## Features
 
-1. **Predict Disease**: Allows users to upload images of specific body parts to predict diseases using the VGG model transfer.
+### Predict Disease
 
-2. **Check Disease (NLP)**: Provides an NLP-based interface for users to describe symptoms and receive disease predictions.
+Dr.Symptoms harnesses the power of a VGG model transfer to enable users to upload images of specific body parts. Through advanced image classification techniques, the system accurately predicts diseases based on the visual analysis of uploaded images. This feature not only enhances diagnostic accuracy but also provides users with immediate insights into potential health conditions.
 
-3. **Store Reports and Prescriptions**: Enables doctors and patients to securely store and access medical reports and prescriptions.
+### Check Disease (NLP)
 
-4. **User Authentication**: Supports role-based login and registration (doctor or patient) for personalized usage.
+Using natural language processing (NLP), Dr.Symptoms offers an intuitive interface for users to describe their symptoms in natural language. Leveraging sophisticated algorithms, the system analyzes and interprets user input to provide real-time disease predictions and recommendations. This functionality ensures rapid assessment and response to user health queries, promoting proactive healthcare management.
+
+### Store Reports and Prescriptions
+
+Facilitating seamless communication and record-keeping, Dr.Symptoms allows doctors and patients to securely store, manage, and access medical reports and prescriptions. Built on Supabase, a robust database solution, this feature ensures data integrity, confidentiality, and accessibility. Users can conveniently retrieve past medical records and prescriptions, fostering continuity of care and informed decision-making.
+
+### User Authentication
+
+Dr.Symptoms implements role-based authentication for enhanced security and personalized user experiences. With support for both doctor and patient roles, the platform tailors access permissions and functionalities based on user credentials. This feature not only safeguards sensitive medical information but also optimizes workflow efficiency for healthcare professionals and patients alike.
+
+Each feature in Dr.Symptoms is meticulously designed to leverage cutting-edge technologies, ensuring reliable performance, intuitive usability, and comprehensive healthcare management capabilities.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
