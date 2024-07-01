@@ -30,18 +30,27 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Dr.Symptoms is a healthcare project focused on image classification using a VGG model transfer. It enables users to predict diseases based on uploaded images and offers a natural language processing (NLP) interface for disease checking. The platform also supports storing medical reports and prescriptions securely.
+Dr.Symptoms is a sophisticated healthcare application designed for accurate disease prediction and management using machine learning and natural language processing (NLP). Built on cutting-edge technologies, this platform leverages a VGG model transfer for image classification, allowing users to upload images of specific body parts to predict diseases with high accuracy.
+
+The frontend of Dr.Symptoms is developed using React JS, providing a modern and responsive user interface styled with Tailwind CSS. This ensures an intuitive user experience across various devices and screen sizes.
+
+On the backend, Flask is used to handle server-side logic and API endpoints. Data management is facilitated by Supabase, offering a secure and scalable database solution. This setup ensures robust data handling, authentication, and real-time updates for user interactions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-* [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
-* [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-* [![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
-* [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.io/)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+![image](https://github.com/prosws2210/HEALTHCARE/assets/141706883/2cf01db6-9adb-4e88-9285-92823edb5200)
+![image](https://github.com/prosws2210/HEALTHCARE/assets/141706883/5252bd54-7253-4b51-85ff-b747511b0066)
+![image](https://github.com/prosws2210/HEALTHCARE/assets/141706883/419e7ddf-360f-4fe2-804e-cecc7fb96a0d)
+
 
 <!-- FEATURES -->
 ## Features
@@ -56,13 +65,4 @@ Dr.Symptoms is a healthcare project focused on image classification using a VGG 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
-## Usage
 
-To get started with Dr.Symptoms, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/yourusername/Dr-Symptoms.git`
-2. Navigate to the project directory.
-3. Install dependencies:
-   ```sh
-   npm install
