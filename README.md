@@ -71,7 +71,7 @@ Facilitating seamless communication and record-keeping, Dr.Symptoms allows docto
 
 Dr.Symptoms implements role-based authentication for enhanced security and personalized user experiences. With support for both doctor and patient roles, the platform tailors access permissions and functionalities based on user credentials. This feature not only safeguards sensitive medical information but also optimizes workflow efficiency for healthcare professionals and patients alike.
 
-Each feature in Dr.Symptoms is meticulously designed to leverage cutting-edge technologies, ensuring reliable performance, intuitive usability, and comprehensive healthcare management capabilities.
+Each feature in Dr.Symptoms is meticulously designed to leverage cutting-edge technologies, ensuring reliable performance, intuitive usability, and comprehensive healthcare management capabilities .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
