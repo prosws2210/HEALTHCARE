@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { FaPhone } from "react-icons/fa6";
-
 
 const CheckDisease_NLP = () => {
   const [input, setInput] = useState('');
@@ -23,48 +21,28 @@ const CheckDisease_NLP = () => {
   return (
     <div className="py-8 bg-cover px-12 bg-violet-50 gap-6">
       <div className="flex flex-row h-full gap-5">
-        <section className="flex flex-col justify-between w-[20%] rounded-3xl bg-white py-4 px-8 shadow-2xl">
-          {/* Top div */}
-        <div className='flex flex-row justify-between pt-2 pb-4 items-center bg-white border-gray-600 border-b-4'>
-          <div className="text-lg font-bold text-blue-500">
-            UMEED 
-          </div>     
-          <div className="flex items-center text-blue-500">
-            <FaPhone className="text-2xl mr-2" /> 
-          </div>
-        </div>
-
-          {/* Bottom div */}
-          <div>
-            Hello World 
-          </div>  
-        </section>
-        <section className="flex flex-col justify-between w-[80%] rounded-3xl bg-white py-4 px-8 h-[80%] shadow-2xl">
-          {/* Top writeup */}
+        <section className="flex flex-col justify-between rounded-3xl bg-white py-4 px-8 h-[80%] shadow-2xl">
           <div className="p-8 bg-white">
-            <h1 className="text-4xl font-bold text-blue-600 mb-2 text-shadow">HEY THERE! </h1>  
-            <p className="text-md text-gray-800 font-serif text-shadow">My name is DR. SYMPTOMS and I'm your personal family AI Doctor. Give me your symptoms and I will try my best to cure them!</p>
+              <h1 className="text-4xl font-bold text-blue-600 mb-2">WELCOME TO DR. SYMPTOMS!</h1>  
+              <p className="text-md text-gray-800 font-serif">
+                  I am your AI Doc Assistant powered by advanced language models. Just describe your symptoms, and I will work to understand and guide you toward the best possible care!
+              </p>
           </div>
 
           <div className='h-[30vh]'></div>
 
-          {/* Bottom writeup */}
           <div className='flex flex-col px-8 py-2 space-y-4'>
-            <h1 className="text-1xl font-semibold text-gray-400">Here are few things we can try</h1>
+            <h1 className="text-1xl font-semibold text-gray-400">Here are a few things we can try</h1>
             <div className='flex flex-row items-center justify-between gap-10'>
-              {/* 1st box */}
               <div className="text-xs p-2 text-center flex items-center bg-white border-black border-2 rounded-2xl w-full h-12">                
-                What could be causing my symptoms of [describe symptoms] ?
+                What could be causing my symptoms of [describe symptoms]?
               </div>
-              {/* 2nd box */}
               <div className="text-xs p-2 text-center flex items-center bg-white border-black border-2 rounded-2xl w-full h-12">
-                How should I manage my [specific health condition] ?
+                How should I manage my [specific health condition]?
               </div>
-              {/* 3rd box */}
               <div className="text-xs p-2 text-center flex items-center bg-white border-black border-2 rounded-2xl w-full h-12">
-                What does the term [medical term] mean ?
+                What does the term [medical term] mean?
               </div>
-              {/* 4th box */}
               <div className="text-xs p-2 text-center flex items-center bg-white border-black border-2 rounded-2xl w-full h-12">
                 Suggest some exercises to improve my mental well-being.
               </div>
@@ -73,7 +51,6 @@ const CheckDisease_NLP = () => {
               <div className="row h-full">
                 <div className="col-md-12 h-full">
                   <div className="form-group space-y-4 h-full">
-
                     <label htmlFor="symptom1" className="text-black text-xl font-bold">
                       Enter Your Symptoms
                     </label>
@@ -107,7 +84,6 @@ const CheckDisease_NLP = () => {
                         <p className="text-black">{output}</p>
                       </div>
                     )}
-
                   </div>
                 </div>
               </div>

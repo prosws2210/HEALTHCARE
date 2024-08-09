@@ -6,7 +6,7 @@ const domains = [
     title: 'BRAIN DATA',
     subtitle: '(BRAIN TUMOUR AND RELATED DISEASES)',
     image: 'assets/images/Predict/brain_tumour.jpg',
-    link: "/Predict/BrainIndex",
+    // link: "/Predict/BrainIndex",
   },
   {
     title: 'BONE DATA',
@@ -56,18 +56,18 @@ const PredictDisease_Domain = () => {
   return (
     <div className='px-20 bg-violet-50'>
       <section className="py-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-8 gap-10">
           {domains.map((domain, index) => (
-            <div key={index} className="bg-gray-100 p-6 rounded-md shadow-xl border-4 border-neutral-300 flex flex-col items-center transform transition duration-500 ease-in-out hover:scale-105">
-              <div className="flex rounded-full overflow-hidden mb-6 w-36 h-36 items-center border-2 border-black">
+            <div key={index} className="bg-gray-100 p-3 rounded-md shadow-xl border-4 border-neutral-300 flex flex-col items-center transform transition duration-500 ease-in-out hover:scale-105">
+              <div className="flex rounded-full overflow-hidden mb-4 w-14 h-14 items-center border-2 border-black">
                 <img className="w-full h-full object-cover" alt="" src={domain.image} />
               </div>
               <p className="text-center">
                 <div className="text-center">
                   {/* Use the Link component to navigate to the specified link */}
                   <Link to={domain.link}>
-                    <h1 className="font-bold text-xl">{domain.title}</h1>
-                    <p className="text-sm">{domain.subtitle}</p>
+                    <h1 className="font-bold text-sm">{domain.title}</h1>
+                    <p className="text-xs">{domain.subtitle}</p>
                   </Link>
                 </div>
               </p>
