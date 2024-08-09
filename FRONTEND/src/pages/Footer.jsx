@@ -12,7 +12,7 @@ import { FaPhone } from "react-icons/fa6";
 const Footer = () => {
 	return (
 		<div className="">
-			<div className="flex gap-24 bg-neutral-700 text-white px-20 pt-8 pb-8">
+			<div className="flex gap-24 bg-neutral-700 text-white px-20 pt-8 pb-3">
 				<div className="w-3/12">
 					<h2 className="font-bold text-xl">Call us now @</h2>
 					<div className="mt-3">
@@ -93,10 +93,44 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div className="w-5/12">
+				<div className="w-6/12">
 					<h2 className="font-bold text-xl first-line">Contact Us</h2>
 					<div className="text-sm italic mt-3">
-						<div className="flex flex-row justify-between">
+
+						<div className="flex justify-between">
+							<div className="flex flex-row justify-between">
+								<div className="flex flex-col gap-1">
+									<div className="flex justify-between gap-1">
+										<div>Eliksha Maheshwari</div>
+										<div>(22BAI1312)</div>
+									</div>
+									<div className="flex justify-between gap-1"> 
+										<div>Jyothsna Arun Kumar</div>
+										<div>(22BAI1024)</div>
+									</div>
+									<div className="flex justify-between gap-1">
+										<div>Ritesh Pradhan</div>
+										<div>(22BAI1055)</div>
+									</div>
+									<div className="flex justify-between gap-1">
+										<div>Shakti Swaroop Sahu</div>
+										<div>(22BAI1012)</div>
+									</div>
+									<div className="flex justify-between gap-1">
+										<div>Vanshika Mahajan</div>
+										<div>(22BAI1291)</div>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<strong>Phone : </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +91 1010101010 <br />
+								<strong>Email : </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; random_mail@gmail.com <br />
+								<a href="https://health-care-website-two.vercel.app/"> <strong>Website : </strong>&nbsp;&nbsp; www.health-care.com</a>
+							</div>
+						</div>
+
+						{/* <div className="flex flex-row justify-between">
 							<div className="flex flex-col">
 								<div className="flex justify-between gap-2">
 									<div>Isha Shrivastava</div>
@@ -117,7 +151,7 @@ const Footer = () => {
 									<div>(22BAI1012)</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 						
 						<br />
 
@@ -126,9 +160,9 @@ const Footer = () => {
 
 						<br />
 
-						<strong>Phone : </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +91 1010101010 <br />
+						{/* <strong>Phone : </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +91 1010101010 <br />
 						<strong>Email : </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; random_mail@gmail.com <br />
-						<a href="https://health-care-website-two.vercel.app/"> <strong>Website : </strong>&nbsp;&nbsp; www.health-care.com</a>
+						<a href="https://health-care-website-two.vercel.app/"> <strong>Website : </strong>&nbsp;&nbsp; www.health-care.com</a> */}
 					</div>
 				</div>
 			</div>
