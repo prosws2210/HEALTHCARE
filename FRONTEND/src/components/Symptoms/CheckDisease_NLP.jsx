@@ -14,10 +14,14 @@ const CheckDisease_NLP = () => {
   const handleCheckDisease = async () => {
     if (!input.trim()) return; // Prevent empty submissions
 
+    // Add user message to history
+    setHistory([...history, { text: input, type: 'user' }]);
+    setInput(''); // Clear input after submission
+
     try {
       setLoading(true);
       setError('');
-      
+
       const response = await fetch('http://127.0.0.1:5000/api/get_response', {
         method: 'POST',
         headers: {
@@ -31,13 +35,11 @@ const CheckDisease_NLP = () => {
       }
 
       const data = await response.json();
-      setOutput(data.response);
-      setLoading(false);
-      console.log('Response:', data.response);
 
-      // Update history
-      setHistory([...history, { question: input, answer: data.response }]);
-      setInput(''); // Clear input after submission
+      // Add AI response to history
+      setOutput(data.response);
+      setHistory([...history, { text: input, type: 'user' }, { text: data.response, type: 'ai' }]);
+      setLoading(false);
     } catch (error) {
       console.error('Error fetching response:', error);
       setError('Failed to fetch response. Please try again.');
@@ -47,7 +49,7 @@ const CheckDisease_NLP = () => {
 
   return (
     <div className="flex items-center justify-center bg-violet-50 px-4">
-      <section className="bg-white min-h-screen mx-12 mt-4 mb-8 pt-14 px-14 pb-8 rounded-3xl shadow-2xl w-full flex flex-col justify-between">
+      <section className="bg-white min-h-screen mx-12 mt-4 mb-8 pt-14 px-14 pb-8 rounded-3xl shadow-2xl w-full flex flex-col">
         <div>
           <div className="text-left mb-8">
             <h1 className="text-4xl font-bold text-blue-600 mb-2">WELCOME TO DR. SYMPTOMS!</h1>
@@ -56,27 +58,28 @@ const CheckDisease_NLP = () => {
             </p>
           </div>
 
-          <div className="mb-8">
+          <div className="flex flex-col h-96 overflow-y-auto mb-8 border border-gray-300 p-4 rounded-lg bg-gray-50">
+            {history.map((entry, index) => (
+              <div key={index} className={`mb-4 p-3 rounded-lg ${entry.type === 'user' ? 'bg-blue-100 text-blue-800' : 'bg-gray-100 text-gray-800'}`}>
+                <p>{entry.text}</p>
+              </div>
+            ))}
+
             {loading && (
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-4">
                 <div className="animate-spin rounded-full h-8 w-8 border-t-4 border-blue-600"></div>
                 <p className="text-lg text-gray-600">Loading... Please wait</p>
               </div>
             )}
 
-            {!loading && output && (
-              <div className="mt-4">
-                <p className="text-black text-xl font-bold">AI Doc Response:</p>
-                <div 
-                  className="text-black" 
-                  dangerouslySetInnerHTML={{ __html: output }} 
-                />
+            {error && (
+              <div className="mt-4 text-center">
+                <p className="text-red-500 font-bold">Error:</p>
+                <p className="text-red-500">{error}</p>
               </div>
             )}
           </div>
-        </div>
 
-        <div>
           <div className="mb-8">
             <h2 className="text-xl font-semibold text-gray-400 mb-4">Here are a few things we can try:</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -120,24 +123,7 @@ const CheckDisease_NLP = () => {
                 Check Disease
               </button>
             </div>
-
-            {error && (
-              <div className="mt-4 text-center">
-                <p className="text-red-500 font-bold">Error:</p>
-                <p className="text-red-500">{error}</p>
-              </div>
-            )}
           </div>
-        </div>
-
-        <div className="mt-8 h-48 overflow-y-scroll border-t border-gray-300 pt-4">
-          <h2 className="text-xl font-semibold text-gray-600 mb-4">History</h2>
-          {history.map((entry, index) => (
-            <div key={index} className="mb-4 p-4 bg-gray-100 border border-gray-300 rounded-lg">
-              <p className="font-bold text-gray-700">Q: {entry.question}</p>
-              <p className="text-gray-600">A: {entry.answer}</p>
-            </div>
-          ))}
         </div>
       </section>
     </div>
