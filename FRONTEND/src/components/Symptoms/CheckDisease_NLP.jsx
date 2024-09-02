@@ -20,7 +20,7 @@ const CheckDisease_NLP = () => {
     try {
       setLoading(true);
       setError('');
-      const response = await axios.post('http://127.0.0.1:5000/api/get_response', { user_input: input });
+      // const response = await axios.post('http://127.0.0.1:5000/api/get_response', { user_input: input });
       setOutput(response.data.response);
       setLoading(false);
       console.log('Response:', response.data.response);
