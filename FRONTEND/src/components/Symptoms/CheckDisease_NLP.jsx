@@ -47,6 +47,10 @@ const CheckDisease_NLP = () => {
     }
   };
 
+  const handleSuggestionClick = (suggestion) => {
+    setInput(suggestion);
+  };
+
   return (
     <div className="flex items-center justify-center bg-violet-50 px-4">
       <section className="bg-white min-h-screen mx-12 mt-4 mb-8 pt-14 px-14 pb-8 rounded-3xl shadow-2xl w-full flex flex-col">
@@ -60,7 +64,8 @@ const CheckDisease_NLP = () => {
 
           <div className="flex flex-col h-96 overflow-y-auto mb-8 border border-gray-300 p-4 rounded-lg bg-gray-50">
             {history.map((entry, index) => (
-              <div key={index} className={`mb-4 p-3 rounded-lg ${entry.type === 'user' ? 'bg-blue-100 text-blue-800' : 'bg-gray-100 text-gray-800'}`}>
+              <div key={index} className={`mb-4 p-3 rounded-lg flex ${entry.type === 'user' ? 'bg-blue-100 text-blue-800' : 'bg-gray-100 text-gray-800'}`}>
+                <span className="mr-2 text-xl">{entry.type === 'user' ? '👤' : '🤖'}</span>
                 <p>{entry.text}</p>
               </div>
             ))}
@@ -83,18 +88,34 @@ const CheckDisease_NLP = () => {
           <div className="mb-8">
             <h2 className="text-xl font-semibold text-gray-400 mb-4">Here are a few things we can try:</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="text-xs p-4 bg-white border border-black rounded-2xl text-center">
-                What could be causing my symptoms of [describe symptoms]?
-              </div>
-              <div className="text-xs p-4 bg-white border border-black rounded-2xl text-center">
-                How should I manage my [specific health condition]?
-              </div>
-              <div className="text-xs p-4 bg-white border border-black rounded-2xl text-center">
-                What does the term [medical term] mean?
-              </div>
-              <div className="text-xs p-4 bg-white border border-black rounded-2xl text-center">
-                Suggest some exercises to improve my mental well-being.
-              </div>
+              <button
+                type="button"
+                className="text-xs p-4 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
+                onClick={() => handleSuggestionClick('What could be causing my symptoms of [describe symptoms]?')}
+              >
+                🤔 What could be causing my symptoms of [describe symptoms]?
+              </button>
+              <button
+                type="button"
+                className="text-xs p-4 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
+                onClick={() => handleSuggestionClick('How should I manage my [specific health condition]?')}
+              >
+                🩺 How should I manage my [specific health condition]?
+              </button>
+              <button
+                type="button"
+                className="text-xs p-4 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
+                onClick={() => handleSuggestionClick('What does the term [medical term] mean?')}
+              >
+                📚 What does the term [medical term] mean?
+              </button>
+              <button
+                type="button"
+                className="text-xs p-4 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
+                onClick={() => handleSuggestionClick('Suggest some exercises to improve my mental well-being.')}
+              >
+                🧘‍♂️ Suggest some exercises to improve my mental well-being.
+              </button>
             </div>
           </div>
 
