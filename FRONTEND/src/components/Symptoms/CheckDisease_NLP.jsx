@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const CheckDisease_NLP = () => {
   const [input, setInput] = useState('');
@@ -6,6 +6,20 @@ const CheckDisease_NLP = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [history, setHistory] = useState([]); // State to store history
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Enter') {
+        handleCheckDisease();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [input]);
 
   const handleInputChange = (e) => {
     setInput(e.target.value);
@@ -62,9 +76,9 @@ const CheckDisease_NLP = () => {
             </p>
           </div>
 
-          <div className="flex flex-col h-96 overflow-y-auto mb-8 border border-gray-300 p-4 rounded-lg bg-gray-50">
+          <div className="flex flex-col h-96 overflow-y-auto mb-8 border border-gray-300 p-4 rounded-lg bg-gray-100 shadow-inner scrollbar-thin scrollbar-thumb-blue-600 scrollbar-track-gray-200">
             {history.map((entry, index) => (
-              <div key={index} className={`mb-4 p-3 rounded-lg flex ${entry.type === 'user' ? 'bg-blue-100 text-blue-800' : 'bg-gray-100 text-gray-800'}`}>
+              <div key={index} className={`mb-4 p-3 rounded-2xl shadow-md flex ${entry.type === 'user' ? 'bg-blue-100 text-blue-800' : 'bg-gray-200 text-gray-800'}`}>
                 <span className="mr-2 text-xl">{entry.type === 'user' ? '👤' : '🤖'}</span>
                 <p>{entry.text}</p>
               </div>
@@ -90,31 +104,31 @@ const CheckDisease_NLP = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <button
                 type="button"
-                className="text-xs p-4 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
+                className="text-xs p-2 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
                 onClick={() => handleSuggestionClick('What could be causing my symptoms of [describe symptoms]?')}
               >
-                🤔 What could be causing my symptoms of [describe symptoms]?
+                🤔 What could be causing my symptoms <br /> of [describe symptoms]?
               </button>
               <button
                 type="button"
-                className="text-xs p-4 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
+                className="text-xs p-2 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
                 onClick={() => handleSuggestionClick('How should I manage my [specific health condition]?')}
               >
-                🩺 How should I manage my [specific health condition]?
+                🩺 How should I manage my [health condition]?
               </button>
               <button
                 type="button"
-                className="text-xs p-4 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
+                className="text-xs p-2 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
                 onClick={() => handleSuggestionClick('What does the term [medical term] mean?')}
               >
                 📚 What does the term [medical term] mean?
               </button>
               <button
                 type="button"
-                className="text-xs p-4 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
+                className="text-xs p-2 bg-white border border-black rounded-2xl text-center hover:bg-gray-200"
                 onClick={() => handleSuggestionClick('Suggest some exercises to improve my mental well-being.')}
               >
-                🧘‍♂️ Suggest some exercises to improve my mental well-being.
+                🧘‍♂️ Suggest some exercises to improve my <br /> mental well-being.
               </button>
             </div>
           </div>
@@ -133,6 +147,7 @@ const CheckDisease_NLP = () => {
                 placeholder="Enter your symptoms"
                 value={input}
                 onChange={handleInputChange}
+                autoComplete="off" // Disable browser autofill
               />
             </div>
             <div className="flex justify-center">
