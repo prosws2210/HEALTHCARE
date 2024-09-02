@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import axios from 'axios';
-// import axios from 'axios';
+import axios from 'axios';
 
 
 const CheckDisease_NLP = () => {
@@ -14,26 +14,26 @@ const CheckDisease_NLP = () => {
     setInput(e.target.value);
   };
 
-  // const handleCheckDisease = async () => {
-  //   if (!input.trim()) return; // Prevent empty submissions
+  const handleCheckDisease = async () => {
+    if (!input.trim()) return; // Prevent empty submissions
 
-  //   try {
-  //     setLoading(true);
-  //     setError('');
-  //     // const response = await axios.post('http://127.0.0.1:5000/api/get_response', { user_input: input });
-  //     setOutput(response.data.response);
-  //     setLoading(false);
-  //     console.log('Response:', response.data.response);
+    try {
+      setLoading(true);
+      setError('');
+      const response = await axios.post('http://127.0.0.1:5000/api/get_response', { user_input: input });
+      setOutput(response.data.response);
+      setLoading(false);
+      console.log('Response:', response.data.response);
 
-  //     // Update history
-  //     setHistory([...history, { question: input, answer: response.data.response }]);
-  //     setInput(''); // Clear input after submission
-  //   } catch (error) {
-  //     console.error('Error fetching response:', error);
-  //     setError('Failed to fetch response. Please try again.');
-  //     setLoading(false);
-  //   }
-  // };
+      // Update history
+      setHistory([...history, { question: input, answer: response.data.response }]);
+      setInput(''); // Clear input after submission
+    } catch (error) {
+      console.error('Error fetching response:', error);
+      setError('Failed to fetch response. Please try again.');
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="flex items-center justify-center bg-violet-50 px-4">
@@ -105,7 +105,7 @@ const CheckDisease_NLP = () => {
               <button
                 type="button"
                 className="bg-gradient-to-r from-blue-500 to-purple-500 text-white text-lg font-bold py-2 px-8 rounded-full border-2 border-black hover:shadow-lg transform hover:scale-105 transition-transform"
-                // onClick={handleCheckDisease}
+                onClick={handleCheckDisease}
               >
                 Check Disease
               </button>
