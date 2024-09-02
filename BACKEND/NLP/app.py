@@ -7,7 +7,8 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Set your Groq API key
-groq_client = Groq(api_key="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")
+# groq_client = Groq(api_key="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")
+groq_client = Groq(api_key="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")
 
 logging.basicConfig(level=logging.INFO)
 
