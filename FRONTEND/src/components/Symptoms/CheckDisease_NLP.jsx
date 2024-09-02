@@ -6,23 +6,30 @@ const CheckDisease_NLP = () => {
   const [output, setOutput] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [history, setHistory] = useState([]); // State to store history
 
   const handleInputChange = (e) => {
     setInput(e.target.value);
   };
 
   const handleCheckDisease = async () => {
+    if (!input.trim()) return; // Prevent empty submissions
+
     try {
-      setLoading(true);  // Set loading to true when the request starts
-      setError(''); // Reset error state before making the request
+      setLoading(true);
+      setError('');
       const response = await axios.post('http://127.0.0.1:5000/api/get_response', { user_input: input });
       setOutput(response.data.response);
-      setLoading(false);  // Set loading to false when the request completes
-      console.log('Response:', response.data.response); // For debugging
+      setLoading(false);
+      console.log('Response:', response.data.response);
+
+      // Update history
+      setHistory([...history, { question: input, answer: response.data.response }]);
+      setInput(''); // Clear input after submission
     } catch (error) {
       console.error('Error fetching response:', error);
       setError('Failed to fetch response. Please try again.');
-      setLoading(false);  // Set loading to false even if there's an error
+      setLoading(false);
     }
   };
 
@@ -110,9 +117,19 @@ const CheckDisease_NLP = () => {
             )}
           </div>
         </div>
+
+        <div className="mt-8 h-48 overflow-y-scroll border-t border-gray-300 pt-4">
+          <h2 className="text-xl font-semibold text-gray-600 mb-4">History</h2>
+          {history.map((entry, index) => (
+            <div key={index} className="mb-4 p-4 bg-gray-100 border border-gray-300 rounded-lg">
+              <p className="font-bold text-gray-700">Q: {entry.question}</p>
+              <p className="text-gray-600">A: {entry.answer}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );
-}
+};
 
 export default CheckDisease_NLP;
