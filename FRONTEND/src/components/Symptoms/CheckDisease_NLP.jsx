@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
-
 
 const CheckDisease_NLP = () => {
   const [input, setInput] = useState('');
@@ -19,13 +17,26 @@ const CheckDisease_NLP = () => {
     try {
       setLoading(true);
       setError('');
-      const response = await axios.post('http://127.0.0.1:5000/api/get_response', { user_input: input });
-      setOutput(response.data.response);
+      
+      const response = await fetch('http://127.0.0.1:5000/api/get_response', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ user_input: input }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      setOutput(data.response);
       setLoading(false);
-      console.log('Response:', response.data.response);
+      console.log('Response:', data.response);
 
       // Update history
-      setHistory([...history, { question: input, answer: response.data.response }]);
+      setHistory([...history, { question: input, answer: data.response }]);
       setInput(''); // Clear input after submission
     } catch (error) {
       console.error('Error fetching response:', error);
