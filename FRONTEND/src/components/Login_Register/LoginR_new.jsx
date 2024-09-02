@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from 'react';
-import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 import { UserContext } from "../context/UserContext";
 import { supabase } from '../../createClient'; 
@@ -71,20 +70,6 @@ const LoginR_new = () => {
 			toast.error("Incorrect admin password");
 		}
 	};
-
-	const handleCameraLogin = async () => {
-        // Assuming you have image data to send to the backend
-        const imageData = ''; // Fill this with actual image data
-
-        try {
-            const response = await axios.post('/camera-login', { image_data: imageData });
-            setLoginResult(response.data.result);
-        } 
-		
-		catch (error) {
-            console.error('Error:', error);
-        }
-    };
 
 	return (
 		<>
@@ -253,7 +238,7 @@ const LoginR_new = () => {
 								Camera Login
 							</h2>
 							<div className="bg-gray-300 h-[20rem] mt-4 rounded-xl flex flex-col justify-end items-center pb-4">
-								<div className="w-[50%] h-[2rem] bg-indigo-600 hover:bg-indigo-700 border-2 border-black text-white text-center rounded-xl shadow-lg flex items-center justify-center" onClick={handleCameraLogin}>
+								<div className="w-[50%] h-[2rem] bg-indigo-600 hover:bg-indigo-700 border-2 border-black text-white text-center rounded-xl shadow-lg flex items-center justify-center">
 									Camera Login
 								</div>
 							</div>
