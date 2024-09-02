@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 const CheckDisease_NLP = () => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const [history, setHistory] = useState([]); // State to store history
+  const [history, setHistory] = useState([]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -15,7 +16,6 @@ const CheckDisease_NLP = () => {
     };
 
     window.addEventListener('keydown', handleKeyDown);
-
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
@@ -26,11 +26,10 @@ const CheckDisease_NLP = () => {
   };
 
   const handleCheckDisease = async () => {
-    if (!input.trim()) return; // Prevent empty submissions
+    if (!input.trim()) return;
 
-    // Add user message to history
     setHistory([...history, { text: input, type: 'user' }]);
-    setInput(''); // Clear input after submission
+    setInput('');
 
     try {
       setLoading(true);
@@ -49,8 +48,6 @@ const CheckDisease_NLP = () => {
       }
 
       const data = await response.json();
-
-      // Add AI response to history
       setOutput(data.response);
       setHistory([...history, { text: input, type: 'user' }, { text: data.response, type: 'ai' }]);
       setLoading(false);
@@ -80,7 +77,14 @@ const CheckDisease_NLP = () => {
             {history.map((entry, index) => (
               <div key={index} className={`mb-4 p-3 rounded-2xl shadow-md flex ${entry.type === 'user' ? 'bg-blue-100 text-blue-800' : 'bg-gray-200 text-gray-800'}`}>
                 <span className="mr-2 text-xl">{entry.type === 'user' ? '👤' : '🤖'}</span>
-                <p>{entry.text}</p>
+                <div className="flex-1">
+                  {/* Render markdown if response contains markdown */}
+                  {entry.type === 'ai' ? (
+                    <ReactMarkdown>{entry.text}</ReactMarkdown>
+                  ) : (
+                    <p>{entry.text}</p>
+                  )}
+                </div>
               </div>
             ))}
 
@@ -147,7 +151,7 @@ const CheckDisease_NLP = () => {
                 placeholder="Enter your symptoms"
                 value={input}
                 onChange={handleInputChange}
-                autoComplete="off" // Disable browser autofill
+                autoComplete="off"
               />
             </div>
             <div className="flex justify-center">
