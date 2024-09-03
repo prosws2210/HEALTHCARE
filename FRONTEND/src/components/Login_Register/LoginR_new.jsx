@@ -42,13 +42,13 @@ const LoginR_new = () => {
             } else if (staffData.length > 0) {
                 console.log('Logged in as staff', staffData);
                 setLoginStatus("Logged in as staff");
-				toast.success("Account Logged in successfully as staff");
+				toast.success("Logged in as staff successfully");
                 navigate("/Login");
                 // Handle staff login
             } else if (patientData.length > 0) {
                 console.log('Logged in as patient', patientData);
                 setLoginStatus("Logged in as patient");
-				toast.success("Account Logged in successfully as patient");
+				toast.success("Logged in as patient successfully");
                 navigate("/Login");
                 // Handle patient login
             } else {
