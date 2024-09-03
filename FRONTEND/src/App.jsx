@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {Toaster} from "react-hot-toast";
 
 // Pages
 import Home from "./pages/Home";
@@ -22,7 +23,6 @@ import Donation from "./pages/Donation.jsx";
 import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
 
-import {Toaster} from "react-hot-toast";
 
 export default function App() {
 	return (

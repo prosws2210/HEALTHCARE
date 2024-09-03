@@ -80,6 +80,7 @@ const CheckDisease_NLP = () => {
                 <div className="flex-1">
                   {/* Render markdown if response contains markdown */}
                   {entry.type === 'ai' ? (
+                    // <p>{entry.text}</p>
                     <ReactMarkdown>{entry.text}</ReactMarkdown>
                   ) : (
                     <p>{entry.text}</p>

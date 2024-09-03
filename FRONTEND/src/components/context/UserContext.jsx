@@ -1,6 +1,4 @@
-/* eslint-disable react/prop-types */
-
-import axios from "axios";
+import axios from "/axios";
 import { createContext, useEffect, useState } from "react";
 
 export const UserContext = createContext({});
