@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "/axios";
 
 const RegisterStaff = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -48,7 +47,7 @@ const RegisterStaff = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(email, password);
-
+  
     try {
       const formData = new FormData(e.target);
       formData.append("name", name);
@@ -61,24 +60,25 @@ const RegisterStaff = () => {
       formData.append("email", email);
       formData.append("password", password);
       formData.append("confirmPassword", confirmPassword);
-
-      const response = await axios.post("http://localhost:8000/registerStaff", formData);
-      console.log(response.data.message);
-
-			then(res=>{
-				if(res.data==="exist"){
-					alert("User already exists")
-				}
-				else{
-					alert("Invalid credentials");
-				}
-			})
-    } 
-
-    catch (error) {
+  
+      const response = await fetch("http://localhost:8000/registerStaff", {
+        method: "POST",
+        body: formData,
+      });
+  
+      const data = await response.json();
+      console.log(data.message);
+  
+      if (data === "exist") {
+        alert("User already exists");
+      } else {
+        alert("Invalid credentials");
+      }
+    } catch (error) {
       console.error("Error registering staff:", error.message);
     }
   };
+  
 
 
   return (
