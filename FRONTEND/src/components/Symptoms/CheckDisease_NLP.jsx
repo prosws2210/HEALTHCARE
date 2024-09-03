@@ -35,7 +35,7 @@ const CheckDisease_NLP = () => {
       setLoading(true);
       setError('');
 
-      const response = await fetch('http://127.0.0.1:5000/api/get_response', {
+      const response = await fetch('https://health-care-website-two.vercel.app/api/get_response', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
