@@ -104,14 +104,14 @@ const Footer = () => {
 										<div>Eliksha Maheshwari</div>
 										<div>(22BAI1312)</div>
 									</div>
-									<div className="flex justify-between gap-1"> 
+									{/* <div className="flex justify-between gap-1"> 
 										<div>Jyothsna Arun Kumar</div>
 										<div>(22BAI1024)</div>
 									</div>
 									<div className="flex justify-between gap-1">
 										<div>Ritesh Pradhan</div>
 										<div>(22BAI1055)</div>
-									</div>
+									</div> */}
 									<div className="flex justify-between gap-1">
 										<div>Shakti Swaroop Sahu</div>
 										<div>(22BAI1012)</div>
@@ -155,7 +155,7 @@ const Footer = () => {
 						
 						<br />
 
-						B.Tech in CSE - Spl. in AI with ( ML & Robotics ) <br />
+						B.Tech in CSE - Spl. in AI with Machine Learning <br />
 						Vellore Institute of Technology - Chennai, Tamil Nadu, INDIA <br />
 
 						<br />
