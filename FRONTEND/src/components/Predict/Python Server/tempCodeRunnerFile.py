@@ -11,7 +11,7 @@ CORS(app)
 # Load both models
 model_path1 = r'C:\Users\This Pc\Documents\GitHub\HEALTHCARE\PYTHON MODELS\Brain_Tumor_VGG_model.h5'
 model_path2 = r'C:\Users\This Pc\Documents\GitHub\HEALTHCARE\PYTHON MODELS\Brain_Tumor_VGG_model_new.h5'
- 
+
 custom_objects = {"preprocess_input": preprocess_input}
 model1 = load_model(model_path1, custom_objects=custom_objects)
 model2 = load_model(model_path2, custom_objects=custom_objects)
