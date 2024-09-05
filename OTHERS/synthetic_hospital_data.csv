@@ -1,0 +1,1001 @@
+Patient ID,Name,Age,Gender,Disease,Admission Date,Region
+013b1604-f1ad-457d-a572-4cda0deea62a,Ms. Robin Garcia,23,Male,COVID-19,2024-02-19,North
+c4e9adef-4c2c-43ae-b4df-e8ad2e52ee3e,Nathaniel Johnson,8,Male,Malaria,2023-06-21,South
+5b63c32a-1cf2-4cec-9d89-2c1b724f9806,Casey Mercer,87,Other,Influenza,2023-08-04,North
+0ef21698-0166-4f30-9ee1-11901811b76b,Natasha Weiss,56,Other,Typhoid,2024-07-22,North
+429344dd-e3d2-45d8-a3d4-014d3e872910,Tamara Scott,43,Male,Malaria,2022-09-29,South
+ca626fb4-41a3-4b59-9f7c-dcd6741cc191,Dr. Jeremy Robinson,88,Male,Heart Disease,2024-02-28,Central
+4aa8963e-8503-4883-806b-f73046df1d85,Sara Rivera,6,Female,Cholera,2024-03-17,East
+3432a9a0-0d42-49a3-98c9-3131a3cdd5ad,Spencer Gray,42,Other,Hypertension,2023-11-08,West
+660b80cc-5b2a-4bd8-b9c8-426062bb49ba,Chelsea Graham,44,Female,Heart Disease,2024-06-01,Central
+ae3550b8-379e-42ae-b497-ab7d8ff6f15b,Cathy Patterson,71,Male,Malaria,2022-10-11,South
+b023a225-b142-4025-a412-0a1657a42a6a,Mikayla Welch,14,Female,Cholera,2023-04-07,East
+2ea91ddc-724d-40a8-9218-1e6a00171fbd,Ashley Gilmore,81,Female,Cancer,2022-10-15,North
+f303c8b3-b537-416c-b3af-3597ad5f13e5,Paula Powers,88,Male,Hypertension,2023-03-22,West
+144767c7-1907-4e76-941b-5ba899fbd290,Vincent Livingston,33,Female,Asthma,2022-12-18,East
+86bd0028-9605-4434-83e8-590c818587d3,Judy Hansen,76,Male,Malaria,2023-01-09,Central
+aefe0cf0-c746-440b-b340-ad625af36dd8,Jason Parker,63,Other,Pneumonia,2023-09-06,Central
+8d5c611d-42a2-48cf-9645-1f9645847918,Jacob Cooper,2,Male,Tuberculosis,2023-11-06,South
+990348ac-cab9-431e-9504-aef336a4aeaa,Anthony Downs,69,Female,Typhoid,2023-07-15,West
+72eec66c-0e4a-4cd5-be70-bbc81950651e,Nancy Nichols,3,Other,Heart Disease,2024-05-16,Central
+b9e9f7dd-bacc-481e-8680-e164c2cc2364,James Humphrey,28,Male,Diabetes,2024-05-22,Central
+caeb84d8-fbfc-4886-96b3-9aa7ec03661a,Michael Haynes,29,Female,Cancer,2022-10-25,North
+fc1fa28b-cbf6-428e-8ac2-cda9642b7fc4,Timothy Knight,69,Female,Cholera,2023-02-12,North
+72fa463c-2510-4de5-bf20-b8bd99469e25,Brian Ford,86,Male,Pneumonia,2022-10-21,Central
+fa4e4553-9f43-45c3-9122-7598115879de,Barbara Fox,12,Male,Cancer,2024-08-14,Central
+dd48c369-3602-46a8-86f9-b205057f3522,Brian Gentry,59,Other,Diabetes,2024-03-14,North
+095552a7-36bb-4656-a75c-33b56efe20d0,Jeffrey Sanchez,85,Male,Heart Disease,2024-09-04,West
+b6122ffd-21ab-4d3d-b2c8-984b6ef66ee7,Lisa Bowman,38,Other,Diabetes,2023-12-04,North
+0504c0eb-09e6-4773-a8eb-e87a278c679f,Rebecca Holloway,70,Male,Diabetes,2024-01-04,Central
+853c3c9c-3671-47b6-a210-95ca8037b263,Robert Brewer,65,Male,Typhoid,2023-03-08,North
+6333ea36-0711-4a4c-be16-01108e05ddb0,John Gilmore,2,Female,Tuberculosis,2023-05-30,West
+7a38a465-bea2-473c-84ce-326d4a132df9,Erica Mcguire,82,Male,Hypertension,2023-03-08,North
+ac1ea62a-0ed4-4c20-b536-8e06176d6e9d,Cindy Sullivan,27,Female,Heart Disease,2023-08-18,North
+694062ee-c31e-417a-94e5-2653f9dde4d8,Dawn Ramirez,67,Other,Asthma,2023-05-23,North
+9f39aaeb-1b86-4a62-b892-c152479914b0,Janice Patterson,23,Other,Dengue,2023-06-23,South
+bdcadc08-4ec5-449e-ab87-62a5d019f67d,Joshua Bishop,17,Female,COVID-19,2023-05-03,East
+681f961b-0006-4928-b2fa-b2548b761e52,Sheri Henderson,77,Other,Influenza,2024-05-18,West
+b5ea4cad-ffa7-4e9f-ae59-e131c6f30b88,Omar Dixon,41,Female,Cholera,2023-10-17,West
+0bd4e9ab-6a31-4e14-b331-4128479617c1,Autumn Rodriguez,13,Other,Diabetes,2024-03-05,North
+5031ffa6-f56e-411f-808e-ec9c900c7870,Danielle Miller,34,Male,Cancer,2024-04-11,North
+e24bf0a4-413f-432b-8079-00802299e5c4,Sarah Smith,36,Male,Tuberculosis,2023-06-25,East
+eaac5360-6b50-4b60-94a4-582d739e883e,Raymond Wagner,42,Female,Cancer,2023-08-24,East
+15a60004-b1c2-4069-860a-fd5b1cbefb3d,Lauren Martinez,79,Other,Cholera,2023-09-29,West
+a73b2366-0fb4-488d-8c54-d0e4608059a6,Andrea Day,79,Other,Cholera,2024-01-06,South
+049735a7-7baf-48fa-8f52-6e0bf69f6c63,Larry Wiley,46,Other,Diabetes,2023-05-06,North
+9b82b098-9837-4bce-a837-0d88b89b838f,Tiffany Green,24,Other,COVID-19,2023-03-31,Central
+8d6a90d6-b744-4e21-9a30-d0e098eaec92,Douglas Benjamin,89,Other,Hypertension,2024-03-22,East
+75ef73c1-983c-419d-aece-ca8d277fbf5e,Steven Douglas,45,Female,Malaria,2023-02-17,Central
+52757bc4-9073-40b8-bf7f-072f43d1ce89,Teresa Jones,47,Other,Influenza,2023-07-23,North
+d15e60eb-776a-4b9c-bad8-d45e5c9f8838,Luke Smith,10,Female,Dengue,2022-11-08,North
+cb5c3df8-af9d-43dd-bba3-d5323f0c45fc,Heather Lee,90,Male,Diabetes,2023-06-01,Central
+a79da342-a7c4-4329-8108-315b77c40f6f,Angela Strickland,61,Other,Tuberculosis,2024-02-16,North
+316e0559-8955-479c-a255-a5c09ad0fde4,Paul Casey,89,Male,Dengue,2022-10-10,East
+7f6f2061-abd4-4f30-b741-0e040c7e62b6,Karen Mayer,70,Male,Tuberculosis,2024-01-21,Central
+bd2d07fc-3001-483c-80b1-80126c614043,Jeffrey Smith,36,Male,Pneumonia,2022-09-15,North
+d12ff955-7b87-4378-bd18-f994fd72de90,Robert Casey,20,Male,Tuberculosis,2023-11-27,Central
+0b29c8b4-4cb2-4221-bfe5-ce2ab0441318,Maria Cervantes,58,Other,Diabetes,2022-09-13,South
+c523c6ea-ce1e-40e8-bcd7-c677daa74c1c,Carol Johnson,77,Other,Hypertension,2023-04-08,South
+309c46c9-5420-4e25-8368-2bdcead2d7ae,Mr. Ralph Myers,9,Male,Cholera,2022-11-18,East
+2ed2e702-06a8-4088-80f8-5595d8306e1e,Julie Lee,73,Other,Typhoid,2024-07-29,West
+e57c2888-dbed-487e-8135-b44a57e87bb7,John Wagner,48,Female,Dengue,2022-11-29,North
+7f677a14-f06b-4905-8340-5421d5ddd9a9,Allison Mcneil,87,Other,Influenza,2022-09-29,North
+d0ee215a-76bd-40fb-be7b-17018ce10212,Linda Smith,76,Male,Dengue,2023-11-21,East
+e3851b1b-2f5e-4852-9546-4f0ced6d09c1,Kristy Alvarez,38,Male,Hypertension,2023-05-26,South
+35c2c7b4-c980-4dbb-a990-00435c3fe22f,Dakota Hughes,24,Female,COVID-19,2023-01-02,East
+333e9973-99e2-43bf-b49c-666e38a9c9e9,Richard Mullen,48,Male,Diabetes,2024-06-10,Central
+b21c989d-b5f7-470f-b632-7a7fc7f7c48a,Dana Johnson,78,Female,Tuberculosis,2024-03-02,East
+f4641271-08c6-4a83-8528-8c112bd2cb0d,Daniel Shea,76,Male,Hypertension,2023-08-12,Central
+9978298b-e46e-4750-991e-dfae694639f8,Kenneth Gonzalez,28,Female,Typhoid,2023-04-05,West
+d28e203b-ab22-4390-968e-0cec452a2cb6,Alexander Ross,7,Female,Hypertension,2024-01-08,East
+f653e145-25cf-4372-99ea-f292ca1e295a,Christopher Bryan,29,Male,Asthma,2023-11-12,Central
+9ff32c27-fb07-4242-b5c0-bbdc1fafd13b,Robert Johnson,35,Other,COVID-19,2023-02-25,West
+e8fb5d90-b532-4e74-8524-fe40224217c6,Jose Schaefer,30,Female,Heart Disease,2023-07-23,West
+5db53644-1bc3-40d7-a798-31c57c00aef4,Mary Moody,28,Male,Cancer,2024-04-01,East
+fa2ba4c0-2f6e-4a74-bcb5-652fed69d18b,Stephen Dixon,74,Male,COVID-19,2024-04-14,Central
+e1ded6c4-2a92-4e15-ae15-5e252a29c3e9,Christopher Burton,32,Male,Cancer,2023-07-18,North
+6942ec02-423b-4576-84d0-b75fab3e7b80,Sarah Johnson,37,Male,Cholera,2023-09-20,East
+ebfc2eec-fb7c-40d8-a2e7-4d481e641b7e,Jamie Anderson,72,Other,Diabetes,2024-05-01,East
+bb08cbea-2e0f-4457-9638-f80de5b983da,Christopher Orozco,27,Male,Asthma,2023-11-02,East
+52f8a99d-0ca8-4128-b95b-b5a593053aef,Walter Stokes,74,Male,Typhoid,2023-03-25,East
+322f0025-42b5-4b29-ba18-3f650dbdcaef,Kathy Martin,38,Other,COVID-19,2023-10-21,Central
+7615a786-990c-4b8e-81c9-87e1389ee4ea,Emily Bailey,43,Male,Tuberculosis,2024-08-24,West
+ece8d3a1-9849-4c34-ab02-0bc786c07794,Gregory Olsen,45,Female,Cholera,2024-04-23,West
+c597180d-559a-4a49-b6b5-ab95b19f9ea1,Joshua Moreno,82,Male,Dengue,2023-03-17,Central
+9e82de28-ef7a-4b20-86ea-6eefaa21ea1d,Donna Cook,79,Female,Asthma,2022-11-12,North
+6e86dcdc-f223-413c-894c-2f957b61305d,Brent Owens,19,Other,Pneumonia,2023-09-06,South
+f5b32ced-4cc9-4eaa-9f45-a8bdde0aecf3,Victor Garrett,49,Female,Typhoid,2024-03-04,Central
+a13b77c0-d915-4a22-8918-ac6f3902e865,William Franklin,11,Other,Hypertension,2023-06-01,East
+3b9d18f9-0653-4962-b68a-d1985fc7f796,Madeline Bell,81,Other,Dengue,2022-11-03,South
+8b7c2651-6710-4991-9875-f7ef589a7840,Laura Barrett,7,Female,Pneumonia,2024-01-17,North
+758e29f4-8ccb-49e8-8aba-397e142449d6,Jillian Dean,88,Female,Hypertension,2024-06-13,West
+722dfaa9-d2c7-4b83-abad-a6647c95eb25,Cameron King,32,Other,Diabetes,2022-12-16,Central
+9b6d8efb-4c8d-4d42-b13c-ec978361a32c,Daniel Spence,56,Male,COVID-19,2022-10-20,West
+76fe5a7f-7c7a-4d84-82a5-aa51a755e1ed,Rodney Jordan,46,Male,Pneumonia,2022-12-11,South
+0909cecd-ac19-4975-a167-89dc7647d4fa,Joseph Allen,66,Other,Pneumonia,2024-02-23,Central
+67d085e9-c4ea-48c0-9ba1-3a85d708bbcf,Eric Harris,52,Male,Dengue,2024-06-15,South
+a0c4530c-127b-4d9a-af9b-1de887c261ee,Jonathon Miranda,86,Female,Malaria,2024-04-18,South
+a7301b47-65fd-4c8b-bcd5-12e93a4cd8c7,Mr. John Aguilar,51,Female,COVID-19,2023-09-10,South
+213d1c6b-0c24-4d8e-94bb-2f6d3a6a29a2,James Parker,13,Other,Hypertension,2023-08-04,East
+c64ca39f-63d3-44b3-8a57-de46540d4933,Karen Torres,22,Female,Typhoid,2024-08-05,South
+b3c28f28-6694-4478-84ae-3fcc6f2652da,Jessica Williams,41,Other,Typhoid,2022-11-30,Central
+3ba7f5e0-f1e1-4e09-a6e0-9c109edea6ea,Robert Mays,33,Other,Cholera,2024-07-27,East
+e1cada81-f553-4b5b-bf90-82d9954305c0,Terrence Washington,33,Other,COVID-19,2022-09-15,East
+00250d2f-a10f-495f-bf1b-84013b2ca155,Carrie Thompson,21,Female,COVID-19,2022-12-01,North
+21c33db2-4f23-4c7f-a35c-880c4da15b40,Amy Taylor,48,Female,Dengue,2023-11-30,Central
+001f0bbc-8610-4028-bb7c-9dd42a4a5c04,Katherine Walker,62,Female,Hypertension,2022-12-13,North
+90fb72ac-6898-40ff-a35b-070fd981427d,Michael White,73,Other,Influenza,2023-10-19,South
+cfb42797-b163-4ac6-a8f4-8658769d68a5,John Chandler,16,Female,Heart Disease,2024-08-30,North
+31cd66e0-f79b-432e-86cb-0b4efe3b8e2d,Timothy Chen,23,Other,Dengue,2024-02-21,West
+37dbce58-a97a-4047-a9ac-842a687fc28b,Jordan Graham,69,Male,Diabetes,2023-07-21,Central
+77d0c0b5-1d99-4208-8f4e-43adac782a89,James Mendoza,12,Other,Asthma,2024-01-11,Central
+7ab74c63-642f-4384-8046-d99415a0ecf1,Lisa Fisher,32,Other,Dengue,2023-02-26,Central
+1409daf5-f6d3-4b2d-ab21-72cd85fa44fc,Randall Romero,63,Other,Tuberculosis,2024-03-24,West
+9babc5c3-8b73-46ce-8307-630d83815b7b,Laura Byrd,77,Other,Hypertension,2023-08-10,North
+881d4adb-adfe-4f43-8498-eb0847eb3ef6,Carrie Christensen,52,Other,Dengue,2024-03-27,East
+240303a3-c9a9-4f5c-bac4-a10ea4c89f87,Heather Moody,17,Female,Hypertension,2023-11-20,West
+9d936869-133e-4098-ad51-dab2b4e3e6f6,Amanda Barnes,59,Other,Heart Disease,2023-09-09,East
+b58af18c-4be2-4870-9af6-e44704e7f591,Jared Brown,48,Other,Dengue,2023-03-06,Central
+6c3f53e9-bf53-48c5-b4ce-1e91fa7f9a68,Elizabeth Douglas DDS,21,Female,Diabetes,2023-07-12,North
+5e0b6d9a-5a27-4464-a965-528c59a432da,Lindsay Bauer,65,Female,Dengue,2023-07-18,West
+213c40c7-77d1-4533-be68-936c6c09fda9,Colleen Brown,55,Male,Diabetes,2023-06-08,Central
+8fb49797-0dfa-4fd8-8463-02169b517d1d,Mr. Steven Black,60,Female,COVID-19,2023-04-10,East
+b8b83d74-89d8-4913-962f-2126740595e7,Dr. Heather Morgan,90,Female,Cancer,2024-04-06,East
+04ff19a8-ea87-4244-954f-322c20327721,David Parks,13,Other,Hypertension,2024-06-10,East
+1ee02d82-d68c-4abf-aede-a9b47d20d3fb,Brandon Johnson,86,Other,Asthma,2024-02-10,East
+fb9fdfdd-d6c9-4aa3-8936-cd6095c32ad4,Whitney Jordan,25,Female,Malaria,2023-01-08,North
+9c542e70-3c17-48f8-90ff-0a03c60b7d9a,Rebecca Park,40,Other,Dengue,2023-06-19,Central
+e7413bea-cc24-4e48-b908-6050e7c6e4ea,Lisa Hardy,81,Other,Cancer,2023-01-10,South
+d6771089-fa12-4a4e-a2e0-82a022b3f865,Anthony Howard,81,Female,Diabetes,2023-03-27,Central
+fb2e87de-3285-48fb-97d9-09614a173f12,Ricky Vincent,28,Male,Dengue,2023-04-25,Central
+3c729edf-d78a-4c03-85e9-4e01a65ed434,Christian Pruitt,30,Other,Heart Disease,2023-03-20,East
+a96f8f35-6a36-4e9f-b562-635bc8f4548b,Stephanie Cunningham,51,Other,Hypertension,2022-11-28,Central
+d46f840d-6616-4e2c-a43a-327af75519e5,Dakota Wells,4,Female,Heart Disease,2024-05-25,South
+070a21e7-8618-4813-b6ed-e20d9c270437,Charles Hayes,38,Other,Hypertension,2023-10-09,West
+23ab91b1-9e04-4470-a757-0c4d567853a3,Douglas Johnson,79,Other,Tuberculosis,2023-07-13,North
+a8606a21-1a85-4153-8851-57b9b1a0b390,Maria Norris,51,Female,Cholera,2023-11-04,North
+5e91dd4d-7250-44f3-b807-4a1882d9a7c1,Christie Wallace,47,Other,Heart Disease,2022-10-16,East
+9f138cc7-b125-4bdb-b19f-250eb4f13510,Barbara Juarez,86,Female,Influenza,2023-04-06,West
+6f9b9fd3-241c-4426-905d-e06df569380b,Tammy Peterson,4,Other,Dengue,2024-05-23,West
+52ade89e-5e13-4b87-85e2-9bee732f5037,Richard Munoz,68,Other,Asthma,2022-09-06,West
+22acf544-ca61-4b58-a11c-410b3d3fbfe5,Rebecca Sanders,28,Female,Typhoid,2023-10-09,Central
+7745f834-5d6f-4547-8da7-a6ff54f0ad6e,Jeffrey Brown,6,Other,Cancer,2024-08-15,West
+6bbc7295-e049-48b1-9cdc-4903d0fde0d4,Susan Lawson,46,Female,Influenza,2023-01-04,West
+8c16a453-bd36-42cb-bc31-96f5a37bbe08,Michael Miller,73,Male,Cholera,2023-08-16,West
+e7b7effe-9751-47fa-9f4c-f19d30ebb8d9,Keith Holmes,35,Male,Malaria,2023-06-16,South
+1fc26a14-9428-4dba-b23b-b572002887ce,Denise Brown,14,Male,Influenza,2022-09-06,East
+a74f2768-5bde-45b1-9355-b7c1b5d3ca62,Robert Garcia,53,Male,Influenza,2023-02-25,Central
+e723f0b3-a802-4fe5-8a99-2e958b81bc99,Madison Johnson,47,Other,Asthma,2023-11-12,East
+b2c68ae9-4bd4-41b7-bf88-dd327b5b89c6,Jessica Walker,37,Other,COVID-19,2023-03-20,West
+1a69634c-8cba-4c92-a637-7a22d5b594ea,Richard Dixon,34,Other,Cholera,2022-11-09,North
+c074f0c8-336a-42a0-8220-3dd9ad90cd41,Carolyn King,10,Other,Dengue,2024-06-02,South
+539b2881-7a59-4edc-bff4-d8b696829bf0,Dana Green,62,Male,COVID-19,2024-06-20,North
+0bf269c1-e6d1-45b6-9429-c6d1966bd6c4,George Vang DDS,89,Female,Pneumonia,2022-12-23,Central
+c94ecbdf-0dbe-4e8e-b611-b6f1fb67aa71,Sydney Rodriguez,30,Female,Tuberculosis,2023-03-26,East
+0f859690-20fd-4118-a07c-d597c9877634,Heather Green,16,Male,Dengue,2022-11-17,Central
+7d0ea379-cee0-4acc-9647-241dde9163f8,Amanda Petersen,82,Male,Asthma,2023-10-09,West
+f40d310b-ce1d-4cbd-9468-b477e9393305,Katelyn Perez,18,Female,COVID-19,2024-04-19,North
+5af2dac0-17d4-4ecb-a176-770d626b029b,David Bird,12,Male,Pneumonia,2023-01-22,North
+39558642-9a4e-4f64-93f2-07c8a88c2ba7,Alexis Murray,51,Other,Cancer,2024-03-03,North
+f4da3ddc-8bea-4e3f-a44f-5212bbbcb283,Kathleen Melton,72,Other,Diabetes,2023-11-18,South
+b45db164-a882-4eaf-8827-7d65aabd167d,Theresa Mills,26,Female,Asthma,2023-10-10,North
+dbe29db3-68b4-457a-96db-38030ca93a1a,Carrie Mclean,61,Male,Heart Disease,2024-07-16,North
+45a8b8e3-10d8-4126-a659-065397b81481,Ebony Smith,69,Other,Typhoid,2023-04-26,West
+2ccfad85-b2e7-4ece-bff0-55c77e760e12,Karen Freeman,8,Other,Hypertension,2023-07-18,South
+572668d0-1414-451b-8024-bba7e56663b3,Angela Combs,82,Female,Malaria,2023-01-09,East
+377c0ba8-6ea0-4843-a53e-c67e693a6a24,Sandra Porter,70,Female,Dengue,2023-12-14,North
+4910ceee-a191-4988-8455-78953995f7ee,Virginia Buchanan,58,Female,Hypertension,2024-07-18,Central
+531ba62e-131c-466b-aa89-9782b4da0413,Kevin Obrien,10,Male,Tuberculosis,2024-03-20,South
+a6d47ba6-95ca-4095-b306-dd498e1ea1c1,Nancy Murphy,33,Male,Malaria,2024-07-19,North
+a29a0405-b27f-4064-9b78-d339545c02f5,Jorge Barton,6,Female,Dengue,2024-04-11,West
+4ccb9f7e-07d3-4c94-83e5-5097ddcb9fc0,Stephen Miller,38,Female,Diabetes,2024-06-07,East
+4c654f45-30d2-4bab-be6c-38cc4b180cac,Frank Wong,86,Female,Cancer,2023-12-12,East
+2bf9dcc2-dbc2-4f1b-b94f-b8c643382ac9,Lisa Lynch,56,Male,Diabetes,2023-06-26,North
+eaaa819f-7a1a-43d1-ae95-a266f855e90b,Christina Erickson,74,Female,Heart Disease,2022-10-05,South
+1f5da28a-2911-4c60-905a-3fee68e43fe0,Richard Clark,12,Other,Pneumonia,2023-08-31,North
+cda7ee61-c89d-42ba-90f0-77bee89273bf,Christopher Juarez,24,Female,Dengue,2024-04-15,North
+80eec857-2a25-4e00-8074-c319da748164,Michael Lee,51,Male,Typhoid,2024-07-31,West
+7c062963-a1fb-43ac-bd15-d1e7ea745973,Samuel Moss,68,Other,Dengue,2022-11-03,East
+a411ac01-c73f-42c1-a765-c76c0095f23d,Christopher Stone,24,Male,Dengue,2023-04-28,Central
+86e02bc1-2a2c-4464-ac0a-65a214b9f122,Mark Baker,15,Other,Dengue,2023-11-16,North
+d440e42e-5a14-4ca9-969d-a1c4334f856e,Megan Serrano,79,Male,Cancer,2022-11-03,South
+15219d76-c701-4c91-ac65-d5445f64496a,Sabrina Hernandez,29,Male,Asthma,2023-03-05,South
+7bd40042-ce56-4d7d-b925-22a1a15b1b39,Theodore Potter,39,Male,Cancer,2022-10-03,Central
+7faccce9-7c04-43a6-b27a-cc491773449d,Jennifer Rios,41,Female,Influenza,2024-03-18,Central
+bd28da0c-e33e-4dce-b564-2d9466bb7536,Jordan Henson,12,Female,Influenza,2023-10-17,South
+7214aa42-a318-44cf-ad4b-253fd967a5e3,Matthew Gonzalez,1,Female,Cancer,2024-02-28,South
+cf757baf-8349-4227-a218-daab4bd04df6,Adrian Mathis,15,Other,COVID-19,2023-11-02,Central
+52355b21-6f0d-45ff-a588-ba5d68265ef7,Derrick Klein,9,Female,Dengue,2024-04-20,South
+45b5c0bf-1246-47fb-8172-3803170c596b,Emma Potter,45,Other,Cholera,2024-04-21,West
+90c8f713-94f9-4e3f-9b93-68b367b7bef0,Patricia Perez,73,Other,Diabetes,2022-09-17,South
+2ef49600-2c18-40e6-a2af-a23e7437d57f,Emily Galvan,9,Male,COVID-19,2022-09-16,West
+5e2405bf-4d06-4f06-9175-3d07f3c526f5,Malik Olsen,75,Other,Hypertension,2024-02-01,Central
+18fd1445-1266-498e-8344-8bb05af7ce2a,Madison Martinez,17,Male,Heart Disease,2023-05-23,North
+9a2e44d4-7670-4f8a-a03a-3c3a15a18948,Michelle Robles,66,Female,Cholera,2023-05-16,Central
+e70b2608-bc3b-457e-97e6-d57337c3f298,Donna Morgan,63,Male,Malaria,2024-04-24,East
+1deb9dbb-904d-4410-b9c1-eabf07398a02,Lauren Porter,65,Male,Typhoid,2023-04-04,East
+96e6603e-f282-4991-98cf-c022f8365d0f,Patricia Reed,35,Male,Malaria,2024-07-07,East
+98583b03-7396-4e54-bfee-abe80b8c44b4,Amy Henderson,63,Female,Hypertension,2022-09-20,North
+588a19ce-9379-458e-b757-f0a0f0952199,Kenneth Johnson,9,Other,Cholera,2024-03-01,Central
+e06102d8-5926-49c3-b51e-16fade6ccd55,Katherine Cowan,32,Female,Cholera,2022-11-14,North
+ac5ea59e-0bb6-4b95-9347-17f5aca29934,Tammie Gonzalez,43,Other,Pneumonia,2023-04-17,North
+7d2fb54e-caa4-45a0-a1af-298069858892,Jeffrey Nunez,21,Female,Asthma,2023-09-28,North
+b85816cb-476f-4e0e-8652-44c49bf46817,Sherri Hooper,41,Female,Malaria,2024-01-13,North
+d7c40326-3e0b-4c46-a8b3-01ab58503651,Brenda Contreras,75,Other,Tuberculosis,2023-05-20,North
+f1808798-ea6e-4aa0-9bc5-0ee06fc7a6ff,Donald Robinson,63,Male,Typhoid,2024-06-08,West
+1b68fef4-1f0c-482b-8977-7c11717c7fa9,Mr. Alex Hughes,4,Other,Pneumonia,2023-04-27,West
+7804a27e-7905-4837-b47d-599833a41be1,Renee Conway,33,Other,Diabetes,2022-10-18,South
+d757778d-6272-4073-8be3-0e82f2b7269e,Theresa Perkins,72,Male,Heart Disease,2023-08-20,East
+693aed9a-d646-4c84-a9a2-f30ee100db42,Jennifer Gonzalez,76,Other,Typhoid,2022-10-23,West
+566b8c3f-2065-4a6c-8631-4af5b80b83e2,Patricia Santiago,22,Male,COVID-19,2022-11-22,North
+fca2c42e-9255-417c-8cf7-40b70c7ab506,Patty Graham,48,Female,Malaria,2023-06-02,Central
+d99f09cb-3f5a-4a17-8da6-a7f66fce5fea,Michael Lopez,84,Male,Cholera,2023-09-30,South
+a2ca9824-80bc-4148-ba4e-a6008e3dd49e,Bryce Smith,47,Male,Asthma,2023-09-17,Central
+6f235916-864b-47d9-b9e2-55af3a32d351,Emily Barrett,57,Other,Typhoid,2024-08-21,East
+5c296eb8-f732-428b-bdd2-d3cf5b296c92,Marcus Gill,23,Other,Tuberculosis,2022-12-17,East
+ccf16571-59a0-4c9d-902b-d0d5563829e5,Michele Miller,44,Male,Dengue,2024-06-06,North
+e9691136-d1ac-4582-a24f-52afe4512506,Daniel Jones,70,Female,Cancer,2022-10-25,West
+9a678da4-500c-46e5-904e-6204cd8f4046,Marvin Ortiz,11,Other,Influenza,2023-12-27,Central
+a7bf80a3-085c-486e-befc-b92090a40099,Kim Clay,71,Male,Heart Disease,2024-03-08,South
+374f4fe5-0a93-4eb6-9962-f592615bd811,Scott Cortez,50,Other,Dengue,2023-07-29,South
+b4108f78-08ed-49eb-b492-1e96ef695e58,Ronald Stewart,45,Female,Diabetes,2023-04-14,North
+67b66b9f-236e-4fd4-af2d-8b1e6e6db6f5,Amber Reynolds,36,Other,COVID-19,2024-03-16,North
+d5754f9a-4e89-43ab-a7ca-c7ddf315096f,Michael Tanner,80,Female,Typhoid,2023-08-12,North
+5ad464dd-1fae-4bae-a6bd-5e6f5a21c768,Joyce Vega,15,Male,COVID-19,2024-04-20,East
+99352345-92fa-4518-b8c0-fc2568817352,Corey Cantu,49,Male,Malaria,2023-03-29,Central
+71c14a67-9943-4fbf-8e48-65d9b4f80b31,Ashley Hall,89,Female,Malaria,2022-11-13,East
+f56304b9-c940-43d9-a16f-5a812ae5af87,Kimberly Howard,82,Female,Pneumonia,2023-07-24,North
+f1e6371b-ca7e-4292-9d66-24a8b9469181,Jesse Harris,11,Male,Asthma,2024-06-20,North
+e6b535df-43d0-4229-a6e2-25d02ee58766,Robin Boone,48,Female,Malaria,2023-01-04,South
+29277664-b9d4-4256-b9ae-2f1bd3bc51be,Ms. Evelyn Davies DVM,20,Male,Asthma,2023-07-17,Central
+3e941dbf-755f-402c-a290-4be5bb39607e,Samantha Harris,19,Male,Asthma,2023-10-01,North
+783cbc5f-1e9e-4755-aa3b-89cff40d952d,Troy Mccarty,46,Other,Malaria,2024-07-23,East
+f8fcbc53-0500-4a05-9174-5d34ed5d7a3b,Elizabeth Davis,81,Male,Asthma,2023-04-30,North
+9b6db565-24db-4775-a7dc-617aac326f29,Micheal Andrews,61,Other,Dengue,2022-12-31,North
+86d60315-c0a0-42b9-ab17-01f026268459,Shelby Ortega,20,Female,Tuberculosis,2024-01-12,South
+98e91c5e-9c9f-4a89-beeb-b919d80440d9,Tracy Brown,60,Female,Tuberculosis,2024-06-04,South
+8050b484-c7e9-42d0-a588-f15207e1fd94,Kelly Phillips,19,Other,Typhoid,2022-09-08,Central
+efd4767f-e667-4268-9c09-345d73c7eb0b,Austin Schmidt,36,Male,Dengue,2023-01-12,North
+4af6b1a7-eaad-456d-bb1f-8bdb0683e963,Mr. Michael Anderson,41,Other,Influenza,2023-07-11,Central
+7d872b2b-db1d-44cb-ab54-47e4a777692d,Krystal Potts,17,Female,Malaria,2022-09-20,Central
+d33dcd33-302a-4e6a-acea-0db4f350e4a0,Angela Smith,17,Male,Asthma,2024-07-23,West
+a8ad685e-05fc-4e9a-849e-8f98d9b6ecbe,Martin Chapman MD,76,Female,Dengue,2023-04-25,East
+17e0da26-4c33-472b-90cf-a9c63d39180b,Jonathan Graves,63,Male,Heart Disease,2023-10-17,South
+b1ec5be9-de93-47c6-b4fd-04125ff4c8b6,Mathew Cherry,74,Other,Influenza,2023-06-11,East
+7763ca2d-a4fe-4b73-be8c-60474c301494,David Trevino,86,Female,Malaria,2024-01-23,South
+9bd90600-a987-46b5-a831-ed88a9ffc1f3,Shelly Mosley,81,Other,Cholera,2023-08-10,East
+a0ec803a-270e-4b0d-af99-e19d24d981c9,James Rodriguez,29,Male,Cholera,2023-11-11,West
+309dd546-4427-40d8-b74f-107cf7b790fe,Jessica Miller,24,Other,Dengue,2024-05-01,Central
+9726c073-7a94-41e4-b2ad-467d61c77c0f,Mrs. Natalie Morrison,42,Female,Hypertension,2024-02-12,South
+001cb808-c89d-4601-a02f-3904089c430f,Brett Robinson DVM,21,Female,Cholera,2023-05-13,East
+53df5f5f-471b-473a-b4e5-fbec9ca6bd68,Rebekah Villa,8,Female,Cholera,2024-08-27,West
+0e875e9e-f9f7-4d2c-a77b-0a8ffd224b65,Shane Farmer,84,Other,Malaria,2022-10-29,Central
+5f20572e-dae8-4774-9f39-6a13bf6bd21f,Heather Miller,19,Male,Cancer,2022-12-17,North
+9e31704a-d018-4466-bfc1-e3522ae592ee,Dominic Sharp,60,Other,Malaria,2023-05-20,Central
+78da9782-063c-4a81-be51-264af18ff672,Michael Wright,7,Female,Malaria,2023-10-25,North
+97598d54-c31d-46ad-95ea-3805c41d2f63,Ryan Mclaughlin,45,Other,Asthma,2024-08-16,West
+8be5fcf0-6c2b-4ad5-abd6-6bdcd9a28b43,Savannah Jones,11,Male,Dengue,2022-09-16,West
+69cad233-40e1-43b6-83db-97c042d6742e,Laura Fields,55,Male,COVID-19,2024-04-23,South
+5b1c0f9b-c348-46ce-8725-46a1bf22ad65,Shelby Jones,50,Other,COVID-19,2024-04-01,Central
+50e44572-d31d-49cc-b788-16415987f63b,Melissa Powell,21,Female,Asthma,2024-07-26,Central
+87a1395c-761d-425d-bbf1-50e7813c4ef5,Roger Robinson,12,Other,Diabetes,2023-02-02,Central
+44d7f125-fc39-4cab-9c5e-4c25fd7b698f,Lisa Summers,31,Male,Pneumonia,2024-03-22,East
+33be7911-f5c8-47c4-9c0d-6497c88ca5b0,Jennifer Jones,9,Female,Cancer,2022-12-16,North
+966bd4f9-e2aa-46a6-a4bd-9470b3d91825,Brad Owens,25,Female,Diabetes,2022-11-05,Central
+8d611fe4-b8de-4bbb-84cc-fc31e3918914,Autumn Bradley,50,Other,Influenza,2022-11-20,East
+4a81e431-dbe7-46c7-9ba1-59840eaea821,Nicholas Boyd,41,Female,Hypertension,2023-08-31,North
+38faf1b0-d465-419b-8909-d5dc1408265d,Alexis Elliott,1,Male,Pneumonia,2024-02-17,Central
+47749035-c28a-4bf2-86b8-02d13e4648f6,Shannon Jackson,58,Male,Heart Disease,2023-02-02,North
+9020b199-f585-4cc7-b6c2-9329022ac1f3,Adrian Tate,1,Other,Heart Disease,2024-01-29,East
+ac184894-4981-4f2d-a0fb-7bd1685d809d,Brenda Miller,29,Female,Asthma,2024-03-11,Central
+b749fd3a-08ac-49fa-ad96-85554af61aea,Shari Hernandez,4,Male,Cholera,2024-01-28,South
+bdec63e2-36b0-4d81-b247-1b2d3e648059,Sabrina Stevens,5,Male,Asthma,2023-08-02,Central
+ba8b26dd-9415-419c-843d-e54ac5a6339c,Raymond Garza,33,Other,Cancer,2022-11-12,East
+d17a383c-2c56-43d9-af71-b468fa735567,Sarah Robinson,2,Other,Cancer,2023-06-07,North
+db878330-e3b5-4b80-835c-af8b254c61e9,Martin Johnson,6,Other,Hypertension,2023-03-25,North
+5ec23d75-9ec0-466f-808c-b003ab768fc7,Logan Cross,62,Other,Dengue,2022-11-10,North
+f9ada6f9-c313-4b49-b4fa-8088bcb880b9,Jill Rose,84,Female,Pneumonia,2024-09-01,South
+5e3d4e19-ae42-4bac-be0a-2aaecd605338,Mrs. Emily Chapman,63,Other,Asthma,2023-11-27,South
+0d554d44-50c0-4725-b04e-d1dc2a506d9f,Jonathan Graham,73,Male,Asthma,2024-07-03,Central
+11fd27ee-1b12-4fe3-a033-d1056dc7cb7a,Brett Pope,5,Other,Influenza,2024-04-23,West
+29fe0e32-bd91-4f15-91ed-1e8cb23007f7,Thomas Lin,29,Other,Dengue,2023-07-29,West
+a4b7467f-2260-4af9-9cb3-0aa507928685,Sarah Young,44,Female,Heart Disease,2023-05-22,Central
+a23f3e7a-0ab5-480f-9241-deb0625233a8,Matthew Manning,5,Other,Diabetes,2023-10-31,East
+6877c1a4-765a-46b5-b9ab-cda1b1300369,Ryan Guzman,41,Male,Dengue,2023-11-21,Central
+c97f957a-2a89-4c04-b245-259520777abe,Antonio Cole,20,Other,Pneumonia,2024-08-19,West
+4513d570-660c-47ea-907a-eff3c7f5ab62,Monica Romero,20,Male,Diabetes,2023-12-18,Central
+19fa2dff-ea85-4a9d-b60f-9a0cac5ec412,Denise Morrow,80,Other,Cholera,2023-07-20,South
+5e667c01-d50d-4ef4-8aa5-79e410686d7f,Gregory Smith,88,Female,Influenza,2023-12-08,South
+782d0169-8c09-49c5-98d1-2cff6436f4d1,Molly Scott,28,Male,Pneumonia,2022-10-20,West
+81d88814-b33b-4f90-81c6-7202f05be648,Mason Molina,43,Other,Dengue,2023-04-17,East
+184fd461-fb60-4f63-bd55-f4b56a1077e1,Jay Brown,19,Female,Influenza,2024-07-26,West
+2ff75c5f-f2bb-4ed9-b258-7ebace97d785,Melissa Evans,8,Male,Influenza,2023-05-02,South
+e61a3617-8f54-453b-8777-db4aac3d9dbb,Jennifer Reynolds,10,Female,Influenza,2023-04-01,South
+aa700ba4-ebf1-4315-9779-cb6bcb0402cf,Rebekah Glover,6,Female,Diabetes,2022-11-09,South
+1e59ccae-c9fe-4b38-b83a-650077e18cf3,Amanda Long,56,Female,COVID-19,2023-01-21,South
+e6c239a0-133b-43ef-8fb2-65dd525abd31,Edward Smith,66,Other,Pneumonia,2023-02-21,East
+b38429c7-7ae0-4638-b58c-ff4adc5841ea,Sarah Patel DDS,25,Female,Hypertension,2023-04-25,Central
+f0091914-1731-4adb-8427-a98d2b259902,Michael Campbell,29,Other,Dengue,2023-04-07,Central
+87dc3498-83a2-4f6d-a238-496cb538688f,Phillip Cantu,85,Other,Influenza,2024-01-31,South
+9e47fbc1-3898-41b7-b84a-83447a01cc50,David Becker,14,Male,Pneumonia,2023-01-31,Central
+c02e3592-0930-4817-a884-2110a4ae8a4e,Kara Hernandez,51,Male,Asthma,2023-08-31,Central
+18515069-0b5b-4c38-ba5b-8c6cf2903af7,Karen Rivera,38,Other,Pneumonia,2024-04-17,East
+2d2e716c-0860-42a3-944f-6042dde6ad24,David Walton,39,Female,COVID-19,2023-05-11,West
+f69a2cff-be6d-42bf-b397-108c45ccb55c,Michael Wallace,44,Male,Typhoid,2023-04-18,Central
+55a79a47-07ff-4cb9-8418-2a743a6ebdd6,Sydney Foster,44,Other,Dengue,2024-06-13,West
+4fa0b3e9-0f28-4da4-bd3d-08212228792a,Laura Evans,73,Female,Hypertension,2023-02-12,Central
+6891bc99-7416-4997-b9ac-1665a9207a4b,Joseph Curry,47,Male,Hypertension,2023-11-29,Central
+a4aa63d2-a747-46f0-8699-3a3f88dede36,Sheila Wright,70,Other,COVID-19,2022-10-10,South
+37d67b6b-be90-40bb-b81b-948574eab268,Kathryn Brown,22,Male,Heart Disease,2024-05-03,South
+34cda8e0-0797-4c31-a4c8-aad5d3984fd1,Bryan Hardy,37,Male,Typhoid,2023-08-11,West
+20345623-5e61-420d-9342-672d0b7c7ef8,Michael Hart,90,Female,Heart Disease,2022-11-22,East
+2b706e8e-e11f-49ba-ad76-5454eed4f2aa,Dean Smith,16,Other,Cholera,2024-04-15,Central
+37eb5c99-3e36-4b78-b021-2de997c1717a,Anna Cox,65,Male,Tuberculosis,2023-10-15,North
+e00f501f-ee5c-4bc3-ab79-8608c59630aa,Brooke Robinson,62,Female,Dengue,2024-06-05,Central
+9f7ce617-afa7-4d82-b0f8-4856ed26ff1a,Jennifer Bird,79,Other,Tuberculosis,2022-10-25,East
+023d8f63-5a4b-4e8f-a28d-9a6ffcf4a4af,Joan Hampton,62,Male,Cancer,2023-10-12,North
+1816bc8b-b7c5-4d88-923e-0f5d6b7e7fae,Matthew Garrett,39,Other,Influenza,2023-04-15,East
+99a73f66-edca-484d-9e4c-2ea00b1736e3,Larry Jones,50,Male,COVID-19,2024-02-11,West
+c0be7cf9-70d8-430f-bbf9-51403becd0ef,Brandon Collins,3,Female,Dengue,2024-05-12,East
+b86a5dff-4ca4-48fc-86fd-1fa08b763c95,Christine Perez,53,Male,COVID-19,2023-03-01,West
+a7f11393-1d4b-450d-8f88-ffdfce606717,Shelly Moore,23,Female,Asthma,2023-11-15,South
+56895d44-44a1-453b-aada-171c4a8f53a8,Stacey Peterson,39,Other,COVID-19,2023-11-03,Central
+0a4d07c6-facb-4bbc-804f-8f618e77cc65,Steven Rodriguez,25,Male,COVID-19,2024-03-31,East
+0df1b98d-314e-46b8-9a93-8aa5c395f3e3,Dr. Maria Sullivan,89,Other,Dengue,2023-09-26,North
+74a53410-4880-47cf-8da3-2d4d4c1653dc,Heather Fischer,88,Male,Pneumonia,2023-09-26,South
+36bfe652-8799-4ad9-a1d1-2b5f1c0ca6d7,Francisco Weiss,86,Other,Malaria,2023-05-24,East
+369458b3-4879-49b9-b639-0ee40b9547ff,Caitlyn Wilson,48,Male,Pneumonia,2023-05-18,Central
+dafd6856-747c-423b-bccf-593d9cb8e216,Lori Wagner,68,Other,Cholera,2023-12-02,North
+b7785c2e-ec2b-4f95-ade8-9e0e391626b6,Sheila Dixon,66,Male,Diabetes,2024-05-12,West
+1082bbd0-3cf2-46b0-bb3d-e4878a44acd7,Brittany White,84,Female,Dengue,2023-04-03,South
+7a6a03ff-21c1-4ca5-99e4-8ea0efdeadd1,Jared Oliver,34,Male,Cholera,2023-04-07,East
+cf7eb98f-3ae4-4108-9ffa-8984d4aa5df1,Daryl Burke,76,Other,Asthma,2024-03-11,Central
+3ce79a45-79e2-4d43-b94a-c3e59f7ddaba,Heather Jones,32,Other,Hypertension,2022-10-04,South
+81c13f02-7afb-4d22-bb3e-3299c9e82aed,Dr. Lori Macias,1,Other,Asthma,2022-10-26,Central
+d315a697-0481-4ed6-bda8-318c4b9ea8cf,Steven Hernandez,24,Male,COVID-19,2024-04-03,Central
+23b193bf-e0dd-49c0-bbcf-5dbe4fa31584,Mary Clay,80,Other,COVID-19,2023-02-13,East
+a5107f53-70c7-4dc5-aa4a-1d9a3f1feae4,Derek Leblanc,57,Female,Heart Disease,2023-03-16,North
+d10d3605-847b-486f-bbb1-6774f7cc9d8f,Adam Santiago,50,Male,Cholera,2023-08-24,East
+735e54f9-6fed-4dd3-881f-7e329a60f4fe,Laura Carroll,59,Female,COVID-19,2022-10-12,North
+4cd3ace0-648a-4926-9118-005a3c4943c4,Brenda Compton,46,Female,Dengue,2023-11-18,Central
+536efa86-0935-4f27-a543-ad85490c22c7,Richard Nguyen,41,Male,Diabetes,2024-08-05,South
+f8bb903f-b7c5-4ca5-8342-b63e0a199e90,Jonathan Pearson,47,Male,COVID-19,2022-09-14,East
+6920a030-febf-4143-8031-1a5a515d411d,Mr. Mark Sanchez,33,Female,Hypertension,2023-06-30,East
+9c398ff5-df13-476d-ad97-5ce6d49f6ae9,Margaret Allen,62,Other,Malaria,2023-03-16,South
+2bb83379-492a-4f20-977c-9bc1101fb108,Amanda Smith,70,Other,Cholera,2023-03-17,South
+97ef354d-f354-4902-a9bc-cd656f70befa,Rebecca Phillips,82,Male,Diabetes,2023-07-26,West
+6cd3d0a4-ac0b-44b3-915c-9e05f997368d,Jeffrey Meyer,33,Male,Malaria,2023-04-30,East
+f3237149-701c-425a-89d5-9182548f2a8d,Jeffrey Roberson,15,Male,COVID-19,2022-12-20,West
+2cef6476-5dc4-4692-8221-53ae00c2c2ca,Jonathan Livingston,59,Female,Tuberculosis,2022-11-26,Central
+788b6d67-7688-4b86-b4e0-37564368c2e8,Kathleen Guerrero,21,Female,Cancer,2023-09-28,North
+a2957a4b-0b61-4125-b593-3e05579e1b1b,Paul Valdez,11,Female,Dengue,2024-06-01,North
+30e35a87-9253-4042-a055-65f40e180751,Timothy Scott,16,Female,Tuberculosis,2024-01-01,West
+f9239f86-ba26-4ade-96c9-7d8264c56994,Amanda Lopez,31,Male,Asthma,2024-03-24,West
+9e888e35-7961-4476-9da9-e8f6b7406e97,Ebony Alexander,41,Other,Asthma,2023-09-22,Central
+41d9c044-e34d-42c0-b5bc-b0a46d2ffbbf,Jenna Jones,6,Female,Typhoid,2023-06-29,West
+56f00317-78c6-4b18-a6d8-87c82ca9ddf5,Raymond Stevens,78,Female,Heart Disease,2023-11-20,Central
+21c2b060-2baa-4aab-9323-d57cfdc91256,Steven Franklin,57,Female,COVID-19,2024-01-15,Central
+147f3f8c-0548-4816-a3d0-047447a35e35,Kimberly Pierce,46,Other,Heart Disease,2024-05-08,North
+a7f79f28-9812-4509-8220-f82e087a21b9,Alison Smith,37,Male,Pneumonia,2022-10-05,North
+4ff9a101-014d-405b-a97a-8c2c648ab29b,Chad King,8,Male,Cholera,2023-10-27,Central
+386db4d3-0691-4d7b-bbec-44ecc9d7d442,Kimberly Reed,16,Other,Heart Disease,2022-09-17,East
+64112c20-5881-407f-b790-2fdbb08d0e10,Susan Hinton,88,Female,Pneumonia,2024-04-27,North
+53530398-8def-4b23-aa52-c696763dfb68,Lori Neal,79,Female,Influenza,2024-01-24,West
+a3b1f812-a6ec-4279-a2e8-592ce713c5ea,Bradley Suarez,18,Female,Cholera,2024-04-01,Central
+71c7e32c-d9d4-4760-baa4-4b2573167154,Sharon Hall,35,Other,Dengue,2023-03-24,North
+18516011-14c3-42a1-859f-9818dcd62cb9,Victoria Little,54,Other,Asthma,2024-02-10,East
+2442e5e6-e014-4b9e-b028-17b46c0d0bee,Wyatt Mcclain,45,Other,Pneumonia,2023-11-11,South
+c5fc949e-f3b1-4a08-ac7c-82c1276babfd,Lisa Walters,36,Female,Pneumonia,2023-05-05,North
+e7e46b0c-b56d-4d8a-a794-0db526289522,Matthew Mendez,45,Male,Pneumonia,2023-10-12,South
+f57b3df9-0b66-4f50-bb31-6dff23e0bfa8,Todd Thomas,54,Male,COVID-19,2022-10-20,North
+c3fb4437-f4e4-4e5e-bd4b-4db446a7b1ae,Cheryl Rosales,8,Female,Diabetes,2024-04-30,North
+0cbda004-25d2-4452-be14-889feecb3f6c,Sharon Murphy,78,Female,Pneumonia,2023-03-14,South
+9ea833fc-b8ba-420a-968b-defb2df9b179,Bradley Obrien,24,Female,Typhoid,2022-12-01,East
+f7911106-cab4-4408-b35a-f4b3accc849f,Courtney Scott,6,Male,Cholera,2024-07-08,East
+3a8a85f9-d4ad-40a1-a26c-901da25ac1e8,Melissa Lynch,16,Female,Cholera,2023-01-08,Central
+3e8ce6fe-4e01-4197-895e-d447b0720250,Jessica Cooper,68,Other,COVID-19,2024-03-19,East
+2ce43dc9-af1e-4db2-acc9-f64c3ce1082d,Patrick Ferguson,40,Female,COVID-19,2023-11-01,West
+eaf355a9-7f08-4ccf-aea0-99e7c6449667,Jessica Ward,26,Female,Malaria,2023-08-14,East
+a041ee27-6817-4bcb-90ff-ec6d76f56eb5,Austin Clements,16,Male,Dengue,2024-04-08,Central
+6f3997f6-f0f6-4735-aff9-fb99043c685b,Brittney Henson,88,Male,Typhoid,2024-04-10,South
+6d4e67ad-57da-4b11-9842-5bca85e7b9e9,Troy Simpson,51,Male,Cancer,2024-04-24,North
+a7650957-0dd5-43fe-a25c-99fc782ee51f,Kimberly Salazar,13,Male,Diabetes,2024-04-20,South
+8800ba86-5d87-4441-a0ef-2f3221d4d35e,Natasha Sanders,57,Female,Pneumonia,2023-02-21,East
+b8e6da2a-648c-4ca4-b8db-f450c7aee45c,Deanna Bryant,63,Other,Hypertension,2022-11-18,East
+e8d7b7e0-c9b0-4f85-be82-7b7fc9b8d6a2,Pamela Ferguson,41,Other,Dengue,2023-02-26,Central
+8aab0513-d9e1-4c95-933f-fabd9f106c0d,Brandon Thompson,41,Other,Malaria,2023-03-02,South
+38dc5787-8d92-4798-827a-df5498e46365,Emma Mendoza,48,Male,Cholera,2022-10-16,South
+866c81d5-3726-4629-9535-f5247c6905b2,Keith Hansen,83,Male,Cholera,2023-10-02,North
+4a353bf1-fee2-4354-8132-967f28a68f1e,William Peters,45,Male,Hypertension,2023-12-17,Central
+7b4e4f0c-faaa-40cb-b4a3-6c69179dc7c3,Janice Taylor,61,Other,Cholera,2023-12-02,North
+11d9ddd6-ee2f-47fc-a4d9-5bbaf200bcc7,Nicole Jones,32,Male,Diabetes,2023-02-04,East
+a270041b-2b3e-4719-9896-352f0d263afb,Chad Rasmussen,81,Other,Diabetes,2023-10-05,South
+07d362da-8dca-4a70-85ea-c02cb6acbf38,Jacob Cabrera,5,Male,COVID-19,2023-12-19,East
+adb7ee1b-88a2-4390-a0a4-3b05cfae1d3b,Samuel Lopez,87,Other,Dengue,2024-01-03,Central
+8f6c5e14-a118-4152-b478-7796d91d99f4,Sarah Williams,26,Other,Asthma,2023-06-10,Central
+9fca7ca4-b705-4dd8-9704-4edc496afa93,Jessica Ho,63,Other,Influenza,2023-10-26,West
+cff1b598-4202-40bf-872f-c178feffe349,Kathryn Lewis,37,Other,Dengue,2024-05-02,North
+02a9e651-9b1a-45e0-9153-09be88328d8c,Stephanie Wright DDS,20,Other,Cholera,2022-12-21,North
+211a0340-d474-454e-9e08-edc97c5fb21d,Paul Howell,45,Other,Influenza,2023-08-09,West
+292d7a38-e077-4dca-af76-7bb0bed0eda8,Larry Wyatt,5,Female,Asthma,2023-04-13,North
+b7a45e0f-3a8b-4428-9bd9-ae8b7dfaaa9e,Daniel Hammond,89,Other,Dengue,2023-01-23,West
+be67b611-f673-4e12-9e34-d7047a71f75e,Eric Campbell,42,Other,Asthma,2024-05-25,South
+65b3de3b-821b-4aa1-a783-5b3c36bf5ac9,Jennifer Adams MD,47,Other,Cholera,2024-02-21,East
+fdf8fff7-1103-4b8a-9f47-a6fd5edd6f4e,Lisa Patterson,17,Male,Malaria,2024-03-16,East
+ef59c365-57e7-4704-a512-816e05fe519d,Tracey Brown,4,Male,Cancer,2024-07-24,East
+2d4b5d30-ca36-4299-8a9f-de23d39df111,Jennifer Palmer,75,Other,Influenza,2023-06-13,East
+679362b5-3b58-4e34-aaf4-a3f2e495b032,Nicholas Mitchell,86,Male,Tuberculosis,2024-01-18,North
+0c59b83a-4d7a-4a20-985e-f11cf28cdc2a,Kristina Mills,18,Female,Cholera,2024-07-01,East
+540e91af-db79-47c7-bf70-d9f1cf72c22b,Carlos Davis,35,Other,Heart Disease,2024-08-05,South
+bc3f9a0c-bb46-4862-b0a8-fee24ffa41a7,Crystal Brooks,1,Female,Cancer,2024-07-04,North
+fed64ce9-b95f-4a90-a655-79e8d84bab90,Andrew Stephenson,84,Male,COVID-19,2023-09-20,North
+8819c7d0-11ed-4f1d-9940-11397d9e7dc7,Jacob Thompson,40,Female,Cholera,2024-06-30,East
+4ca5ba77-575e-426d-b1c8-d13b43e4172d,Stacy Roberts,22,Male,Asthma,2024-08-01,South
+a47d93ba-2819-4974-9753-c73d33aed5d9,Melissa Oliver,48,Other,Cancer,2022-11-09,South
+589947cd-122a-4eb6-8244-d793c24d4295,Tamara Castaneda,44,Other,Cancer,2024-08-05,West
+0b227823-fd63-42dc-852a-b783f9e431f3,Steve Blankenship,45,Female,Malaria,2023-08-23,Central
+26bfd7fa-19d1-4f00-a413-cd3f7b6472d6,Danielle Lopez,25,Male,Diabetes,2023-12-27,East
+d6e133f4-0e30-4d9a-ae0d-310c869ce309,Leslie Mckinney,31,Other,Typhoid,2024-03-27,North
+b2074a75-86ca-44a9-97de-926b844a7ff8,Pamela Howard,1,Female,Influenza,2023-03-30,West
+28e41c62-77b8-415e-8aaf-08d9e3cefe1f,Jacob Collier,28,Female,Cholera,2023-02-01,North
+97750690-3286-4184-b375-1c02f166c735,Richard Hogan,74,Other,Malaria,2023-05-21,North
+be096f92-4de4-403c-b7b4-4866b5eed4e8,Wayne Lopez Jr.,20,Male,Asthma,2024-07-28,North
+6368b0cd-4fc6-4a25-8955-2a454dbcd024,Erika Thomas,47,Female,Hypertension,2024-05-15,West
+34224e00-7ce6-4d48-8f78-34a969214d30,Amy Larsen,23,Other,Typhoid,2023-12-11,North
+1929aae1-83ab-4132-84d7-7de03a27e2db,Ashley Curry,60,Female,COVID-19,2023-01-10,South
+84696aab-dbed-4b74-bf6f-4b653ee68d40,Samantha Stanton,34,Female,Tuberculosis,2023-03-14,East
+0bad74d2-b1d6-4cfa-9e4f-bb1ab290f430,Jacqueline Bernard,22,Female,Tuberculosis,2022-09-11,Central
+80fbdc2f-99fd-4fc6-a778-949faeae2f55,Arthur Miller,13,Other,Dengue,2024-05-17,West
+46231f39-ba8a-48d9-8f55-feaabe9965fe,Kristen Martinez,65,Male,Dengue,2022-12-01,North
+b3e756c3-e4b9-4ee1-aed5-7056e0ba6241,Paul Andrews,35,Other,Heart Disease,2023-09-19,West
+c367b69e-2d1c-4abe-ac25-6420cdf16bff,Shawn Miller,74,Other,Typhoid,2023-09-23,Central
+7575e205-33d9-4012-b58d-3202c5b0065e,Brandi Vaughn,21,Other,Dengue,2024-02-10,East
+f3b01e93-8b1a-46df-97d0-6c43374c9a1b,Ana Terry,80,Other,Tuberculosis,2023-11-22,Central
+b9469fcc-ac46-4758-83c4-bd912547cc50,Sheri Hall,11,Female,Hypertension,2022-11-07,South
+bd0c242e-7eb0-4362-b76d-4a3ed9823e41,Dustin Chambers,73,Male,Diabetes,2024-02-01,North
+2e50c0dd-47b6-47d8-85a3-448be7ed2e24,Darren Rich MD,25,Female,Heart Disease,2024-05-09,East
+6ef9ae69-23a9-49b1-8b99-e7ef88d2e964,Joseph Mcclain,28,Female,Dengue,2023-02-27,West
+5f9c249f-56f7-4594-86a8-4788d36163f4,Vicki Hancock,66,Female,Asthma,2023-08-31,North
+87759cfd-c689-466d-84e0-5bef289e2776,Frank Miller,80,Other,Pneumonia,2023-09-19,South
+60ff029f-6298-4e08-9a57-86ce10ade506,Randy Ellis,62,Other,Tuberculosis,2023-02-12,Central
+078a8da8-bc57-484f-b12f-93c9fd7f2986,Kayla Goodman,71,Male,Pneumonia,2024-02-08,West
+efd5e2bf-0a85-4148-93ef-91c12d27c47e,Jennifer Carpenter,53,Other,Pneumonia,2023-07-29,West
+8918fa74-f4f3-4bd8-a55a-fd9d485edc01,Alicia Warner,76,Female,Typhoid,2023-02-10,North
+4dbfe477-3588-4e27-85a6-13de916b4f80,Ruth Welch,38,Other,Heart Disease,2023-12-12,Central
+b5108964-3b73-49ea-963c-a10489cece5b,Jackie Rosales,31,Other,Heart Disease,2024-01-03,West
+2af98db7-cebb-47ed-a44b-e5c5ae807aff,Michael Brooks,29,Female,Tuberculosis,2022-12-10,East
+c4ac9f69-523b-4b05-86fa-e496aa9e5442,Chad Taylor,11,Male,Cancer,2023-12-03,North
+5bb59db1-a485-462d-a751-4813987679b8,Beth Martinez,1,Male,Tuberculosis,2023-10-11,Central
+784adde1-8514-421d-8fc8-af4a592d756f,David Adams,38,Male,Hypertension,2023-04-01,Central
+e7328a9f-64cb-493c-974b-2cbebab2bfd8,Richard Ochoa,45,Male,Tuberculosis,2023-04-17,North
+c171afb6-4f9a-45c8-acb6-f3a2ee66dd91,William Harris,33,Other,COVID-19,2023-06-20,West
+da9329c2-e45d-48fd-b785-79ef1b148288,Cody Green,1,Other,COVID-19,2023-01-31,North
+20785b59-1c3d-46bd-9925-247c7a388c42,Danielle Mitchell,36,Male,Typhoid,2023-02-23,North
+73d9f5df-6eaa-4d4e-b886-57fd2f73de6f,Lauren Hatfield,17,Female,Typhoid,2022-11-07,North
+0c5d9ff2-0130-4657-8f0a-e4ec182beb24,Amanda Jennings,19,Male,Cancer,2024-06-19,North
+b6777bb8-1304-4435-88f9-72d4ce967421,Christina Ross,65,Male,Diabetes,2024-02-24,South
+9f0b5c7e-ed45-49d5-97d5-3959261203ac,Jacob Russell,83,Male,Pneumonia,2023-05-01,Central
+971908d4-9a54-4277-b104-93b1056e9db1,Steven Schultz,23,Female,Typhoid,2023-08-03,North
+92da1a5c-6937-4941-b933-a7ee4c342dd8,Johnny Jones,27,Other,Diabetes,2024-08-09,East
+67a42c03-5578-4627-aa47-98b87f211d9a,Michael Smith MD,8,Other,Typhoid,2023-07-02,Central
+fc5ed837-9356-4410-b855-dcf829707eab,Kevin Osborn,44,Female,Asthma,2023-04-21,North
+11ba350f-ac06-49f4-9f6f-e48b31eb357e,Katie Rivera,47,Female,Influenza,2022-12-11,East
+cfaaf7a6-a55f-4f38-aa58-ba4efed39094,Jennifer Castillo,38,Male,Influenza,2024-06-11,Central
+e48e9ba3-fa29-4a4e-823a-368350d092fb,Heidi Whitehead,41,Other,COVID-19,2022-12-25,South
+13e38a6d-7289-4a48-bcd7-f3e8272490b1,Ricky Bonilla,79,Female,Dengue,2024-08-07,East
+8112ae5b-4a7b-4164-814f-b496bf057e02,Kevin Lucas,57,Male,Diabetes,2022-09-12,East
+6d57cea1-1a63-4eaf-ba32-1e813433b5f9,Heather May,11,Female,Dengue,2024-03-31,North
+33a54d23-09b6-45c9-b485-04bb44df2d51,Stephen Anderson MD,52,Male,Heart Disease,2023-02-16,West
+dc342a71-36d6-46c7-9c8c-927c60588746,Leslie Wheeler,65,Female,Cancer,2024-06-13,West
+85d71d7d-e2b5-40d3-ac03-fd83e73403cf,David Clayton,40,Other,Tuberculosis,2022-12-15,West
+4d69b6f7-e1aa-4695-a901-acc79ee98865,Mark Kelley,75,Male,Cholera,2022-10-09,East
+cfceb5c3-686d-4dc0-a475-4db27c5694bb,Kevin Collins,21,Male,COVID-19,2024-02-21,East
+00cf248f-94b7-4def-9877-bee05c857935,Rhonda Nelson,48,Other,COVID-19,2023-05-23,Central
+5a853102-13cf-457e-82dd-d750abd3c2ea,Sarah Gomez,24,Other,Tuberculosis,2022-12-14,East
+e501a9db-94bf-43df-a1a0-529c6f05b749,Claire Johnson,71,Male,Cholera,2023-07-06,South
+aa20b650-dc67-41f9-bf4c-a5e21a026884,Amber Woods,14,Female,Diabetes,2024-08-15,East
+137bb594-bf29-419d-832b-65a6b11c2b2e,Kimberly Davis,23,Male,Diabetes,2023-05-26,East
+de2e3c5e-b559-4ede-bbc2-b63faccc2a93,Edward Allen,74,Other,Hypertension,2023-07-05,East
+0f3f805c-290c-4f25-b74a-290d60adea6d,Derek Hawkins,82,Other,Asthma,2023-07-06,East
+e166d08d-bda4-4e45-8210-1b1bc3437473,Troy Rowe,53,Male,Malaria,2024-03-08,North
+674d96ee-073f-4749-b763-3cba8a85f686,Shelby Thomas,9,Other,Asthma,2024-05-14,North
+1f62cb00-d4c4-4d30-bfcc-bdd9ea2d5a8f,Anthony Brown,49,Male,COVID-19,2023-08-14,North
+79d85fe8-1907-4c18-90b2-83a90488b2c3,Ronald Moreno,63,Other,Diabetes,2023-03-06,West
+8a063362-7ff4-493a-bd2e-adeaa9707545,Scott Holmes,20,Female,Cholera,2023-09-16,East
+4d544ec4-47a8-4387-8a35-fe61fce13fea,Nancy Torres,22,Other,Malaria,2023-12-08,North
+b01bd349-bc55-4dfb-b4c5-bec66d80173f,Diana Welch,60,Other,COVID-19,2023-02-04,West
+752d6966-5a59-4bf0-a1e9-101491505b2c,Karl Wyatt,70,Male,Hypertension,2024-08-22,East
+6e01c5be-3b45-482d-aa85-36aa343fa283,Christopher Ferrell,79,Female,Asthma,2024-05-14,West
+1b585d2a-c77c-4a9d-b9ee-db8a00ba1f4f,Stephanie Davis,2,Male,Influenza,2022-09-29,North
+63cdb08c-a23b-4b6f-9d94-60328c8fb258,David Griffin,51,Male,Asthma,2023-02-20,East
+8f1bc753-ad44-40c0-ad9e-7bcbef7b1a3d,Amanda Johnson,63,Male,Cancer,2023-01-12,East
+b4f40c85-0fc8-4cc9-a5c9-facfd91f845d,Joshua Thomas,27,Other,Pneumonia,2024-01-30,West
+3e9a02c4-31fa-4a50-b3e6-9d5595656646,Sandra Cooper,63,Other,COVID-19,2023-01-15,North
+c637d21e-98d4-4eaa-9312-3d20d71dfba6,Leah Medina,22,Other,COVID-19,2023-08-06,West
+f28cee4a-10c7-4a9d-a096-ec076ed58c1f,Samuel Reese,9,Male,Diabetes,2023-01-29,Central
+8403e2d2-34d8-461e-8754-6906eb0cec95,Joe Henderson,22,Other,Heart Disease,2022-12-03,East
+d4eee9f0-ffe7-4835-a1ea-2aeb171ecdce,Matthew Becker,84,Other,Hypertension,2023-02-18,East
+810e7550-951d-41b5-a5fa-b7e01dba5add,Anthony Williams,70,Female,Typhoid,2022-09-07,East
+539203f0-4085-4810-8a78-8cb19c502706,Laurie Gibson,36,Male,Heart Disease,2022-10-03,West
+aebf7df1-e909-4f53-9dfd-48cdf131625a,Michele Kent,42,Other,Dengue,2023-12-21,Central
+0591c1c6-4c67-457b-bd75-479985989a46,Mr. Stephen Beasley,59,Other,Dengue,2024-04-13,Central
+5a8d7f95-5269-416a-be39-d23d900760e2,John Ross,47,Male,Hypertension,2022-11-12,East
+6ec266a7-2a48-4651-aa76-f15745e640b4,Dr. Shawn Page,3,Female,Asthma,2023-08-22,South
+e0d3a89d-3540-457b-82ea-93ce81368dcc,Heather Taylor,87,Male,Dengue,2023-04-19,East
+fb4194f5-c070-434f-98b1-d99ad7f91899,Heather Martinez,63,Other,Diabetes,2022-10-23,Central
+d2b76e74-f3ce-4357-b2ed-c19de4073d8e,Michelle Pacheco,39,Male,Tuberculosis,2024-06-17,Central
+dee89b9a-efda-4d33-b2c5-fd49c3007259,Alejandro Ingram,57,Female,Asthma,2023-04-14,Central
+f6705d32-a939-4523-9bb4-36f90795a93d,Melissa Moss,22,Female,Typhoid,2023-03-08,South
+7cd03364-a828-465b-8daf-fd05349ccbc1,Jessica Calhoun,31,Other,Heart Disease,2023-08-27,North
+50382bfd-8267-4ce7-bdfb-a16466129cae,Howard Gibson,84,Male,Malaria,2024-08-07,Central
+a021224a-baa4-4fd9-8b5a-bdc1d65236ad,Tyler Nguyen,28,Female,Diabetes,2022-12-16,East
+40819edc-ca9a-4ce1-8213-53d6bcae30b7,Carrie Thompson,39,Female,Cholera,2023-05-08,South
+698f47aa-b14e-4832-9109-b7e3bf519dfa,David Johnson,33,Male,Tuberculosis,2023-04-20,East
+587b5d25-be60-4d3f-9a9d-d8ed365920ff,Douglas Rios,27,Other,Pneumonia,2022-10-30,East
+2892b692-360c-4fe5-8a60-84dabe99d59d,Tiffany Lopez,34,Male,COVID-19,2024-02-01,South
+6e350c71-75e7-4915-9852-d2da53caed6f,Pamela Richmond,57,Other,Asthma,2023-02-19,East
+5fc2bf92-4b0f-42bb-af59-4e83037cbd9d,Kelly Anderson,2,Female,Pneumonia,2024-02-10,South
+e67d9957-0392-4e5b-8322-9824e862c38f,Rodney Combs,6,Male,Hypertension,2024-05-28,West
+5ac40329-1294-4831-8079-f75fa0879a3c,Joshua Stewart,42,Female,Influenza,2024-07-24,North
+1dacac71-a490-491b-a45f-d0c9e61bdcf0,Theresa Moore,4,Female,Hypertension,2023-10-14,East
+88faf172-35de-4218-9157-623eec57310c,Billy Bell,20,Other,Diabetes,2022-12-27,Central
+ac166b30-7714-4da3-8967-2eac11cb477f,Tanya Simpson,63,Male,Tuberculosis,2023-02-15,West
+087b78e3-239a-4f09-9002-2d74a7ae2faf,Dawn Hunt,78,Male,Hypertension,2023-07-16,North
+aa4433d2-2988-41f9-a7bb-5936e45a6a46,Dr. Ashley Fry PhD,19,Male,Heart Disease,2022-12-19,South
+736f25dc-d64c-4136-a689-d4b6da6da943,Laura Bowers,35,Female,Heart Disease,2024-07-13,Central
+31bad649-4d4c-4d8d-89f3-7ec61e6ab11f,Erica Preston,60,Other,Typhoid,2024-03-11,West
+79a05507-e23d-46e8-82af-4ae2098a97eb,Joseph Hernandez,65,Other,Dengue,2024-02-02,East
+e6135f57-bebf-449b-9b7c-fc69dc5d2953,Jessica Ford,66,Male,Tuberculosis,2022-12-04,East
+23171762-39b1-495a-8308-8145673634d7,Allen Fisher,35,Male,Heart Disease,2024-08-30,West
+e84d5adb-a386-4a1d-b4c5-ea6dcffd67fe,Daniel Davidson,40,Male,Hypertension,2024-01-08,West
+5a458f73-3bf7-4e3d-8067-4a9f1dde6855,Adam Malone,43,Other,Influenza,2023-06-06,South
+2f2cfbbd-d13e-439c-b231-587fe72d56b5,Kurt Sanchez,75,Other,Pneumonia,2024-08-17,East
+a679d384-042b-4ad2-bc7e-03a99bb03cdb,Brittany Harris,79,Female,Cancer,2023-03-06,South
+c6f83f62-022f-4a81-b3db-625477c63180,Beverly Lozano,84,Male,Cancer,2023-10-17,Central
+82593fe3-5f3e-443e-93f3-878fd9559a54,Courtney Mcgee,50,Female,COVID-19,2024-05-20,Central
+153d8e4d-84e2-401c-9400-a2b569cb4e4a,Mike Frederick,3,Other,Dengue,2022-09-30,West
+33ef7c4e-3d70-4dd3-96c0-2b1177536e7c,Elijah Caldwell,17,Other,COVID-19,2024-03-12,Central
+2b99fe13-69c0-4eab-b1aa-d542df692bf2,Kevin Banks,87,Female,Diabetes,2023-04-11,North
+a9caf4aa-3c48-4633-9c68-856147e39d6b,Jessica Mack,5,Female,Dengue,2022-09-19,Central
+f8a37a8b-4ddd-49f8-887d-66e7a9518e5d,Eric Todd,66,Male,Typhoid,2024-09-04,West
+ec182bb4-9186-4c76-a250-8c8623b854a8,Sandra Gordon,28,Male,Asthma,2024-03-16,Central
+77aeefc3-777d-46e9-9d15-a921893c2497,Lindsey Smith,56,Male,Typhoid,2024-01-31,East
+6d26a66e-a6cf-4407-b17a-3da1fd678ff1,Melinda Jackson,5,Female,Cholera,2023-11-15,West
+bad8760e-e08e-4cd3-8cef-db02c10b8302,Donald Hunter,60,Male,Diabetes,2022-10-02,West
+b37e5679-efb3-4a42-95f5-af018410c25f,Jacob Short,45,Female,Pneumonia,2024-07-17,Central
+4b0d5b22-908f-4270-b67f-986026dd0099,Cody Fowler,9,Other,Tuberculosis,2024-03-08,North
+188f4201-1e32-4955-ba13-a35d26e55b43,Ashley Dennis,83,Male,Diabetes,2023-07-10,North
+5c427084-23f5-446a-bd8a-3e9e0e52d209,Angela Patterson,26,Female,Typhoid,2024-08-21,South
+dbda4482-500e-41da-aea5-9eeb452e41d5,Michelle Tran,5,Male,Asthma,2023-01-17,East
+475f744e-3339-4c5d-9291-cc27f8fec812,Christina Bentley,82,Other,Influenza,2023-01-22,East
+ae744ff9-d178-4efa-92ba-c44058a3a825,Kimberly Velasquez,19,Other,Typhoid,2022-12-20,West
+c81eefbf-5ba4-4518-b7eb-b108b73b979f,Mr. Richard Ross,42,Female,Cholera,2023-10-08,Central
+52054a50-2304-4bed-b8f1-838ab932f611,Kevin Kent,34,Other,Malaria,2023-05-14,South
+38485fa4-844c-48b0-b306-9af01e583ea9,Mark Owen,30,Female,Asthma,2023-03-10,East
+df92dba2-9cbb-414e-ad68-826c0fab109c,Kim Best,47,Male,Pneumonia,2023-07-01,West
+ea153a0c-19b0-4b08-9d69-988d93e54605,Anna Koch,23,Female,Typhoid,2024-03-16,West
+3eb7cb1d-070c-4c5e-b25c-a54a2dab3e1a,Paul Coleman,45,Female,Tuberculosis,2023-03-23,Central
+d7092c47-9204-4fec-874b-a1211654e560,Alexander Gillespie,66,Male,Cancer,2024-07-07,East
+9c627108-e0ae-42e0-80d1-a5896328eddc,Patrick Lee,46,Male,Typhoid,2024-08-13,Central
+d6ba0e2a-96b2-4cd0-a8e8-052694ed75ad,Kaitlin Bowman,43,Female,Asthma,2023-08-04,East
+71b2f605-d015-48d9-93ab-efb5efd545eb,Daniel Singleton,7,Other,Dengue,2023-02-17,South
+81f942f1-5a9d-418a-90bb-6697259900d9,Nancy Johnson,85,Male,Influenza,2024-03-26,West
+71e226df-7381-4ec4-8886-124f35143070,Erica Hall,23,Female,Heart Disease,2023-09-15,Central
+c2a956bd-4a8e-42bf-9dd8-745fabf61ea8,Christopher Russell,28,Male,Asthma,2022-10-02,North
+ccda3bd2-68ce-4321-9227-10004e938360,Jasmine Macdonald,48,Male,Malaria,2023-07-08,East
+c6b200f9-b592-4931-96b4-6b83721bae97,Justin Murphy,83,Female,Heart Disease,2023-03-28,North
+b23d33f0-4470-4b35-9c4f-7a69a71a9546,Suzanne Perry,79,Other,Pneumonia,2022-09-28,South
+187df446-c304-450f-9c4a-be356087b7e7,Michael Dudley,77,Male,Diabetes,2023-12-21,East
+67548f67-8e3f-4a80-aea4-0f2001d8562d,Daniel Wise,12,Other,Asthma,2023-02-18,Central
+5d13441c-f9e7-40a9-996a-ad7756f20126,Joshua Hunter,39,Male,Influenza,2023-01-31,Central
+2efa8ede-7b2a-4cb8-acb2-242b91581efb,Chris Serrano,89,Male,Asthma,2023-09-01,South
+538ffa39-f0b3-4d8e-a2bc-a573fd5f9f4e,Tina Woods,29,Female,Asthma,2023-02-21,East
+eb3b70f6-a7ad-45d9-b510-2262ae049be4,Barbara Davis,36,Female,Diabetes,2023-11-04,Central
+47fd78f1-ae87-4f1d-a4b9-05c2dbb61836,Curtis Martinez,15,Male,Dengue,2024-05-10,Central
+fa046a9b-7f52-4d7f-a98a-4f64c1629206,Michael Henderson,42,Female,Cancer,2023-06-11,East
+8eef03ed-b851-4e07-9149-4c2569892eb7,Julie Graham,89,Male,Malaria,2024-06-18,West
+d8c4ffb7-0fb8-406c-84c8-8d2037e6324b,Michael Parker,55,Other,Tuberculosis,2024-04-07,Central
+398ceb68-1d03-471a-b832-e75267ca2fdb,Julia Hinton,51,Male,Hypertension,2024-05-27,Central
+97170895-1950-4ec6-bbc7-657256b66839,Candace Luna,28,Male,Cholera,2024-07-04,East
+0252cabf-e481-4ce0-b0a3-c26eeb3b8f81,Austin Hayes,55,Male,Heart Disease,2023-03-14,East
+5a0cc172-d725-4348-aef5-c8f068d5be01,Bryan Davis,37,Male,Typhoid,2022-10-14,South
+36dade75-61a6-44ea-9b06-ee9ff9cf4463,Rebecca Valdez,48,Female,Diabetes,2024-03-15,Central
+ea4e8ee4-3098-489a-8204-e88711e04dfa,Tracy Green,60,Female,Heart Disease,2023-07-02,East
+b649c977-0923-4f5d-8ab3-1a6470b191f2,Ray Rhodes,43,Male,Diabetes,2024-04-11,West
+f6eb9f89-4aaf-48ca-836b-e631396ddc4d,Gregory Rodriguez,15,Male,Malaria,2023-09-13,East
+8cc725bc-c2fe-4732-ac26-b6f30b4eb167,John Gutierrez,42,Male,Malaria,2023-07-17,East
+d166a5af-362f-4436-837a-e83bd282c659,Garrett Bryant,22,Other,Influenza,2024-03-09,Central
+24163b10-5462-4c15-b3b9-43484d76333c,Michael Baldwin,62,Female,Typhoid,2023-11-17,North
+9f8c2d6a-b790-458d-a80f-9122f9b4236d,Travis English,6,Female,Dengue,2024-06-11,North
+cefb80b2-9481-4d65-955e-0c2534c1d361,Katie Snyder,50,Female,Typhoid,2024-06-27,Central
+0fea4cfd-8fc2-44ad-b787-d162f1a2cd51,Lee Rogers,60,Male,Malaria,2022-09-29,West
+760c3d9a-11b8-4032-9c4a-54ee4ef8a451,Gwendolyn Riley,41,Female,Dengue,2022-12-02,South
+ccbaf35e-7a21-4807-a371-6a2645b0e9d8,Adam Rose,57,Female,Influenza,2024-03-26,North
+48c0de0e-2eba-4ccb-b583-7f4d11e954e3,Daniel Mejia,41,Male,Dengue,2022-09-15,South
+5d98fe4e-43be-4eba-b014-bc1a176a5c1a,Michael Norton,50,Female,Tuberculosis,2024-05-30,East
+65d7a68f-f21e-4a62-9391-298a7972db16,Michael Charles,85,Female,COVID-19,2023-05-06,East
+66ece6f7-19b9-4260-b905-b4d2edb89784,Kristin Flores,12,Female,Malaria,2022-09-21,South
+a3e537f4-6cbb-4cda-a64f-1bf46ad41f37,Kathleen Edwards,3,Other,Typhoid,2023-06-09,South
+6a908975-0f36-4fa9-a191-6b11b412abe1,David Moore,81,Male,Hypertension,2023-05-25,North
+2f0c97f7-c302-4b24-9ec3-80402b50e102,Amy White,35,Female,Asthma,2023-08-08,East
+7e706651-8e4d-42de-9280-96609c2b270d,Joshua Stein,58,Other,Diabetes,2024-05-06,South
+5654793e-95b9-473e-a3c8-dc51475ff953,David Joseph,65,Female,Cancer,2024-05-27,West
+5b828a44-9441-423c-a88d-ea61ec4b52ae,Anna Sheppard,13,Female,Pneumonia,2023-03-18,North
+5ce8fb08-b162-47ea-8d9e-48443891e06d,Theresa Bowman,12,Male,Tuberculosis,2023-12-05,South
+89a9a24a-9d0b-493c-a3a6-0a706b619504,Maria Sanchez,70,Other,Tuberculosis,2023-01-14,South
+295a7b75-073f-4424-9517-c4740cfcbd72,Andrew Bell,13,Male,Pneumonia,2024-04-30,West
+4838a3e2-3db2-47d4-bb3b-ba4837d6b794,Glenn Baker,57,Male,Influenza,2023-02-03,North
+1a7e35c6-185c-4c41-9352-d3a4214ccbaa,Michelle Nelson,52,Male,Heart Disease,2023-06-12,South
+04770ec1-e2f0-4c33-a87a-ec8b572eec1f,Trevor Clark,27,Female,Cholera,2023-11-12,South
+b7b0d361-4c5e-44f3-baf7-fa32cbab3af2,Virginia Morris,9,Female,Pneumonia,2024-04-07,West
+8d2e5bcb-ea58-48bd-b0b0-1070a2f332f4,Mike Griffin,89,Female,Tuberculosis,2024-01-18,East
+ad3fd61b-e114-4c10-99bb-37c2c619ff01,Megan Ball,8,Female,Hypertension,2022-10-11,South
+e23b74cf-fe10-4b64-ac01-6c105d58797a,James Gutierrez,31,Female,Cancer,2024-01-21,South
+27a99432-8cba-4529-a068-dc94a67b48e3,Tony Lee,2,Female,Asthma,2024-06-26,South
+4e1c6841-ae9f-4942-87a8-b1590b9fe38b,Martha Rhodes,6,Other,Asthma,2024-09-03,South
+5271f0bf-1481-462f-9b11-1453c63f68a6,Melissa Paul,33,Male,Pneumonia,2023-08-21,East
+239ad15d-1890-42e3-9126-261d1cb75820,Alexis Beard,76,Other,Cholera,2022-11-24,West
+083870c1-609f-4eef-b93d-9a2859d084fb,Antonio Adams,28,Female,Hypertension,2023-05-10,North
+20ae925e-a454-4ac9-9e57-1b3ccb7d8efe,Jonathan Richardson,4,Female,COVID-19,2023-02-13,East
+68f91ca9-ab03-4d3c-b69e-fe9b1575d5b7,Eugene Lane,49,Female,Malaria,2023-11-19,East
+d6a7c016-7239-4995-80b4-7098010e4bab,Vanessa Hester,87,Other,Hypertension,2024-02-01,East
+5d2c4005-0f0d-458d-a37b-05ebbdf6982c,Melissa Christensen,21,Female,Cholera,2023-11-26,South
+89b2e1ee-b573-46ec-822f-21ca2106a91a,Kathleen Christian,85,Male,Tuberculosis,2024-08-16,East
+1dcfa052-1a0c-4f2b-9734-2a2c27de5c38,Dylan Richardson,64,Other,Diabetes,2024-05-29,West
+757bb883-7e69-403d-a0bb-163101e7caf0,Madison Greer,68,Female,Diabetes,2023-11-09,East
+eb454cc6-eb03-49fc-8596-5e48b38e6e5a,Michelle Leonard,89,Female,Diabetes,2024-07-23,Central
+1985ca98-802a-405e-9a09-c668a1c68462,Samantha Adams,20,Female,Cholera,2023-06-07,West
+4839b6c9-bcab-4fc1-98a2-e88bbcbc1c7f,Belinda Harvey,17,Female,Asthma,2023-01-29,West
+b0f43a45-e7de-4c48-ae22-9c9a871346f4,Tiffany Carlson,33,Other,Pneumonia,2023-03-18,South
+4159fe4d-0dbd-4142-aa27-990a719b79ee,Christopher Rubio,27,Female,Typhoid,2024-02-11,Central
+fe95ea10-c3a2-4990-a97a-81ca267b67b2,Kathleen Ortega,86,Male,Hypertension,2024-03-28,South
+aa37930a-1796-4772-b2d0-93f8b2129836,Michael Ball,27,Female,Tuberculosis,2023-10-23,East
+96f4e6fb-817f-49bb-b9a2-8d2c3ff976a0,Barbara Parker,27,Other,Dengue,2022-10-23,South
+d41f4ae0-2d4f-4204-93ce-d39be98684e6,Jennifer Bowman,55,Other,Malaria,2023-01-29,West
+b54799c5-5695-41e4-937b-30accf4354b2,Laura Miller,67,Female,Cancer,2022-09-29,East
+33e2ed35-ae60-4b21-875e-0aa370fe0202,Kendra Cruz,77,Male,Cancer,2022-09-23,South
+90a1bda9-a9e9-4d8d-9c8b-0f9aad8a4f60,Carly Burke,83,Other,Dengue,2023-01-08,West
+d1176d45-f8fb-4854-b84d-a3c43c6b025e,Charles Cortez,52,Female,Cholera,2024-03-01,South
+ad1d24ef-71de-433f-a95b-d395964cd9fb,Dana Brown,42,Male,Influenza,2023-06-14,West
+5752f1df-fc2f-4426-ad37-f12c7decf086,Phillip Foster,57,Male,Malaria,2024-06-03,South
+10a7b232-693b-4c74-94a9-9af5b663be5c,Sheryl Ward,12,Female,Diabetes,2023-01-22,Central
+95c6ae1f-0230-4444-b992-c7703e7db333,Jacqueline Carter,25,Female,COVID-19,2023-07-02,West
+af0602a7-d11b-4093-b328-53f8634a147d,Paul Sexton,84,Male,Heart Disease,2022-11-21,South
+72d8f8c9-313b-4513-a9ac-a0ab8a1477bb,Daniel Lin,33,Female,Tuberculosis,2023-09-30,East
+805b1096-be09-4208-b085-6e5a58c7747d,Joseph Glover,47,Male,Asthma,2023-05-06,Central
+51727f7a-8e87-453e-aa57-3f303a544bc3,James Anderson,9,Female,Cholera,2022-12-09,South
+d622ab10-9127-4283-ac9b-d277f4715e5a,Patricia Meyer,33,Other,Hypertension,2023-04-07,North
+4f20d8fa-f19c-4475-81c8-0b0695da872b,Bradley Little,50,Male,Cancer,2023-06-09,East
+5706e8b8-564a-4ee3-8df6-5a554c1b30aa,Danielle Novak,6,Other,Influenza,2022-10-19,East
+0562e256-dd02-49a2-b45e-7283725d1c7f,Taylor Farmer,9,Female,Cancer,2022-12-10,North
+6056ac03-b80d-4abc-9356-dd12035a9ba6,Christopher Cook,42,Female,Cholera,2023-08-31,South
+503e6986-ee58-4d38-953d-fffa2621a4f0,Nancy Cruz,69,Male,Heart Disease,2022-10-28,North
+6ec07f86-bd44-4255-84e7-4d18fb325c33,Gina Gutierrez,77,Other,Dengue,2022-10-29,South
+04159cd5-06ef-4689-9afc-57e7a34570b2,Daniel Velazquez,26,Male,Pneumonia,2024-05-28,South
+b4b8bb74-13ec-4bf1-b06e-f43d4617dfaa,Lisa Carter,80,Other,Tuberculosis,2023-07-31,West
+60ca0072-62f8-4509-b6f8-74137595757e,Carrie Clark,67,Other,Typhoid,2023-11-27,Central
+f075442d-f6d6-4372-a4a4-5d0ced1541e7,Stephanie Dunlap,85,Other,Diabetes,2023-11-24,North
+b982069c-908d-42f5-a8b2-e30b1efa4d03,Rebecca Gonzalez,76,Other,Cholera,2024-05-24,South
+599fca52-b8d7-4078-97ac-3b577551a6ee,Angela Hancock,86,Female,Malaria,2022-10-21,West
+5b0faf2f-d0f6-4b9b-a6a3-3435d318999e,Kimberly Jones,75,Other,Hypertension,2023-11-23,South
+46d66f0d-068c-41fa-acd9-013b08fc0630,Robin Hansen,76,Male,Diabetes,2024-04-06,West
+7fe538b1-4415-4d9d-a611-df83c4297ac6,Richard Patterson,73,Female,Tuberculosis,2023-08-21,East
+e483437e-5cf4-4b21-8d9b-a062126983ef,Heather Walters,51,Female,Heart Disease,2023-05-10,South
+733a6390-bb27-4f94-8b27-b28af0dac9a7,Russell Adams,28,Female,Typhoid,2022-09-17,West
+7819b9ac-33b3-45e0-b35a-77bb6699ce71,Brittney Thompson,40,Male,Influenza,2023-02-03,Central
+9547c959-07bb-4654-b1f4-8df8c44575c0,Dawn Hardy,35,Female,Influenza,2022-10-24,North
+32df231c-04d6-43df-9ef4-dcde8b869ac0,Jennifer Adams,18,Other,Cholera,2023-12-18,North
+7c86d55c-3cda-4f52-9a97-89397d623882,Shannon Thomas,13,Female,Cancer,2024-03-17,East
+85c1fea1-5bd3-4d3d-b6d0-5a0043a2d28c,Martha Woods,68,Male,Cholera,2023-08-17,South
+a786cbe7-7ab4-488a-bc65-f878017ca7ab,Sean Hardy,81,Other,Asthma,2022-10-23,Central
+1839a67a-56d4-41bf-a288-3ce5e2e0f9f8,David Clark,2,Male,Malaria,2023-04-02,East
+05d5632f-de5a-4af6-8d2e-92a75d18c377,Abigail Gonzalez,32,Other,Diabetes,2024-03-18,East
+9f4a26a3-6ebc-46b6-9eff-fd9fbf3c77dc,Jesus Tucker,31,Male,Heart Disease,2024-04-03,North
+78d70160-6eda-469b-b4ae-cf24a0943178,Janet Callahan,79,Male,COVID-19,2024-05-19,Central
+2b75f4c5-ac11-4b55-972b-e04229aed36e,Ashley Brown,43,Other,COVID-19,2024-04-15,West
+587068e2-5c61-4793-84f9-af2ccec42c01,William Stephens,47,Other,Malaria,2022-10-16,North
+d8a3479b-67e0-4655-9e1d-4860aa8363d6,Laura Jones,40,Female,Hypertension,2022-12-19,East
+3e2f37f4-2a8a-4e5c-83ee-7636fcedf794,Jonathan Kaufman,88,Female,Dengue,2023-10-23,North
+3810bb68-cf2b-46f6-9e80-3d613ab5909f,Robin Anderson,29,Male,Asthma,2023-01-14,South
+d93fed5d-903f-4222-9c6b-f623a7f00491,John King,10,Other,Asthma,2023-04-02,South
+efa1b921-9782-47a8-bd79-f4e6430876cb,Melvin Vaughn,68,Other,Pneumonia,2023-10-29,North
+39b4575a-e488-4221-9e82-fcecf2b9ee96,Jeremiah Archer,43,Other,Typhoid,2023-12-08,North
+31376658-eaca-4f8b-9b3d-2b00e8528702,Donald Mendoza,79,Other,Dengue,2024-08-03,West
+7d69b120-9d6b-4a85-b822-1acf692f9f72,Stephanie Bell,10,Male,Malaria,2023-04-01,North
+99dac34e-426d-4ae9-8722-096f59b3abad,Craig Gonzales,8,Female,Diabetes,2023-09-19,West
+28e189bb-3f4e-4293-aa9c-99ab51f40c80,Kevin Acevedo,75,Female,Asthma,2023-01-10,South
+5034bac1-0350-460a-bc87-e2d46325c573,Elizabeth Hawkins,73,Female,Pneumonia,2023-06-03,Central
+fc1cfca5-c55e-482d-a95b-7dfb765dbcb4,Jenny Duran,44,Female,Tuberculosis,2024-05-11,Central
+a25b2ea8-762a-4c48-8121-39bd51b2545a,Walter Mullins,4,Other,COVID-19,2022-12-16,South
+374c1275-4ddd-455a-bfdd-3e783f6fae52,Michael Moore,80,Female,COVID-19,2024-07-13,North
+0a35d169-d67e-4430-a60e-e829a521674d,Elizabeth Bell,31,Male,Diabetes,2024-04-01,North
+5bd6df7f-e3f5-41d6-b446-cc310c94a3e7,George Avila,28,Female,Dengue,2023-01-20,West
+2a19f397-7e36-459a-9d6b-4187deeda6c4,Kenneth Howard II,63,Female,Heart Disease,2024-02-13,West
+638e3f42-ab97-4f3d-b35e-2a0cc3182602,Kim Gonzalez,62,Male,Cholera,2023-02-21,South
+62cb8613-6071-4755-b1e4-13f275124039,Gina Kim,80,Male,Dengue,2023-06-15,West
+9b608dbe-47cf-4ea5-b1b0-f43338324b1b,Leslie Hodge,47,Male,COVID-19,2023-11-15,South
+c9cad499-cf4f-4326-a31d-e91d9a72d921,Wendy Weeks,31,Female,Cholera,2022-12-04,West
+5c5a3094-f747-4b6f-a8e8-2a9c3018b8da,Steven Wiley,14,Other,Cholera,2024-03-02,North
+cc95323d-1e65-48d5-b96f-dd683d1e6634,Lawrence Reyes,54,Female,Cholera,2023-11-25,East
+99fae2fd-03a3-4545-9079-dfce8043df63,Ronald Tate,79,Female,Malaria,2023-08-04,North
+384507b8-40b0-4b25-9bfd-f33b91e6df71,Pamela Cole,34,Male,Heart Disease,2023-04-21,East
+9786fb26-cbd3-49ca-b842-59b7338bd765,Pamela Stewart,57,Male,Tuberculosis,2024-03-11,North
+73aaee12-f2c6-4c5a-983f-4543613fa3f3,Calvin Daniels,87,Female,Diabetes,2024-05-15,West
+303563f3-b4ff-40cf-a1cb-71dd7508b571,Joshua Young,31,Male,Heart Disease,2024-03-19,South
+acdf1dc7-f967-45d0-b8e5-d13dcc0a8811,Lisa Green,8,Other,Heart Disease,2024-08-29,North
+4c665001-9bdf-4c5e-817e-49d50093e95e,April Lang,34,Female,Diabetes,2024-05-28,South
+d55a15d0-d320-4237-82bc-063fa1a0d1c2,Victor Armstrong,85,Other,Diabetes,2023-01-22,North
+aa7ecb6d-4b85-499d-83f0-f10cca06293f,Megan Price,55,Male,Asthma,2022-10-04,East
+c0f618e3-3bc3-4e40-844c-143a21bb0f20,Cristina Clark,7,Other,Typhoid,2023-02-07,East
+85f9f87f-a3a2-4012-99f9-0ae53f2548d7,Larry Tyler,42,Female,Tuberculosis,2022-10-26,North
+7a82ad9c-5cfb-4497-b3b3-fcb7c22b5237,Julie Alvarado,9,Female,Hypertension,2023-12-12,East
+05b6c9ce-7c6f-4cd4-be85-314c2e8142fb,Daniel Mcgrath,58,Male,Typhoid,2024-08-24,North
+b77db395-4537-4d96-a105-a49836085593,Jennifer Lee,64,Female,COVID-19,2024-08-17,East
+25a7172d-f179-4695-8489-3ec8ebdfea65,Matthew Gomez,70,Male,Influenza,2023-04-12,East
+34d8d5b7-3025-4c2c-97d1-6c3e99ce47d5,Kimberly Brennan,49,Female,Typhoid,2023-12-04,West
+3b9af8f7-5910-47a1-a607-c9b8be519df5,Kelsey Smith,87,Other,Tuberculosis,2022-10-14,West
+dae14689-123c-43b4-a919-c06263ec6daf,Regina Mckinney,34,Male,Hypertension,2024-02-20,West
+ea0a6e46-b9a0-4009-b929-63e0cd71118f,Tammy Robinson,89,Other,Dengue,2023-04-20,Central
+3452b92a-8490-44a4-a13b-f91dbf262aa7,Jessica Barrett,83,Female,Diabetes,2024-04-04,West
+5a47cc7f-2059-417d-863e-5b31f880e703,Brandy Chandler,40,Other,Typhoid,2023-05-17,East
+4f86d0f1-a973-4a98-abdf-406221429687,Erica Ross,15,Other,Cholera,2024-03-30,South
+ea3eb08e-060f-4da0-8f29-306bb3e30639,Andrew Daniels,35,Other,Heart Disease,2024-08-17,West
+6f79498b-4f57-4f43-b3d4-bd5a19bcea40,Richard Shaw,1,Male,Dengue,2022-10-08,East
+bddc574c-9e9d-4666-871f-44155231e7f9,Eric Brown,79,Female,Pneumonia,2023-05-11,North
+dc85935c-bf20-4b53-b427-56c7548f2588,Kyle Farrell,42,Female,Hypertension,2023-04-25,West
+ef3dd954-d21a-4331-b5ff-053706fb786d,Charles Thomas,31,Male,Asthma,2024-02-14,Central
+09780888-cce9-4ab4-a38e-6495211cfcb1,Shawn Hudson,13,Female,Cholera,2023-02-05,East
+2d1391b1-3a08-4c6a-9e50-ca7fae7e71eb,Barbara Jackson,18,Other,Cholera,2023-03-10,Central
+5ddb756d-2ab3-4e8f-b1c7-d7b4ff704590,Gerald Walker,17,Other,Influenza,2024-07-10,Central
+b6024924-e937-4adc-a319-e902640e6800,Dean King,25,Male,Diabetes,2022-12-29,North
+1aa3d8b5-b6dd-45b9-9bbc-6ae418f89d76,Jon Ramos,47,Other,Heart Disease,2024-05-24,West
+6aac8477-50c9-48eb-8672-fcaf5f07a499,Joseph Lewis,85,Other,Tuberculosis,2024-04-26,East
+6714eb1e-c070-4940-843a-8b114af530db,Adam Miller,16,Other,Pneumonia,2023-06-27,Central
+9dd9c69d-b86b-454b-a451-0e41063e467d,David Walls,86,Female,Malaria,2024-03-21,East
+a4c98a55-3cc6-49fc-aa6b-8358ff622c18,Joseph Garcia,82,Male,Dengue,2023-02-09,Central
+2161de4f-74ce-4f36-8791-cdc30ba0fd75,Nicole Mercer,75,Female,Tuberculosis,2024-07-08,North
+797fcca9-8080-46c4-8dd9-9330c16dc4cb,Curtis Green,12,Male,Pneumonia,2023-12-01,South
+4ae6eccd-19d2-442b-a56b-ec874340c7c9,Kimberly Garrett,44,Male,COVID-19,2024-08-19,West
+96f619c6-be13-4325-b3ce-b0ec59f9c8e1,Stephanie French,8,Other,Tuberculosis,2024-07-09,East
+f7d858d6-0025-4e16-ba1a-3be4689ca894,William Carter,39,Female,COVID-19,2022-12-26,West
+74f0e2dd-5bbc-455c-a460-8edd66591a33,Megan Glass,72,Female,Hypertension,2022-10-27,North
+fc22de20-c1c5-4703-bd98-aced512be5f5,Terry Rogers,73,Other,Diabetes,2023-03-19,East
+ddcf854b-ddc6-4059-bbe3-5491f59f19a3,Steven Mcpherson,23,Male,Pneumonia,2023-03-15,West
+42fca384-e71a-455a-a32c-1d2f3df50bc1,Tiffany Walker,29,Other,Diabetes,2023-10-18,East
+6c26f120-44d1-471f-98ad-9cc7821dfbbe,Matthew Kelley,75,Male,Pneumonia,2024-08-22,Central
+4b49ab32-0e13-455e-ab62-5cc95efe1340,Andrew Campos,3,Male,Diabetes,2023-07-02,North
+861b61a2-44b6-437a-90c4-d5e64938026b,Alexandra Higgins,49,Female,Tuberculosis,2023-08-25,West
+f708830f-91c5-4d26-a992-ce911d5bc461,Bradley Chen,35,Female,Asthma,2023-02-13,West
+42217154-1b91-4e3a-9f46-47b68fd2890c,Michelle Edwards,14,Male,COVID-19,2023-05-17,North
+ea71d5f2-c66f-4aab-bd3e-ef639fe27e29,Cynthia Moore,90,Male,Heart Disease,2023-12-24,West
+583b348a-c4d9-4dc0-94fc-d2790e1b82f2,Carrie Olson,9,Other,Influenza,2024-04-01,South
+4f0224ba-d348-4443-8eec-1e8d896cc2d6,Andrew Young,89,Male,Hypertension,2023-01-13,West
+5f95d58c-cad1-4257-8508-ab9062b27bcf,Frank Lucero,16,Male,Hypertension,2022-12-09,North
+4f407fea-498a-4d8c-9376-4527cd6a5ff4,Christopher Russell,51,Female,Cholera,2023-10-23,North
+a2ef8beb-cd6c-4c82-94f2-40b782a66e08,Allen Smith,60,Female,Dengue,2023-01-08,East
+c7c84db9-71d4-4b75-b3ca-e40cc5de843b,Courtney Morrow,28,Male,Hypertension,2022-10-25,East
+2d8d994f-b9ba-4247-bd6b-f71aa8053f3c,Lisa Larson,23,Female,Malaria,2023-09-13,East
+b354a6de-7152-4882-ba34-f3a4f5c6e0f8,Lindsey Beard,74,Female,Heart Disease,2023-07-06,Central
+5d9eee20-aabc-4ae1-859b-4b3f823c06e4,Randy King,79,Female,Typhoid,2024-06-03,West
+4dfadb0d-cb42-4e49-9311-9d8d23d7c787,Virginia Martinez,48,Female,Asthma,2024-05-02,West
+4bd8ffe4-fdb6-407a-8db6-7305bf40c9b0,Michael Ochoa,35,Other,Influenza,2023-10-23,Central
+c0b33bc2-347e-435e-82e0-fe88bcde6dec,Erika Rivera,56,Male,Cancer,2024-06-24,East
+b15301a6-ca46-454d-9a17-83f523a35a6c,Heather Hogan,81,Female,Malaria,2024-07-02,West
+3321aa9e-944d-446f-a423-00406804898a,Adrienne Wall,85,Male,Diabetes,2024-06-13,West
+e8472994-4670-4e3d-8a4e-a3d3edb30858,Raymond Garza,37,Other,Malaria,2024-01-14,West
+fb4d151f-d09e-43c2-a9f9-ac1e0cfb415e,Joel Williams,56,Male,Cancer,2022-11-23,West
+fdf8db60-fd7d-4fda-8cdb-22c17fd7a82d,Lee Summers,52,Male,Asthma,2024-03-09,Central
+1ae9175f-f1e6-4aad-b46b-037cfda1bb2a,Jennifer Davis,2,Female,COVID-19,2024-05-13,Central
+29f1b20c-6730-4f16-8b30-e65f80bd2728,Joseph Hughes,23,Male,COVID-19,2024-08-07,West
+3671e8fe-0106-46a5-947b-cc4bab0847d4,Nancy Taylor,51,Female,Pneumonia,2023-11-01,East
+632c18d3-196a-4bfb-9443-7e2295057c92,Taylor Cochran,56,Other,Malaria,2024-03-27,Central
+2d70d083-f092-483d-9a3c-04db85620d70,Bradley Flores,5,Female,Hypertension,2024-03-21,North
+4ecac28d-142d-45d3-aba0-39ec265e4315,Lauren Cook,16,Female,Heart Disease,2023-06-24,North
+0fb32e3f-61fa-46fa-8ffe-320e69d47e24,Debbie Larson,79,Male,Influenza,2024-08-11,North
+a316923d-1d3b-439c-992a-393ccc25c86e,Danielle Schultz,22,Female,Malaria,2022-12-27,East
+e8b487f8-4d14-490d-84e8-9421680e6dad,Sheryl Robinson,63,Female,Tuberculosis,2023-03-08,South
+9b0473cd-0fd5-40f1-be7a-dfc3c4316713,Elijah Buck,58,Male,Hypertension,2024-02-18,East
+d7972b6f-c433-4dac-b249-bda3b845c75b,Shannon Murillo,80,Female,COVID-19,2022-11-30,North
+0053845a-ac0f-4302-8ef6-2effabf05f5f,Colleen Herman,42,Female,COVID-19,2024-06-03,East
+8efa71cb-ce5b-4a89-85c2-8da490d9df29,Wendy Andrews,11,Male,COVID-19,2023-10-22,Central
+b14e835f-275e-4590-b795-c41c68bc253d,Jacob Day,25,Other,Heart Disease,2024-06-12,South
+f30199c0-6495-4beb-b654-06057d98fb58,Ashley Lucas,38,Other,Asthma,2022-09-14,East
+e53d6bd9-f71c-46af-9a32-7e172f7a1576,Henry Newton,56,Female,Influenza,2022-10-13,Central
+9e974527-b3e8-4396-9e35-f9e4233d010b,Aaron Reed,53,Male,Influenza,2022-09-08,South
+c4e5d371-86a9-4913-80e0-04380ed38126,Paul Escobar,32,Other,Cholera,2024-01-11,West
+a131fd1b-f91d-49c5-9e11-8f47ff5ed56d,Tony Young,40,Other,COVID-19,2023-03-14,Central
+23c7685e-5f58-4edc-bca1-0e4eafcd69d9,Jessica Randolph,20,Other,Dengue,2022-10-18,South
+b9711677-8838-4cbd-9603-29d5740a3f65,James Jones,89,Other,Hypertension,2022-10-07,North
+0bb2f0ac-2305-4a3c-9b98-fc011a5e1198,Courtney Wilkinson,21,Male,Hypertension,2023-12-26,East
+cae4e63e-d6a4-4554-a829-a0ebf3f48da7,Lauren Sullivan,4,Female,Diabetes,2022-12-03,West
+5a7ea252-e385-45b1-8ce5-4a9b5b8be848,Daniel Hernandez,3,Other,Influenza,2022-10-28,East
+dccdffed-4bf2-47b4-9b36-684c6a579eee,Laura Frye,56,Female,Asthma,2022-12-23,South
+ae59d723-5abb-4335-b75f-a8edb3ccdedb,Alyssa Cardenas,17,Female,Dengue,2024-08-25,East
+11b515b9-4452-41ef-bdf7-c2c52020b721,Eric Knox,25,Male,Tuberculosis,2023-10-17,West
+e6c09f4e-4f39-474d-a8c2-f390d95bfafb,Thomas Gill,51,Other,COVID-19,2023-02-15,North
+8f14798e-3c72-4d71-ad6b-c85e71c24d3a,Ray Hernandez,18,Female,Cancer,2024-03-06,South
+de729679-a39d-4285-b8af-224a3dff9bbd,Eric Conner,25,Other,Tuberculosis,2023-09-26,South
+65b8837b-ac2c-4ec0-a457-a24343294835,Tammy Parks,28,Other,Diabetes,2023-08-11,South
+1f6543c9-ec7d-4601-92cc-eba1713abf1b,Tiffany Weiss,1,Male,Influenza,2023-09-25,North
+2c430b24-b48a-4c67-84a6-14da8ce4264e,Kayla Oconnor,8,Female,Typhoid,2023-06-09,South
+1a08e093-632e-4bd2-a80b-9342e34bec5e,Gary Wagner,13,Female,Diabetes,2023-11-19,West
+0c02b2c1-7b77-44d6-8df3-f500275eac5a,Stephanie Pham,80,Male,Typhoid,2022-11-03,North
+ea48bffe-08d4-4360-a2cc-e96db5b2a947,Richard Shelton,13,Female,Typhoid,2022-12-17,East
+61c7060a-619d-4d9f-a28c-2e9d766cb7d5,Kimberly Martin,44,Other,Tuberculosis,2023-09-30,South
+9f391aba-9cde-44a0-9f9b-47eb75550bb6,Michelle Mathis,85,Other,Hypertension,2023-02-20,Central
+748f4f9d-2d82-476c-bec8-d407406200a1,Amber Daugherty,77,Female,Cancer,2024-08-26,North
+69e8d31e-b49e-42d9-95d7-80947082ecb1,Cheryl Stout,20,Female,Diabetes,2023-09-05,East
+1326704e-5cf7-4db8-88d4-79204f24ae2b,Laura Coleman,65,Female,COVID-19,2024-01-09,Central
+1375d68c-5bde-4c6e-8ff5-e38ea52e1bb1,Andrea Huynh,71,Other,Typhoid,2023-12-11,West
+d754edad-8028-4890-949c-fd1356ca0060,Shannon Buck,34,Other,COVID-19,2023-10-18,South
+5eeeffc5-2014-4669-9335-6c41fd17c040,Katie Williams,44,Other,Cancer,2023-07-18,Central
+4a556df2-16c5-4860-995c-e9f2e6ea1f37,Mitchell Santiago,39,Male,Asthma,2024-07-25,Central
+7c64c227-d42f-4208-ad73-37f5f93b494c,Christian Rowe,33,Female,Hypertension,2023-08-02,East
+dceec75f-47f5-4b3b-ba50-fea99887bc99,Brandon Rogers,6,Other,Tuberculosis,2023-04-10,South
+13f58501-7eb0-4824-b775-023a873627b8,Pamela Martin,75,Male,Heart Disease,2023-04-28,East
+7a1a32ff-fd12-4c68-b3ca-4042c24f21ee,James Walters,73,Other,Tuberculosis,2024-04-06,North
+81c3488e-4108-4480-b8f3-ccfe9b220e4b,Jeremy Owens,47,Female,Typhoid,2024-04-04,East
+f2c72550-c624-487a-860b-aea23a110f7a,Brittany Goodman,20,Other,Typhoid,2023-04-08,East
+3d6873f4-71ca-4cfc-9f45-5be6b8730580,Crystal Alvarez,11,Other,Influenza,2022-11-27,West
+a01c1f15-9c65-4bdd-85b2-866b6346d75f,Cassandra Brown,2,Other,Typhoid,2023-05-02,North
+094e87c6-3e4f-4815-9948-c15ba829bca8,Alison Nelson,58,Other,Malaria,2023-11-26,East
+8d49b41f-8870-4302-b972-4ebe127dd769,Dawn Reed,39,Other,Tuberculosis,2024-05-14,South
+f1a4a858-09c1-4b16-836a-f8f8e2681e4a,Andrew Jackson,34,Female,Asthma,2023-06-03,North
+72653519-6b24-4280-9d06-c66736d45bc6,Kevin Meyers,83,Male,Hypertension,2022-09-27,Central
+e4220c3b-5170-4a07-8df3-7f6489a8963d,Evelyn Hayes,62,Female,Cholera,2024-06-14,Central
+168a8d4f-0fe6-408c-99c8-bb5e08c936e3,Amanda Montgomery,1,Other,Cancer,2023-10-13,South
+e3cc0ab5-b1d9-401d-945a-a4aaec50ecde,Deborah Martinez,83,Other,Hypertension,2022-10-09,Central
+78d2e198-c7d3-471c-b55b-f6e96dce0be1,Brandon Anderson,1,Male,Typhoid,2023-07-10,South
+bddc468c-4389-42fd-802c-63838efee599,Lindsey Johnson,32,Male,Malaria,2022-12-09,West
+0767895b-032e-45bc-96fc-5dde4b0ce3fd,Amber Gomez,23,Male,Pneumonia,2022-09-19,West
+76cedd12-652e-4dbd-a7c1-ac4f6645e371,Travis Stewart,52,Female,Typhoid,2024-09-04,West
+c8919ce2-6836-472f-b548-84b1324c7a1e,Paul Small,7,Other,Cancer,2024-01-19,East
+6f9ae943-74fd-4177-bf71-5bd34a00530d,Julie Morgan,52,Other,Tuberculosis,2024-03-11,North
+ed3ec7e5-c8b4-4579-bfeb-36d09a55736c,Kathryn Malone,8,Male,Hypertension,2024-03-20,Central
+315c77c3-4bba-4d91-8fe1-7f3d18a62e99,Tina Li,29,Female,Cancer,2022-11-03,South
+46944c1c-4780-4eaa-b823-988d628712bd,Christina Harrison,75,Other,Heart Disease,2023-03-02,South
+27938ce5-fe40-4b48-9ca2-1a65f55943b0,Zachary Lynch,84,Other,Heart Disease,2023-10-20,Central
+403d7f00-944a-43ae-995b-e3ae00e8c6c0,Tony Davis,67,Female,Pneumonia,2023-01-20,West
+d9cc3120-cb0e-4201-814e-201c66ee061a,Sheena Li,12,Male,Cancer,2022-11-08,North
+119d5912-191a-42cb-ac8e-c3afb7220c07,Christopher Henry,45,Female,Cholera,2023-12-30,East
+fc414c2c-f0d9-4fbc-9b0b-7e2fd8bb48c7,Douglas Scott,10,Male,Heart Disease,2024-08-08,North
+567dcc53-2b47-4ead-a25f-7f4182a792af,Keith Sutton,10,Male,Heart Disease,2023-07-12,North
+ba19a54b-b508-4b76-bb5f-cf505ee276ae,Bradley Marshall,78,Other,Heart Disease,2024-05-07,West
+d33c9f0f-e3b9-477d-97dc-1645c09c67a5,Emma Pena,78,Other,Hypertension,2024-03-15,Central
+ce86d729-f819-43bc-8a6f-cece7c432748,David Edwards,59,Female,Tuberculosis,2023-02-27,East
+baa79dc8-06d5-4778-8fab-5ef53b6adf21,Mark Lewis,38,Female,Tuberculosis,2023-10-16,Central
+4cb78976-5fe3-449c-88df-f84390874999,Jared Barnett,39,Other,Cancer,2023-02-06,North
+42781312-8bdd-4328-8643-ce8f89088755,Matthew Bell,27,Male,COVID-19,2024-04-19,Central
+1f321ebf-80d9-4d27-b06a-d50be99e2814,Amanda Fox,43,Female,Cholera,2022-10-01,South
+6ff2d753-b300-4c01-9840-3b30b12c7deb,Stacy Miller,17,Male,Malaria,2024-06-20,Central
+6b8456d1-4821-4981-8ba6-14374dee06f8,Nancy Garcia,78,Other,Tuberculosis,2023-06-05,West
+dbe679fc-7e9d-4556-85ef-cef073d59e49,Lucas Barrera,26,Other,Cancer,2024-06-11,West
+15652473-8245-41b7-9617-b5d795857897,Melissa Morris,1,Other,Tuberculosis,2023-12-30,North
+07366b8f-92b1-49ef-a678-945d28d2cf27,Patrick Rosario,11,Male,Pneumonia,2022-12-01,East
+88df3344-c75c-4a3d-a615-1899aee5273e,Barbara Morales,73,Female,Diabetes,2024-05-01,West
+5eea20b7-d778-453d-b33a-5e73bfac4810,Jacqueline Tran,37,Other,Diabetes,2024-03-24,North
+5a9a5bd9-5837-44ed-b465-e031db53f91a,Charles Howard,56,Male,Asthma,2023-11-04,Central
+78429922-7600-4d1d-b65e-ae779ddc533c,Derek Santos,61,Other,Cancer,2024-09-04,North
+15e5e903-bd42-4e61-94de-2b1e80829f5b,Karen Torres,25,Other,Asthma,2024-08-19,North
+4bfac519-5e1a-40f4-b43e-8b49b5b52896,Cindy Wright,54,Male,COVID-19,2023-09-29,North
+e3fd5959-dfa3-42da-9e50-8caf9619b80c,Mary Wallace,7,Male,Dengue,2024-08-09,North
+76959a5a-63b3-40c5-8b08-479ce59b0a8a,Meagan Schultz,13,Other,Malaria,2023-11-22,Central
+8ac4fbe0-195b-4539-8454-f1302289153d,Rachel Thompson,84,Other,Dengue,2022-12-22,Central
+769a9d7b-28e3-4f39-82e8-3ea07222aa9b,Jaime Turner,40,Female,Diabetes,2024-06-13,North
+7153aaef-7b76-4ebb-9151-0f3035152b5f,Brittany Barrera,66,Female,Heart Disease,2023-04-29,West
+1e765e83-6964-4e82-8b91-d7c757a665f0,Wendy Townsend,57,Female,Tuberculosis,2023-06-05,North
+20ba3eb0-4bf4-4d20-a916-c220748e4094,Cody Lindsey,86,Other,Malaria,2024-07-28,West
+ce3f2bb6-ce7f-44cc-8ff7-fd7716f9396f,Alexander Avery,12,Other,Dengue,2023-03-10,West
+64cabe6b-83f2-46f4-ac46-00250cc04106,Priscilla Adams,39,Other,Diabetes,2022-09-12,South
+8f25c307-d0d9-4435-a4bb-09614f915387,Robert Nunez,63,Female,Asthma,2024-03-30,East
+83b881ed-c8cc-4e79-965c-6783b156c313,James Estes,3,Female,Cholera,2023-04-30,West
+1a96686e-25a2-4a2a-b2fa-4c485cba7dcc,Brian Kelly,4,Female,Dengue,2022-12-12,East
+506c3489-c93c-4e5b-8c82-f37c776e7359,Brian Bentley,49,Female,Cancer,2024-02-10,Central
+be11c043-a65f-4d02-b608-9d58eca2855c,Theresa Haynes,43,Female,Typhoid,2023-11-13,Central
+590628c8-0e25-4b92-88d9-6ca02365f887,Jennifer Potts,37,Other,Cholera,2022-10-04,Central
+c7e7c113-2240-43b8-a4ec-f2c58da73f8f,David Clark,5,Male,COVID-19,2024-07-31,South
+1a541b00-4616-40da-81b2-14ac8012c13e,Mrs. Alicia Cooper PhD,38,Male,Cholera,2024-05-30,South
+37c29d2b-300f-4712-adaf-db5b65d5d802,Michael Jackson,13,Male,Typhoid,2022-09-26,North
+42c9acb0-9a91-4c1c-b582-a5737ef22d1c,Robert House,15,Male,Cholera,2022-12-17,West
+b2aa6fbc-cd4c-4c06-a19b-2a64ad4bb4eb,Rodney Reynolds,71,Male,Cancer,2023-08-13,North
+cfca4064-d037-453a-aa2f-3da3fc9cbdc9,Kevin Ramirez,82,Female,Typhoid,2024-08-26,West
+c3edfc28-3dcf-4dbb-9d44-4fdc74d17fd2,Dean Thomas,54,Female,Asthma,2023-09-11,South
+376a7509-03e4-4502-abe9-3c00f56e79dd,Paul Cruz,10,Other,Diabetes,2023-09-23,East
+9ea2e1dd-4292-46a1-8731-ab16320d3e13,Todd Porter,80,Other,Malaria,2024-07-12,South
+ab70d33c-63f0-4f15-8d04-ba810e1f66ad,Tyler Anderson,18,Female,Pneumonia,2023-08-29,North
+ada96583-f07a-4804-8a55-4793dc83f80f,Ashley Jones,80,Other,Asthma,2024-03-29,South
+48312763-8f24-49fa-a939-47c0c0312441,Jody Davis,65,Female,Malaria,2023-11-07,West
+ff24c113-3409-4909-b019-febd2d79d8c0,Carl Hernandez,25,Other,Heart Disease,2022-10-14,South
+e6d20b2f-9996-412e-a28e-788fb0bfacdc,Michael Rosales,35,Male,COVID-19,2024-04-15,East
+033032d2-f670-4b87-9386-2248af8cd7b9,Christine Garcia,18,Male,COVID-19,2023-06-28,South
+1d45b6f2-dba6-4a69-9fd6-51c0e097ed13,Laura Cooper,14,Female,Malaria,2022-11-07,Central
+f97d15ac-e07d-4101-949f-4409706aa6ee,Joseph Craig,58,Other,Cholera,2024-01-16,North
+521b2af8-1d82-407b-bb00-8cb86c48b4a8,William Montoya,26,Female,Asthma,2023-02-20,East
+6c1aed9e-f902-4c92-b390-8260f98316e8,Lori Carter,65,Female,Asthma,2022-11-24,North
+858320a8-db97-4997-9a29-85b43513dcfd,Beth Lawrence,55,Female,Tuberculosis,2024-01-14,South
+215ccdb1-1689-4d70-b3c8-d40a94636cb8,Michelle James,57,Other,Hypertension,2023-01-05,West
+48d6308f-ea10-4f93-952e-6d34d0f41058,Leonard Escobar,50,Female,Influenza,2023-08-07,West
+a7f99281-6c84-4604-ae33-346a5f7f4cea,Lisa Larsen,89,Other,Asthma,2023-01-01,North
+3bcfce67-b290-4aa6-935e-73298e6778bc,Darrell King,18,Male,Diabetes,2024-07-11,West
+0ee6294e-72a3-4343-b318-bb3d412f668c,Valerie Medina,43,Male,Typhoid,2024-01-08,East
+697ed001-3fe0-42ce-842c-c5f765a5fa88,Denise Hall,41,Male,Malaria,2023-04-02,North
+2ee176de-850f-4246-be56-a5cbcfbf23b9,Brent Ochoa,19,Female,Asthma,2023-10-12,West
+bb4a85d3-8b7b-4a89-9d1d-a9624a1201b9,Robert Salazar,46,Other,Hypertension,2024-03-23,Central
+75849dce-6053-43c5-8127-ce0935629287,Maria Smith,55,Female,Malaria,2023-05-25,West
+a3624a99-a046-4661-95b2-bad593e1e6f2,John Moore,72,Other,Heart Disease,2022-12-13,Central
+540d305a-0438-4b13-9e78-d77a48a572a2,Rebecca Robertson,19,Female,Asthma,2022-12-18,South
+3d88991f-cba5-4d06-9ebc-a1c0d84c1cb3,Cheyenne Jenkins,59,Other,Asthma,2022-10-26,South
+bbe3e55e-e02e-4ea1-80bf-7a590537150e,Sheila Pacheco,37,Female,Hypertension,2023-02-23,East
+67fe5792-a34d-45ee-b7f4-321893d9611d,Nicholas Floyd,59,Female,Malaria,2023-11-17,Central
+38a30e36-4681-4c57-b1c3-3a1f138ae987,Sarah Ryan,29,Female,Dengue,2023-11-28,North
+91c9d66c-8d7f-40e7-a5ae-a97fdc2840d3,Robert Payne,13,Other,Hypertension,2022-12-13,North
+4f42dc4b-806c-457e-b7f9-1d831355d2b3,Kevin Bailey,89,Female,Typhoid,2022-11-12,Central
+33b76a4c-d33b-4bc7-b884-83bdcc9d8df0,Bonnie Salas,43,Other,Tuberculosis,2024-07-05,North
+189ab4c7-4b73-45e6-b916-937f0637f2d3,David Wells,45,Male,Tuberculosis,2022-10-07,North
+c8941ce0-2bfa-4b4e-87ab-2f5964801cc8,Kathy Carter,50,Male,Typhoid,2023-07-15,South
+d06420cd-c5d2-4fb7-a3ad-f8d0157ac38b,Robert Lindsey,51,Female,Heart Disease,2023-06-05,Central
+e2f218b6-f9b4-4757-9fe4-46c6b7130298,Allison Norton,24,Female,Typhoid,2024-03-13,Central
+cfd89c82-1b3a-419c-8e9e-90b4c1e8ae10,Elizabeth Grimes,43,Other,Tuberculosis,2023-03-29,East
+a769b355-de24-4d7b-8fb1-1502e597ffaf,Mark Love,32,Male,Hypertension,2023-09-07,East
+f2ffc2bd-f9cd-457f-9b38-f7d9a1b6d412,James Mejia,74,Male,Cholera,2023-01-02,South
+725a7235-ac34-4a23-b4b5-cd6a1134402e,Michael Mcdaniel,30,Female,Asthma,2023-03-13,Central
+1ef98107-9a75-4355-af3e-267e72e95535,Vanessa Bartlett,35,Female,Dengue,2022-11-01,East
+85c238ec-6812-4b6a-adeb-b225909c2bbd,Andrew Thomas,52,Male,Pneumonia,2023-02-21,South
+82754955-446a-40ae-b6c3-5cff4281b139,Deborah Hudson,67,Female,Cholera,2023-12-09,West
+165bf445-572d-426b-a613-2c56d074c611,Sarah Gonzalez,75,Female,Pneumonia,2023-11-09,East
+6e068a74-b053-4a56-8fa4-79f7dce7c8d5,Jason Martinez,12,Other,Influenza,2023-07-02,West
+b60b2e5a-3cc0-4b36-9bd7-c96ec90bbea4,Kaitlyn Diaz,34,Male,Typhoid,2023-03-11,Central
+0419b64e-5728-4e6a-8795-577bf27d19a1,Karla Brown,71,Male,Asthma,2024-08-29,East
+97396bec-dcb7-438e-bb9b-1d9241ee8f23,Patrick Boyer,21,Female,Malaria,2023-01-14,Central
+5af28f54-3d34-4626-843c-730b9adbb7dd,William Robinson,8,Male,Heart Disease,2023-08-25,Central
+85d3299c-458e-4afd-9506-e214940fd14e,Alicia Sanchez,38,Female,Tuberculosis,2023-12-10,South
+649c49d5-e260-4ef4-b2eb-367932722be2,Kyle Baldwin,33,Male,Dengue,2023-06-09,South
+f0403a4d-2367-421c-be1d-4931f83c231c,Robert Ross,61,Female,Diabetes,2024-05-03,East
+caa82f17-4f66-49d0-97f0-35189e89d423,William Roberson,70,Male,Cancer,2023-06-05,West
+2d453cbe-e71e-414f-a8a9-b32e8ea3ff1c,Susan Roy,56,Female,Diabetes,2022-12-14,South
+db93d172-fc76-4018-bc78-deb6888e603f,Melissa Jenkins,37,Male,Dengue,2023-05-15,West
+583dc01b-3b33-4bb8-be37-6c7e70252153,David Smith,59,Other,Influenza,2023-01-01,Central
+abd89067-ba1d-4e39-96b5-9d8daba64b16,Dawn Hawkins,50,Female,Heart Disease,2022-10-02,Central
+8a91fda7-efd2-4d47-aa60-80612302399f,Joseph Hays,13,Other,Tuberculosis,2023-04-14,North
+9208429c-99df-4ba4-b5c4-2506faae82bc,Madeline Frazier,5,Female,Asthma,2023-11-29,Central
+d4ac3d20-a4f9-417e-90da-8a15076e23e3,Robert Clark,54,Male,Asthma,2023-05-16,North
+37748a4c-8180-4862-88d4-cf7b63c8de01,Gina Johnson,31,Other,Heart Disease,2022-11-05,South
+7839127d-78ba-42a3-966e-ef78a123ca66,Bailey Shields,51,Male,Cholera,2023-05-23,East
+12e9a9dc-c909-47ef-850f-d9dd23651b98,Richard Clayton,56,Male,Heart Disease,2024-05-31,East
+61669cfc-1680-4a2d-badb-8209efafe865,Jeffrey Cook,50,Other,Influenza,2023-08-27,South
+138baa19-74ba-4fc1-ae03-71098eb0794d,Timothy Hancock,33,Other,Typhoid,2023-04-26,South
+2f75a6a8-7adf-4ef3-9d99-296cb2d3136c,Catherine Avila,17,Male,Diabetes,2023-07-01,West
+b1646147-4016-417c-9a92-3f3602397405,Robyn Ingram,73,Female,COVID-19,2022-09-24,East
+212786b2-8731-4deb-9491-b4e14f7049e4,Cristina Sanders,81,Male,Influenza,2023-10-07,Central
+38c2e7aa-49d9-4e16-89f6-8ace5ee1f9a6,Heather Cobb,23,Male,Pneumonia,2024-06-01,North
+8565e68f-5da0-4897-a26f-da54da331481,Jillian Lowe,32,Other,Cholera,2023-09-26,West
+a0b49360-c1a6-4cdd-801c-8a9ed17ec8cb,Megan Snow,18,Male,Hypertension,2023-05-23,East
+e67bf27b-5dba-4748-a810-ae811083ef85,Bradley Peterson,32,Male,Dengue,2023-09-20,North
+ada3f401-5ff8-4961-99bc-4b96d02baf4d,Kristen Rodriguez,48,Female,Dengue,2024-08-07,Central
+07eb73ba-ed09-406f-8165-1e9027e4b817,Tanner Butler,63,Female,Pneumonia,2023-02-23,Central
+09fd36f7-e8dc-44d3-a625-9eec861fd719,Abigail Soto,14,Male,Cholera,2024-04-12,South
+dc073b8a-b6e5-4829-a1c5-c0fd6b55372e,Robert Rasmussen,88,Female,Dengue,2023-03-13,West
+92abfc53-e674-461a-b908-d767e43cb9f7,Kelsey Garcia,70,Other,COVID-19,2023-11-04,South
+bcb68d7e-fedf-4507-926d-028ed3be89c8,Joseph Padilla,74,Female,Typhoid,2023-04-11,Central
+06700fa6-9c2e-40c1-b919-13a09a820d1b,Chelsea Murphy,65,Male,Dengue,2023-09-06,South
+eb9048f9-0521-4827-a0be-566ec2f75433,Donna Elliott,30,Male,COVID-19,2023-02-05,North
+59acd9c9-90ba-4cc3-bb00-456fa50c2321,Meghan Moreno,77,Other,Dengue,2022-11-20,East
+92045ba4-ccf5-418f-b324-b6d76520bf52,David Barrett,49,Female,COVID-19,2023-07-11,Central
+d31ad607-e759-4bb9-b3be-b8d73d3eef50,Kyle Webster,81,Other,Hypertension,2022-12-23,Central
+b2c32d30-1247-4f90-92de-aa92879f8dab,Ryan Alexander,54,Other,Cholera,2023-06-16,North
+d8ec47b6-75de-44d6-a9aa-11c7f9363572,Aaron Spencer,16,Other,Tuberculosis,2023-02-03,North
+cb9b27a5-703a-4661-9dd3-c3002871ed21,Steven Davis,65,Female,Asthma,2022-11-26,West
+9e9e197f-8b7d-4d51-bcc3-b38326eb78e4,Mrs. Nancy Miller,6,Male,COVID-19,2023-11-22,Central
+717cdb50-0b1b-468d-b814-c8fbba97f7ec,Kristine Spencer,53,Female,Cancer,2023-07-01,North
+249f1632-9649-4a01-bbd0-632cb22f8b76,Tanya Walls,25,Male,Pneumonia,2023-06-05,South
+697da33c-ba77-4a72-9661-254472e8e675,Suzanne Wells,38,Male,Typhoid,2024-08-16,West
+a8e5b83b-c04b-4422-a77a-001eb215f716,Johnny Reese,83,Other,Malaria,2023-05-22,East
+55bb36d3-63de-4a46-b7eb-b8bdd7cfde4d,Casey Hubbard,7,Other,Tuberculosis,2023-11-10,East
+1ef609ae-a9fc-4f3c-8fe8-8b694ba193a0,Stephanie Moore,55,Male,Malaria,2024-07-05,Central
+3fcccbe8-f1f1-4de8-9164-b5bad07dc0a4,Anita Hall,8,Other,Cholera,2024-07-21,West
+9890aed1-2ae0-4498-b1a6-34e86bd5ad4e,Samantha Cortez MD,20,Female,Diabetes,2024-01-27,Central
+cb1e762b-b970-4c42-9439-ef8201842d2e,Emily Williams,3,Male,Hypertension,2023-03-31,North
+cf1619d9-653b-4977-ae0a-8ef5e9360bd5,Matthew Morgan,83,Other,Malaria,2023-11-03,Central
+c876d60d-16fc-43ff-8747-f3c52d011ea1,Pamela George,40,Female,Heart Disease,2023-02-25,West
+8e1245e5-f4a8-42c0-ae4d-e62c2a7df9da,Deborah Reid,39,Other,Diabetes,2023-07-12,Central
+20c65a26-2fa6-42e6-80f9-8aa4443077df,Evan Ingram,41,Female,Influenza,2023-04-01,South
+195202de-bc6f-4d56-aaa8-a6dc5ece886f,Timothy Smith,25,Male,Tuberculosis,2023-10-30,East
+cd8e73b3-8d7f-44ca-835a-7c1c3ab402ce,Jeremy Martin,33,Male,Cholera,2023-12-06,West
+b1a8c9a5-1f38-4e82-9b21-b7dc53535143,Christine Browning,1,Male,Influenza,2023-03-03,North
+fa0c585e-997f-4454-b771-56d903a69f60,John Kennedy,56,Female,Tuberculosis,2024-03-26,West
+cef64cf7-a0bb-4023-937a-4a8145172a83,Elizabeth Brown,86,Male,Hypertension,2022-11-10,Central
+2b51ada6-75ae-46b6-b012-21aa044fbb20,Rhonda Cook,57,Male,Dengue,2024-07-12,East
+344dbb32-21de-4f81-a964-ec4f06c12883,Holly Jackson,87,Other,Cholera,2024-08-30,Central
+47aa4495-502e-4b88-9d68-682437100dfd,Carly Jones,4,Male,Heart Disease,2024-06-20,South
+395988a1-e830-4271-ae4f-e814b35d87a1,George Lloyd,67,Male,Dengue,2024-08-10,West
+8c351179-e06a-4012-b043-b9a4049f1f8b,Heidi Holland,77,Male,Malaria,2023-08-11,South
+ef9f6f7b-5055-4d28-9216-c0d01ede109f,Keith Dixon,29,Other,Hypertension,2023-01-02,South
+c6a139f0-a600-4e2a-a40c-1edbed2db246,Mark Dixon,39,Male,Tuberculosis,2023-05-06,North
+7fbc36fb-d434-4c07-92a0-d8abc3c8d83c,Douglas Andrews,10,Female,Heart Disease,2024-08-22,Central
+274b3628-fdfe-4231-9906-a2844bbdb2be,Stacy Cooper,22,Male,Influenza,2022-10-04,West
+5b58faa6-21b6-442c-a941-5c1010012896,Steven Johnson,29,Other,Diabetes,2023-07-11,South
+45a7ef90-4468-4a46-bd5b-117ce4a972c0,Eric Clements,55,Male,Dengue,2022-11-11,South
+b761d32e-50a1-41fd-81c0-d334a6494033,Jacob Martinez,16,Male,Asthma,2022-12-10,West
+451549c2-b5fb-4e3c-b996-40fa47c16ddf,Justin Keller,39,Other,Typhoid,2023-11-27,North
+b20ff698-9766-4615-9fd3-1186054b6e43,Heidi Brown,58,Male,Pneumonia,2024-04-26,South
+fd072cd0-f017-4946-b8d7-8ad354ec5093,Eric Graves,81,Other,Typhoid,2024-05-10,South

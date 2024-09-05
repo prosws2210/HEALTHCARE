@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {Toaster} from "react-hot-toast";
 
 // Pages
+import Admin from "./pages/Admin.jsx"; 
+
 import Home from "./pages/Home";
 import Cardialogy from "./components/Home/Cardialogy.jsx";
 
@@ -31,6 +33,8 @@ export default function App() {
 				<Navbar />
 
 				<Routes>
+					<Route path="/admin" element={<Admin />} />
+
 					<Route path="/" element={<Home />} />
 					<Route path="/Home/Cardialogy" element={<Cardialogy />} />
 
