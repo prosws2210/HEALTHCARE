@@ -13,7 +13,7 @@ const BrainIndex_Image = () => {
   const [fileName, setFileName] = useState('');
   const [cancelClicked, setCancelClicked] = useState(false);
 
-
+ 
   // Use a ref to store the interval ID for clearing later
   const intervalRef = useRef(null);
 

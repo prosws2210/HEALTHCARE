@@ -8,7 +8,6 @@ import Cardialogy from "./components/Home/Cardialogy.jsx";
 
 import About from "./pages/About.jsx";
 import Predict from "./pages/Predict.jsx";
-import BrainIndex from "./components/Predict/BrainIndex.jsx";
 
 import Check from "./pages/Check.jsx";
 
@@ -37,7 +36,6 @@ export default function App() {
 
 					<Route path="/about" element={<About />} />
 					<Route path="/predict" element={<Predict />} />
-					<Route path="/Predict/BrainIndex" element={<BrainIndex />} />
 
 					<Route path="/check" element={<Check />} />
 					<Route path="/viewreport" element={<ViewReport />} />

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-const BrainIndex_Image = () => {
+const Predict_UploadImageFinal = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
@@ -13,7 +13,7 @@ const BrainIndex_Image = () => {
   const [fileName, setFileName] = useState('');
   const [cancelClicked, setCancelClicked] = useState(false);
 
-
+ 
   // Use a ref to store the interval ID for clearing later
   const intervalRef = useRef(null);
 
@@ -174,4 +174,4 @@ const BrainIndex_Image = () => {
   );
 };
 
-export default BrainIndex_Image;
+export default Predict_UploadImageFinal;

@@ -39,23 +39,31 @@ const LoginR_new = () => {
             if (staffError || patientError) {
                 toast.error("Login failed");
                 setLoginStatus("Login failed");
-            } else if (staffData.length > 0) {
+            } 
+			
+			else if (staffData.length > 0) {
                 console.log('Logged in as staff', staffData);
                 setLoginStatus("Logged in as staff");
 				toast.success("Logged in as staff successfully");
                 navigate("/Login");
                 // Handle staff login
-            } else if (patientData.length > 0) {
+            } 
+			
+			else if (patientData.length > 0) {
                 console.log('Logged in as patient', patientData);
                 setLoginStatus("Logged in as patient");
 				toast.success("Logged in as patient successfully");
                 navigate("/Login");
                 // Handle patient login
-            } else {
+            } 
+			
+			else {
                 toast.error("No matching user found");
                 setLoginStatus("No matching user found");
             }
-        } catch (error) {
+        } 
+		
+		catch (error) {
             console.error('Error: ', error);
             toast.error("An error occurred during login");
             setLoginStatus("An error occurred during login");
